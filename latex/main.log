@@ -1,0 +1,1804 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 OCT 2015 17:26
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./suthesis-2e.sty
+Package: suthesis-2e 2014/05/26
+
+Note that this tries to fulfill the Stanford Thesis requirements but it is unof
+ficial
+(/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\signaturespace=\skip43
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen103
+\lightrulewidth=\dimen104
+\cmidrulewidth=\dimen105
+\belowrulesep=\dimen106
+\belowbottomsep=\dimen107
+\aboverulesep=\dimen108
+\abovetopsep=\dimen109
+\cmidrulesep=\dimen110
+\cmidrulekern=\dimen111
+\defaultaddspace=\dimen112
+\@cmidla=\count89
+\@cmidlb=\count90
+\@aboverulesep=\dimen113
+\@belowrulesep=\dimen114
+\@thisruleclass=\count91
+\@lastruleclass=\count92
+\@thisrulewidth=\dimen115
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip44
+\subfigcapskip=\skip45
+\subfigcaptopadj=\dimen116
+\subfigbottomskip=\skip46
+\subfigcapmargin=\dimen117
+\subfiglabelskip=\skip47
+\c@subfigure=\count93
+\c@lofdepth=\count94
+\c@subtable=\count95
+\c@lotdepth=\count96
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip48
+\subfig@bottom=\skip49
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count97
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen118
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip11
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks18
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks19
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks20
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+)
+\c@ContinuedFloat=\count110
+Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip53
+\enit@outerparindent=\dimen136
+\enit@toks=\toks23
+\enit@inbox=\box30
+\enitdp@description=\count111
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2015/03/01 v5547 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/02/28 v5542 L3 Bootstrap code
+L3 Module: l3names 2015/02/24 v5535 L3 Namespace for primitives
+L3 Module: l3basics 2015/01/27 v5500 L3 Basic definitions
+L3 Module: l3expan 2014/11/27 v5472 L3 Argument expansion
+L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
+L3 Module: l3str 2015/03/01 v5545 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2015/02/21 v5529 L3 Integers
+\c_max_int=\count112
+\l_tmpa_int=\count113
+\l_tmpb_int=\count114
+\g_tmpa_int=\count115
+\g_tmpb_int=\count116
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count117
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2015/02/26 v5537 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count118
+\l__iow_target_count_int=\count119
+\l__iow_current_line_int=\count120
+\l__iow_current_word_int=\count121
+\l__iow_current_indentation_int=\count122
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen137
+\c_max_dim=\dimen138
+\l_tmpa_dim=\dimen139
+\l_tmpb_dim=\dimen140
+\g_tmpa_dim=\dimen141
+\g_tmpb_dim=\dimen142
+\c_zero_skip=\skip54
+\c_max_skip=\skip55
+\l_tmpa_skip=\skip56
+\l_tmpb_skip=\skip57
+\g_tmpa_skip=\skip58
+\g_tmpb_skip=\skip59
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
+\g__keyval_level_int=\count123
+\l_keys_choice_int=\count124
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count125
+\c__fp_middle_shift_int=\count126
+\c__fp_trailing_shift_int=\count127
+\c__fp_big_leading_shift_int=\count128
+\c__fp_big_middle_shift_int=\count129
+\c__fp_big_trailing_shift_int=\count130
+\c__fp_Bigg_leading_shift_int=\count131
+\c__fp_Bigg_middle_shift_int=\count132
+\c__fp_Bigg_trailing_shift_int=\count133
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box31
+\l_tmpa_box=\box32
+\l_tmpb_box=\box33
+\g_tmpa_box=\box34
+\g_tmpb_box=\box35
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box36
+\l__coffin_internal_dim=\dimen143
+\l__coffin_offset_x_dim=\dimen144
+\l__coffin_offset_y_dim=\dimen145
+\l__coffin_x_dim=\dimen146
+\l__coffin_y_dim=\dimen147
+\l__coffin_x_prime_dim=\dimen148
+\l__coffin_y_prime_dim=\dimen149
+\c_empty_coffin=\box37
+\l__coffin_aligned_coffin=\box38
+\l__coffin_aligned_internal_coffin=\box39
+\l_tmpa_coffin=\box40
+\l_tmpb_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen150
+\l__coffin_display_x_dim=\dimen151
+\l__coffin_display_y_dim=\dimen152
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen153
+\l__box_bottom_dim=\dimen154
+\l__box_left_dim=\dimen155
+\l__box_right_dim=\dimen156
+\l__box_top_new_dim=\dimen157
+\l__box_bottom_new_dim=\dimen158
+\l__box_left_new_dim=\dimen159
+\l__box_right_new_dim=\dimen160
+\l__box_internal_box=\box45
+\l__coffin_bounding_shift_dim=\dimen161
+\l__coffin_left_corner_dim=\dimen162
+\l__coffin_right_corner_dim=\dimen163
+\l__coffin_bottom_corner_dim=\dimen164
+\l__coffin_top_corner_dim=\dimen165
+\l__coffin_scaled_total_height_dim=\dimen166
+\l__coffin_scaled_width_dim=\dimen167
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/03/01 v5544 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count134
+))
+Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count135
+\l__xparse_m_args_int=\count136
+\l__xparse_mandatory_args_int=\count137
+\l__xparse_processor_int=\count138
+\l__xparse_v_nesting_int=\count139
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count140
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+\c@abspage=\count141
+Package zref Info: New property: abspage on input line 62.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+\mdf@templength=\skip60
+\c@mdf@globalstyle@cnt=\count142
+\mdf@skipabove@length=\skip61
+\mdf@skipbelow@length=\skip62
+\mdf@leftmargin@length=\skip63
+\mdf@rightmargin@length=\skip64
+\mdf@innerleftmargin@length=\skip65
+\mdf@innerrightmargin@length=\skip66
+\mdf@innertopmargin@length=\skip67
+\mdf@innerbottommargin@length=\skip68
+\mdf@splittopskip@length=\skip69
+\mdf@splitbottomskip@length=\skip70
+\mdf@outermargin@length=\skip71
+\mdf@innermargin@length=\skip72
+\mdf@linewidth@length=\skip73
+\mdf@innerlinewidth@length=\skip74
+\mdf@middlelinewidth@length=\skip75
+\mdf@outerlinewidth@length=\skip76
+\mdf@roundcorner@length=\skip77
+\mdf@footenotedistance@length=\skip78
+\mdf@userdefinedwidth@length=\skip79
+\mdf@needspace@length=\skip80
+\mdf@frametitleaboveskip@length=\skip81
+\mdf@frametitlebelowskip@length=\skip82
+\mdf@frametitlerulewidth@length=\skip83
+\mdf@frametitleleftmargin@length=\skip84
+\mdf@frametitlerightmargin@length=\skip85
+\mdf@shadowsize@length=\skip86
+\mdf@extratopheight@length=\skip87
+\mdf@subtitleabovelinewidth@length=\skip88
+\mdf@subtitlebelowlinewidth@length=\skip89
+\mdf@subtitleaboveskip@length=\skip90
+\mdf@subtitlebelowskip@length=\skip91
+\mdf@subtitleinneraboveskip@length=\skip92
+\mdf@subtitleinnerbelowskip@length=\skip93
+\mdf@subsubtitleabovelinewidth@length=\skip94
+\mdf@subsubtitlebelowlinewidth@length=\skip95
+\mdf@subsubtitleaboveskip@length=\skip96
+\mdf@subsubtitlebelowskip@length=\skip97
+\mdf@subsubtitleinneraboveskip@length=\skip98
+\mdf@subsubtitleinnerbelowskip@length=\skip99
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box46
+\mdf@footnotebox=\box47
+\mdf@splitbox@one=\box48
+\mdf@splitbox@two=\box49
+\mdf@splitbox@save=\box50
+\mdfsplitboxwidth=\skip100
+\mdfsplitboxtotalwidth=\skip101
+\mdfsplitboxheight=\skip102
+\mdfsplitboxdepth=\skip103
+\mdfsplitboxtotalheight=\skip104
+\mdfframetitleboxwidth=\skip105
+\mdfframetitleboxtotalwidth=\skip106
+\mdfframetitleboxheight=\skip107
+\mdfframetitleboxdepth=\skip108
+\mdfframetitleboxtotalheight=\skip109
+\mdffootnoteboxwidth=\skip110
+\mdffootnoteboxtotalwidth=\skip111
+\mdffootnoteboxheight=\skip112
+\mdffootnoteboxdepth=\skip113
+\mdffootnoteboxtotalheight=\skip114
+\mdftotallinewidth=\skip115
+\mdfboundingboxwidth=\skip116
+\mdfboundingboxtotalwidth=\skip117
+\mdfboundingboxheight=\skip118
+\mdfboundingboxdepth=\skip119
+\mdfboundingboxtotalheight=\skip120
+\mdf@freevspace@length=\skip121
+\mdf@horizontalwidthofbox@length=\skip122
+\mdf@verticalmarginwhole@length=\skip123
+\mdf@horizontalspaceofbox=\skip124
+\mdfsubtitleheight=\skip125
+\mdfsubsubtitleheight=\skip126
+\c@mdfcountframes=\count143
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newmdtheoremenv with sig. 'O{} m o m o ' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
+.................................................
+\mdf@envdepth=\count144
+\c@mdf@env@i=\count145
+\c@mdf@env@ii=\count146
+\c@mdf@zref@counter=\count147
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count148
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mdwtools/mdwlist.sty
+Package: mdwlist 1996/05/02 1.1 Various list-related things
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/dblfloatfix/dblfloatfix.sty
+Package: dblfloatfix 2012/12/31 v1.0a (JAW)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2015/02/21 v2.0a fixes to LaTeX (obsolete)
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+)
+\@dblbotnum=\count149
+\c@dblbotnumber=\count150
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
+\babel@savecnt=\count151
+\U@D=\dimen168
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count152
+\c@Blindtext=\count153
+\c@blind@countparstart=\count154
+\blind@countxx=\count155
+\blindtext@numBlindtext=\count156
+\blind@countyy=\count157
+\c@blindlist=\count158
+\c@blindlistlevel=\count159
+\c@blindlist@level=\count160
+\blind@listitem=\count161
+\c@blind@listcount=\count162
+\c@blind@levelcount=\count163
+\blind@mathformula=\count164
+\blind@Mathformula=\count165
+\c@blind@randomcount=\count166
+\c@blind@randommax=\count167
+\c@blind@pangramcount=\count168
+\c@blind@pangrammax=\count169
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count170
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip127
+\skiplinenumber=\skip128
+\skiprule=\skip129
+\skiphlne=\skip130
+\skiptext=\skip131
+\skiplength=\skip132
+\algomargin=\skip133
+\skipalgocfslide=\skip134
+\algowidth=\dimen169
+\inoutsize=\dimen170
+\inoutindent=\dimen171
+\interspacetitleruled=\dimen172
+\interspacealgoruled=\dimen173
+\interspacetitleboxruled=\dimen174
+\algocf@inoutbox=\box51
+\algocf@inputbox=\box52
+\AlCapSkip=\skip135
+\AlCapHSkip=\skip136
+\algoskipindent=\skip137
+\algocf@nlbox=\box53
+\algocf@hangingbox=\box54
+\algocf@untilbox=\box55
+\algocf@skipuntil=\skip138
+\algocf@capbox=\box56
+\algoheightruledefault=\skip139
+\algoheightrule=\skip140
+\algotitleheightruledefault=\skip141
+\algotitleheightrule=\skip142
+\c@algocfline=\count171
+\c@algocfproc=\count172
+\c@algocf=\count173
+\algocf@algoframe=\box57
+\algocf@algobox=\box58
+)
+\c@defo=\count174
+\c@thm=\count175
+ (./main.aux
+
+LaTeX Warning: Label `tab:dataTable' multiply defined.
+
+
+LaTeX Warning: Label `tab:results1' multiply defined.
+
+
+LaTeX Warning: Label `fig:confidence' multiply defined.
+
+
+LaTeX Warning: Label `tab:predacc' multiply defined.
+
+
+LaTeX Warning: Label `sec:experiments' multiply defined.
+
+
+LaTeX Warning: Label `sec:relatedwork' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 131.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count176
+\scratchdimen=\dimen175
+\scratchbox=\box59
+\nofMPsegments=\count177
+\nofMParguments=\count178
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count179
+\MPscratchDim=\dimen176
+\MPnumerator=\count180
+\makeMPintoPDFobject=\count181
+\everyMPtoPDFconversion=\toks25
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box60
+
+Redefining \end@dblfloat\ for use with subfigure
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 141.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+ [2]
+LaTeX Font Info:    Try loading font information for U+msa on input line 141.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 141.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 142.
+ [4
+
+
+]
+(./chapters/acknowledgements.tex) [5
+
+] (./main.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+ [6
+
+] [7])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [8] (./main.lot)
+\tf@lot=\write4
+\openout4 = `main.lot'.
+
+
+[9
+
+] (./main.lof [10
+
+] [11])
+\tf@lof=\write5
+\openout5 = `main.lof'.
+
+ [12]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
+(./chapters/1-introduction.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+ [1
+
+
+]
+
+LaTeX Warning: Citation `sadler2006impact' on page 2 undefined on input line 22
+.
+
+
+LaTeX Warning: Citation `corbett2001cognitive' on page 2 undefined on input lin
+e 22.
+
+[2] [3] [4]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 161.
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]\OT1/ptm/b/n/9 Khan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]\OT1/ptm/b/n/9 Code.org
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]\OT1/ptm/b/n/9 Stanford
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]\OT1/ptm/b/n/9 Coursera
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+[]\OT1/ptm/b/n/9 Coursera
+ []
+
+[5] <img/assnType_all.pdf, id=67, 1444.39626pt x 362.35374pt>
+File: img/assnType_all.pdf Graphic file (type pdf)
+
+<use img/assnType_all.pdf>
+Package pdftex.def Info: img/assnType_all.pdf used on input line 203.
+(pdftex.def)             Requested size: 433.62pt x 108.77884pt.
+
+<img/intro-projects.pdf, id=68, 455.7025pt x 481.8pt>
+File: img/intro-projects.pdf Graphic file (type pdf)
+
+<use img/intro-projects.pdf>
+Package pdftex.def Info: img/intro-projects.pdf used on input line 224.
+(pdftex.def)             Requested size: 195.12767pt x 206.30246pt.
+
+<img/intro-impact.pdf, id=69, 460.72125pt x 481.8pt>
+File: img/intro-impact.pdf Graphic file (type pdf)
+
+<use img/intro-impact.pdf>
+Package pdftex.def Info: img/intro-impact.pdf used on input line 228.
+(pdftex.def)             Requested size: 195.12767pt x 204.05284pt.
+ [6 <./img/assnType_all.pdf>]) [7 <./img/intro-projects.pdf> <./img/intro-impac
+t.pdf>]
+Chapter 2.
+(./chapters/2-deepKnowledgeTracing.tex
+<img/assnType_1.pdf, id=164, 273.02pt x 271.0125pt>
+File: img/assnType_1.pdf Graphic file (type pdf)
+ <use img/assnType_1.pdf>
+Package pdftex.def Info: img/assnType_1.pdf used on input line 2.
+(pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
+
+
+LaTeX Warning: Citation `polson2013foundations' on page 8 undefined on input li
+ne 14.
+
+
+LaTeX Warning: Citation `corbett2001cognitive' on page 8 undefined on input lin
+e 16.
+
+[8
+
+ <./img/assnType_1.pdf>]
+<img/singleStudent.pdf, id=188, 761.84625pt x 163.61125pt>
+File: img/singleStudent.pdf Graphic file (type pdf)
+
+<use img/singleStudent.pdf>
+Package pdftex.def Info: img/singleStudent.pdf used on input line 34.
+(pdftex.def)             Requested size: 433.62pt x 93.12206pt.
+
+
+LaTeX Warning: Citation `corbett1994knowledge' on page 9 undefined on input lin
+e 42.
+
+
+LaTeX Warning: Citation `linnenbrink2004role' on page 9 undefined on input line
+ 49.
+
+
+LaTeX Warning: Citation `elliot2013handbook' on page 9 undefined on input line 
+50.
+
+
+LaTeX Warning: Citation `cohen2008identity' on page 9 undefined on input line 5
+1.
+
+
+LaTeX Warning: Citation `fitch2005evolution' on page 9 undefined on input line 
+51.
+
+
+LaTeX Warning: Citation `gentner1983structure' on page 9 undefined on input lin
+e 51.
+
+[9 <./img/singleStudent.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+
+
+LaTeX Warning: Citation `corbett1994knowledge' on page 10 undefined on input li
+ne 57.
+
+
+LaTeX Warning: Citation `d2008more' on page 10 undefined on input line 58.
+
+
+LaTeX Warning: Citation `yudelson2013individualized' on page 10 undefined on in
+put line 58.
+
+
+LaTeX Warning: Citation `pardos2011kt' on page 10 undefined on input line 58.
+
+
+LaTeX Warning: Citation `schraagen2000cognitive' on page 10 undefined on input 
+line 61.
+
+
+LaTeX Warning: Citation `rafferty2011faster' on page 10 undefined on input line
+ 66.
+
+
+LaTeX Warning: Citation `pavlik2009performance' on page 10 undefined on input l
+ine 68.
+
+
+LaTeX Warning: Citation `cen2006learning' on page 10 undefined on input line 68
+.
+
+
+LaTeX Warning: Citation `gong2010comparing' on page 10 undefined on input line 
+68.
+
+
+LaTeX Warning: Citation `d2011ensembling' on page 10 undefined on input line 69
+.
+
+[10]
+
+LaTeX Warning: Citation `lan2014time' on page 11 undefined on input line 72.
+
+
+LaTeX Warning: Citation `khajah2014integrating' on page 11 undefined on input l
+ine 72.
+
+
+LaTeX Warning: Citation `khajah2014incorporating' on page 11 undefined on input
+ line 72.
+
+
+LaTeX Warning: Citation `williams1989learning' on page 11 undefined on input li
+ne 77.
+
+
+LaTeX Warning: Citation `hochreiter1997long' on page 11 undefined on input line
+ 78.
+
+
+LaTeX Warning: Citation `graves2013speech' on page 11 undefined on input line 8
+2.
+
+
+LaTeX Warning: Citation `mikolov2010recurrent' on page 11 undefined on input li
+ne 82.
+
+
+LaTeX Warning: Citation `karpathy2014deep' on page 11 undefined on input line 8
+2.
+
+[11]
+
+LaTeX Warning: Citation `hochreiter1997long' on page 12 undefined on input line
+ 100.
+
+
+LaTeX Warning: Reference `app LSTM' on page 12 undefined on input line 104.
+
+
+LaTeX Warning: Citation `baraniuk2007compressive' on page 12 undefined on input
+ line 120.
+
+[12] <img/rnn.pdf, id=225, 637.38126pt x 415.5525pt>
+File: img/rnn.pdf Graphic file (type pdf)
+ <use img/rnn.pdf>
+Package pdftex.def Info: img/rnn.pdf used on input line 133.
+(pdftex.def)             Requested size: 303.53267pt x 197.89041pt.
+ [13 <./img/rnn.pdf>]
+
+LaTeX Warning: Citation `rohrer2009effects' on page 14 undefined on input line 
+172.
+
+[14]
+
+LaTeX Warning: Citation `drasgow1990item' on page 15 undefined on input line 20
+0.
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+LaTeX Warning: Citation `KAprivacy' on page 15 undefined on input line 208.
+
+
+LaTeX Warning: Citation `feng2009addressing' on page 15 undefined on input line
+ 210.
+
+
+LaTeX Warning: Citation `pardos2011kt' on page 15 undefined on input line 238.
+
+[15] <img/toyAcc.pdf, id=261, 464.73625pt x 451.6875pt>
+File: img/toyAcc.pdf Graphic file (type pdf)
+ <use img/toyAcc.pdf>
+Package pdftex.def Info: img/toyAcc.pdf used on input line 249.
+(pdftex.def)             Requested size: 134.42113pt x 130.6414pt.
+
+<img/khanRoc.pdf, id=262, 463.7325pt x 450.68375pt>
+File: img/khanRoc.pdf Graphic file (type pdf)
+ <use img/khanRoc.pdf>
+Package pdftex.def Info: img/khanRoc.pdf used on input line 254.
+(pdftex.def)             Requested size: 134.42113pt x 130.63991pt.
+
+<img/curriculum.pdf, id=263, 464.73625pt x 451.6875pt>
+File: img/curriculum.pdf Graphic file (type pdf)
+
+<use img/curriculum.pdf>
+Package pdftex.def Info: img/curriculum.pdf used on input line 259.
+(pdftex.def)             Requested size: 134.42113pt x 130.6414pt.
+ [16 <./img/toyAcc.pdf> <./img/khanRoc.pdf> <./img/curriculum.pdf>] <img/concep
+tClusters.pdf, id=366, 1130.2225pt x 623.32875pt>
+File: img/conceptClusters.pdf Graphic file (type pdf)
+
+<use img/conceptClusters.pdf>
+Package pdftex.def Info: img/conceptClusters.pdf used on input line 283.
+(pdftex.def)             Requested size: 433.62pt x 239.14056pt.
+
+
+LaTeX Warning: Citation `piech2015autonomously' on page 17 undefined on input l
+ine 299.
+
+
+LaTeX Warning: Citation `piechICML15' on page 17 undefined on input line 300.
+
+[17]) [18 <./img/conceptClusters.pdf>]
+Chapter 3.
+(./chapters/3-problemSolvingPolicies.tex
+<img/assnType_2.pdf, id=405, 273.02pt x 271.0125pt>
+File: img/assnType_2.pdf Graphic file (type pdf)
+ <use img/assnType_2.pdf>
+Package pdftex.def Info: img/assnType_2.pdf used on input line 2.
+(pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
+
+[19
+
+ <./img/assnType_2.pdf>]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+ [20]
+Package mdframed Info: Not enough space on this page on input line 34.
+
+<img/policy3.png, id=432, 1150.2975pt x 979.66pt>
+File: img/policy3.png Graphic file (type png)
+ <use img/policy3.png>
+Package pdftex.def Info: img/policy3.png used on input line 38.
+(pdftex.def)             Requested size: 433.62pt x 369.29994pt.
+
+[21] [22 <./img/policy3.png>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 67.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<img/problems3.png, id=441, 2326.6925pt x 588.1975pt>
+File: img/problems3.png Graphic file (type png)
+ <use img/problems3.png>
+Package pdftex.def Info: img/problems3.png used on input line 73.
+(pdftex.def)             Requested size: 433.62pt x 109.61362pt.
+
+<img/retention.png, id=442, 434.1018pt x 361.8318pt>
+File: img/retention.png Graphic file (type png)
+ <use img/retention.png>
+Package pdftex.def Info: img/retention.png used on input line 85.
+(pdftex.def)             Requested size: 208.13574pt x 173.48405pt.
+
+<img/annotationImpact.png, id=443, 434.1018pt x 361.8318pt>
+File: img/annotationImpact.png Graphic file (type png)
+
+<use img/annotationImpact.png>
+Package pdftex.def Info: img/annotationImpact.png used on input line 90.
+(pdftex.def)             Requested size: 208.13574pt x 173.48405pt.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [23] [24 <./img/problems3.png> <./img/retention.png> <./img/annotationImpact.p
+ng>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
+ [25]
+<img/wrongVsPopularity.png, id=458, 434.1018pt x 362.7954pt>
+File: img/wrongVsPopularity.png Graphic file (type png)
+
+<use img/wrongVsPopularity.png>
+Package pdftex.def Info: img/wrongVsPopularity.png used on input line 147.
+(pdftex.def)             Requested size: 216.81pt x 181.19795pt.
+ [26] [27 <./img/wrongVsPopularity.png>]
+[28] [29] [30] [31] <img/lcs.png, id=480, 580.569pt x 640.794pt>
+File: img/lcs.png Graphic file (type png)
+
+<use img/lcs.png>
+Package pdftex.def Info: img/lcs.png used on input line 327.
+(pdftex.def)             Requested size: 216.81pt x 239.29984pt.
+ [32] [33 <./img/lcs.png>]
+<img/future.png, id=488, 823.878pt x 759.3168pt>
+File: img/future.png Graphic file (type png)
+ <use img/future.png>
+Package pdftex.def Info: img/future.png used on input line 345.
+(pdftex.def)             Requested size: 433.62pt x 399.63213pt.
+ [34 <./img/future.png>] [35] [36]) [37] [38]
+Chapter 4.
+(./chapters/4-programEncoding.tex
+<img/assnType_3.pdf, id=506, 273.02pt x 271.0125pt>
+File: img/assnType_3.pdf Graphic file (type pdf)
+ <use img/assnType_3.pdf>
+Package pdftex.def Info: img/assnType_3.pdf used on input line 2.
+(pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
+
+[39
+
+ <./img/assnType_3.pdf>]
+<img/splash2_noborder.pdf, id=529, 745.78625pt x 494.84875pt>
+File: img/splash2_noborder.pdf Graphic file (type pdf)
+
+<use img/splash2_noborder.pdf>
+Package pdftex.def Info: img/splash2_noborder.pdf used on input line 56.
+(pdftex.def)             Requested size: 281.85034pt x 187.01003pt.
+
+
+LaTeX Warning: Citation `huangetal13' on page 40 undefined on input line 65.
+
+
+LaTeX Warning: Citation `basu2013powergrading' on page 40 undefined on input li
+ne 65.
+
+
+LaTeX Warning: Citation `nguyen14' on page 40 undefined on input line 65.
+
+
+LaTeX Warning: Citation `brooks2014divide' on page 40 undefined on input line 6
+5.
+
+
+LaTeX Warning: Citation `lan2015mathematical' on page 40 undefined on input lin
+e 65.
+
+
+LaTeX Warning: Citation `piech2015' on page 40 undefined on input line 65.
+
+
+LaTeX Warning: Citation `huangetal13' on page 40 undefined on input line 73.
+
+
+LaTeX Warning: Citation `rogers2014aces' on page 40 undefined on input line 73.
+
+
+
+LaTeX Warning: Citation `mokbel2013domain' on page 40 undefined on input line 7
+4.
+
+
+LaTeX Warning: Citation `nguyen14' on page 40 undefined on input line 79.
+
+[40]
+
+LaTeX Warning: Citation `socher2013recursive' on page 41 undefined on input lin
+e 89.
+
+
+LaTeX Warning: Citation `socher2011semi' on page 41 undefined on input line 89.
+
+
+
+LaTeX Warning: Citation `zaremba2014learningb' on page 41 undefined on input li
+ne 89.
+
+
+LaTeX Warning: Citation `bowman2013can' on page 41 undefined on input line 89.
+
+
+LaTeX Warning: Citation `ovsjanikov2012functional' on page 41 undefined on inpu
+t line 98.
+
+
+LaTeX Warning: Citation `ovsjanikov2013analysis' on page 41 undefined on input 
+line 98.
+
+
+LaTeX Warning: Citation `song2013kernel' on page 41 undefined on input line 101
+.
+
+
+LaTeX Warning: Citation `song2009hilbert' on page 41 undefined on input line 10
+1.
+
+<img/overview.pdf, id=533, 741.77126pt x 134.5025pt>
+File: img/overview.pdf Graphic file (type pdf)
+ <use img/overview.pdf>
+Package pdftex.def Info: img/overview.pdf used on input line 114.
+(pdftex.def)             Requested size: 433.62pt x 78.62718pt.
+
+Overfull \hbox (7.95511pt too wide) in paragraph at lines 124--136
+[]\OT1/ptm/m/n/10 While there are many di-men-sions that ``char-ac-ter-ize'' a 
+pro-gram in-clud-ing as-pects such as style or time/space
+ []
+
+[41 <./img/splash2_noborder.pdf>]
+
+LaTeX Warning: Citation `hoare1969axiomatic' on page 42 undefined on input line
+ 137.
+
+
+Overfull \hbox (2.07608pt too wide) in paragraph at lines 137--143
+[]\OT1/ptm/m/n/10 We pro-pose to learn pro-gram fea-tures us-ing a train-ing se
+t of $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; A; Q\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/1
+0 -triples --- so-called \OT1/ptm/m/it/10 Hoare triples \OT1/ptm/m/n/10 [[]]
+ []
+
+[42 <./img/overview.pdf>] [43]
+
+LaTeX Warning: Citation `bergstra2012random' on page 44 undefined on input line
+ 291.
+
+
+LaTeX Warning: Citation `duchi2011adaptive' on page 44 undefined on input line 
+294.
+
+[44]
+
+LaTeX Warning: Citation `socher2013recursive' on page 45 undefined on input lin
+e 383.
+
+[45]
+
+LaTeX Warning: Citation `goller1996learning' on page 46 undefined on input line
+ 427.
+
+[46]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [47] [48] <img/force_mult_1.pdf, id=670, 474.77374pt x 405.515pt>
+File: img/force_mult_1.pdf Graphic file (type pdf)
+
+<use img/force_mult_1.pdf>
+Package pdftex.def Info: img/force_mult_1.pdf used on input line 591.
+(pdftex.def)             Requested size: 130.08731pt x 111.11166pt.
+
+<img/force_mult_2.pdf, id=671, 474.77374pt x 405.515pt>
+File: img/force_mult_2.pdf Graphic file (type pdf)
+
+<use img/force_mult_2.pdf>
+Package pdftex.def Info: img/force_mult_2.pdf used on input line 596.
+(pdftex.def)             Requested size: 130.08731pt x 111.11166pt.
+
+<img/force_mult_3.pdf, id=672, 474.77374pt x 405.515pt>
+File: img/force_mult_3.pdf Graphic file (type pdf)
+
+<use img/force_mult_3.pdf>
+Package pdftex.def Info: img/force_mult_3.pdf used on input line 601.
+(pdftex.def)             Requested size: 130.08731pt x 111.11166pt.
+ [49]
+
+LaTeX Warning: Citation `nguyen14' on page 50 undefined on input line 630.
+
+[50 <./img/force_mult_1.pdf> <./img/force_mult_2.pdf> <./img/force_mult_3.pdf>]
+<img/prediction_acc_v_cyclomatic.pdf, id=764, 474.77374pt x 409.53pt>
+File: img/prediction_acc_v_cyclomatic.pdf Graphic file (type pdf)
+
+<use img/prediction_acc_v_cyclomatic.pdf>
+Package pdftex.def Info: img/prediction_acc_v_cyclomatic.pdf used on input line
+ 642.
+(pdftex.def)             Requested size: 125.74689pt x 108.46243pt.
+
+<img/forcemulti_v_cyclomatic.pdf, id=765, 474.77374pt x 409.53pt>
+File: img/forcemulti_v_cyclomatic.pdf Graphic file (type pdf)
+
+<use img/forcemulti_v_cyclomatic.pdf>
+Package pdftex.def Info: img/forcemulti_v_cyclomatic.pdf used on input line 647
+.
+(pdftex.def)             Requested size: 125.74689pt x 108.46243pt.
+
+<img/force_mult_bystrategy.pdf, id=766, 427.5975pt x 282.05376pt>
+File: img/force_mult_bystrategy.pdf Graphic file (type pdf)
+
+<use img/force_mult_bystrategy.pdf>
+Package pdftex.def Info: img/force_mult_bystrategy.pdf used on input line 654.
+(pdftex.def)             Requested size: 143.09538pt x 94.38637pt.
+
+
+LaTeX Warning: Citation `mccabe1976complexity' on page 51 undefined on input li
+ne 676.
+
+[51 <./img/prediction_acc_v_cyclomatic.pdf> <./img/forcemulti_v_cyclomatic.pdf>
+ <./img/force_mult_bystrategy.pdf>]
+
+LaTeX Warning: Citation `graves2014neural' on page 52 undefined on input line 7
+08.
+
+) [52]
+Chapter 5.
+(./chapters/5-scalableHomeworkSearch.tex
+<img/assnType_4.pdf, id=868, 273.02pt x 271.0125pt>
+File: img/assnType_4.pdf Graphic file (type pdf)
+ <use img/assnType_4.pdf>
+Package pdftex.def Info: img/assnType_4.pdf used on input line 2.
+(pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
+
+[53
+
+ <./img/assnType_4.pdf>]
+
+LaTeX Warning: Citation `paul94' on page 54 undefined on input line 31.
+
+
+LaTeX Warning: Citation `thummalapenta07' on page 54 undefined on input line 31
+.
+
+
+LaTeX Warning: Citation `hummel08' on page 54 undefined on input line 31.
+
+
+LaTeX Warning: Citation `kim10' on page 54 undefined on input line 31.
+
+
+LaTeX Warning: Citation `piech13' on page 54 undefined on input line 70.
+
+[54] <img/goodimplementation.pdf, id=904, 684.5575pt x 222.8325pt>
+File: img/goodimplementation.pdf Graphic file (type pdf)
+
+<use img/goodimplementation.pdf>
+Package pdftex.def Info: img/goodimplementation.pdf used on input line 150.
+(pdftex.def)             Requested size: 143.09538pt x 46.57858pt.
+
+<img/astexample2.pdf, id=905, 706.64pt x 380.42125pt>
+File: img/astexample2.pdf Graphic file (type pdf)
+
+<use img/astexample2.pdf>
+Package pdftex.def Info: img/astexample2.pdf used on input line 156.
+(pdftex.def)             Requested size: 91.0631pt x 49.02113pt.
+
+<img/subtreeexample.pdf, id=906, 498.86375pt x 158.5925pt>
+File: img/subtreeexample.pdf Graphic file (type pdf)
+
+<use img/subtreeexample.pdf>
+Package pdftex.def Info: img/subtreeexample.pdf used on input line 162.
+(pdftex.def)             Requested size: 56.37271pt x 17.91953pt.
+
+<img/contextexample.pdf, id=907, 706.64pt x 330.23375pt>
+File: img/contextexample.pdf Graphic file (type pdf)
+
+<use img/contextexample.pdf>
+Package pdftex.def Info: img/contextexample.pdf used on input line 168.
+(pdftex.def)             Requested size: 91.0631pt x 42.55397pt.
+ [55] [56 <./img/goodimplementation.pdf> <./img/astexample2.pdf> <./img/subtree
+example.pdf> <./img/contextexample.pdf>]
+
+LaTeX Warning: Citation `eaton97' on page 57 undefined on input line 218.
+
+[57]
+
+LaTeX Warning: Citation `zobel06' on page 58 undefined on input line 274.
+
+[58]
+
+LaTeX Warning: Citation `shasha94' on page 59 undefined on input line 373.
+
+
+LaTeX Warning: Citation `kim10' on page 59 undefined on input line 374.
+
+
+LaTeX Warning: Citation `huang13' on page 59 undefined on input line 374.
+
+
+LaTeX Warning: Citation `rivers13' on page 59 undefined on input line 374.
+
+
+LaTeX Warning: Citation `paul94' on page 59 undefined on input line 376.
+
+
+LaTeX Warning: Citation `xu03' on page 59 undefined on input line 376.
+
+
+LaTeX Warning: Citation `rivers12' on page 59 undefined on input line 376.
+
+
+LaTeX Warning: Citation `rivers13' on page 59 undefined on input line 376.
+
+
+LaTeX Warning: Citation `rivers12' on page 59 undefined on input line 379.
+
+[59]
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 410.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 410.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 410.
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 415.
+ [60] [61]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 549.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [62]
+<img/cartoon.pdf, id=1040, 630.355pt x 446.66875pt>
+File: img/cartoon.pdf Graphic file (type pdf)
+ <use img/cartoon.pdf>
+Package pdftex.def Info: img/cartoon.pdf used on input line 586.
+(pdftex.def)             Requested size: 151.76964pt x 107.54346pt.
+
+[63 <./img/cartoon.pdf>]
+<img/taggingexample.pdf, id=1207, 694.595pt x 176.66pt>
+File: img/taggingexample.pdf Graphic file (type pdf)
+
+<use img/taggingexample.pdf>
+Package pdftex.def Info: img/taggingexample.pdf used on input line 638.
+(pdftex.def)             Requested size: 151.76964pt x 38.60114pt.
+
+<img/equivalencesAll.pdf, id=1208, 676.5275pt x 521.95pt>
+File: img/equivalencesAll.pdf Graphic file (type pdf)
+
+<use img/equivalencesAll.pdf>
+Package pdftex.def Info: img/equivalencesAll.pdf used on input line 647.
+(pdftex.def)             Requested size: 294.85841pt x 227.49242pt.
+ [64 <./img/taggingexample.pdf>] [65 <./img/equivalencesAll.pdf>] <img/numastsv
+sruntime.pdf, id=1271, 392.46625pt x 156.585pt>
+File: img/numastsvsruntime.pdf Graphic file (type pdf)
+
+<use img/numastsvsruntime.pdf>
+Package pdftex.def Info: img/numastsvsruntime.pdf used on input line 718.
+(pdftex.def)             Requested size: 205.97214pt x 82.17967pt.
+
+<img/astsizevsruntime.pdf, id=1272, 402.50375pt x 152.57pt>
+File: img/astsizevsruntime.pdf Graphic file (type pdf)
+
+<use img/astsizevsruntime.pdf>
+Package pdftex.def Info: img/astsizevsruntime.pdf used on input line 722.
+(pdftex.def)             Requested size: 205.97214pt x 78.07272pt.
+
+<img/zipfnoequivalence.pdf, id=1273, 389.455pt x 278.03876pt>
+File: img/zipfnoequivalence.pdf Graphic file (type pdf)
+
+<use img/zipfnoequivalence.pdf>
+Package pdftex.def Info: img/zipfnoequivalence.pdf used on input line 735.
+(pdftex.def)             Requested size: 130.08731pt x 92.86885pt.
+
+<img/reduction.pdf, id=1274, 373.395pt x 262.9825pt>
+File: img/reduction.pdf Graphic file (type pdf)
+ <use img/reduction.pdf>
+Package pdftex.def Info: img/reduction.pdf used on input line 739.
+(pdftex.def)             Requested size: 130.08731pt x 91.61989pt.
+
+<img/reduction2.pdf, id=1275, 402.50375pt x 238.8925pt>
+File: img/reduction2.pdf Graphic file (type pdf)
+
+<use img/reduction2.pdf>
+Package pdftex.def Info: img/reduction2.pdf used on input line 743.
+(pdftex.def)             Requested size: 130.08731pt x 77.209pt.
+
+
+LaTeX Warning: Citation `eaton97' on page 66 undefined on input line 761.
+
+[66 <./img/numastsvsruntime.pdf> <./img/astsizevsruntime.pdf>]
+
+LaTeX Warning: Citation `zipf1949human' on page 67 undefined on input line 799.
+
+
+
+LaTeX Warning: Citation `breslau99' on page 67 undefined on input line 804.
+
+
+LaTeX Warning: Citation `lu10' on page 67 undefined on input line 806.
+
+[67 <./img/zipfnoequivalence.pdf> <./img/reduction.pdf> <./img/reduction2.pdf>]
+
+LaTeX Warning: Citation `huang13' on page 68 undefined on input line 857.
+
+<img/bugsFscoreDiffs.pdf, id=1390, 506.89375pt x 357.335pt>
+File: img/bugsFscoreDiffs.pdf Graphic file (type pdf)
+
+<use img/bugsFscoreDiffs.pdf>
+Package pdftex.def Info: img/bugsFscoreDiffs.pdf used on input line 871.
+(pdftex.def)             Requested size: 134.42113pt x 94.75874pt.
+
+<img/bugIsolation.pdf, id=1391, 406.51875pt x 276.03125pt>
+File: img/bugIsolation.pdf Graphic file (type pdf)
+
+<use img/bugIsolation.pdf>
+Package pdftex.def Info: img/bugIsolation.pdf used on input line 876.
+(pdftex.def)             Requested size: 130.08731pt x 88.32758pt.
+ [68]
+Overfull \hbox (32.44878pt too wide) in paragraph at lines 926--934
+\OT1/ptm/m/n/10 writ-ing the er-ro-neous ex-pres-sion (e.g., $[]$, $[]$,
+ []
+
+[69 <./img/bugsFscoreDiffs.pdf> <./img/bugIsolation.pdf>]
+
+LaTeX Warning: Citation `sindhgatta06' on page 70 undefined on input line 945.
+
+
+LaTeX Warning: Citation `hoffmann07' on page 70 undefined on input line 945.
+
+
+LaTeX Warning: Citation `hummel08' on page 70 undefined on input line 948.
+
+
+LaTeX Warning: Citation `hartmann10' on page 70 undefined on input line 948.
+
+
+LaTeX Warning: Citation `paul94' on page 70 undefined on input line 950.
+
+
+LaTeX Warning: Citation `thummalapenta07' on page 70 undefined on input line 95
+0.
+
+
+LaTeX Warning: Citation `kim10' on page 70 undefined on input line 950.
+
+
+LaTeX Warning: Citation `baxter98' on page 70 undefined on input line 951.
+
+
+LaTeX Warning: Citation `xu03' on page 70 undefined on input line 951.
+
+
+LaTeX Warning: Citation `rivers12' on page 70 undefined on input line 956.
+
+
+LaTeX Warning: Citation `rivers13' on page 70 undefined on input line 956.
+
+
+LaTeX Warning: Citation `hummel08' on page 70 undefined on input line 961.
+
+
+LaTeX Warning: Citation `lazzarini09' on page 70 undefined on input line 961.
+
+
+LaTeX Warning: Citation `piech12' on page 70 undefined on input line 971.
+
+
+LaTeX Warning: Citation `glassman13' on page 70 undefined on input line 972.
+
+
+LaTeX Warning: Citation `gross12' on page 70 undefined on input line 975.
+
+
+LaTeX Warning: Citation `gross13' on page 70 undefined on input line 975.
+
+
+LaTeX Warning: Citation `rivers12' on page 70 undefined on input line 975.
+
+
+LaTeX Warning: Citation `rivers13' on page 70 undefined on input line 975.
+
+
+LaTeX Warning: Citation `huang13' on page 70 undefined on input line 976.
+
+[70]
+
+LaTeX Warning: Citation `fast13' on page 71 undefined on input line 1018.
+
+
+LaTeX Warning: Citation `kohlhase06' on page 71 undefined on input line 1018.
+
+[71]) [72]
+Chapter 6.
+(./chapters/6-peerGrading.tex
+<img/assnType_5.pdf, id=1465, 283.0575pt x 271.0125pt>
+File: img/assnType_5.pdf Graphic file (type pdf)
+
+<use img/assnType_5.pdf>
+Package pdftex.def Info: img/assnType_5.pdf used on input line 2.
+(pdftex.def)             Requested size: 86.72267pt x 83.03293pt.
+
+
+LaTeX Warning: Citation `sadler06' on page 73 undefined on input line 6.
+
+<img/assn5GradingGraph_color.png, id=1466, 401.5pt x 401.5pt>
+File: img/assn5GradingGraph_color.png Graphic file (type png)
+
+<use img/assn5GradingGraph_color.png>
+Package pdftex.def Info: img/assn5GradingGraph_color.png used on input line 16.
+
+(pdftex.def)             Requested size: 260.17464pt x 260.19385pt.
+
+
+LaTeX Warning: Citation `kulkarni13' on page 73 undefined on input line 28.
+
+[73
+
+ <./img/assnType_5.pdf>] [74 <./img/assn5GradingGraph_color.png>]
+
+LaTeX Warning: Citation `russell04' on page 75 undefined on input line 53.
+
+
+LaTeX Warning: Citation `kulkarni13' on page 75 undefined on input line 66.
+
+
+LaTeX Warning: Citation `kulkarni13' on page 75 undefined on input line 72.
+
+[75] [76] <img/gradergrade_v_residual.pdf, id=1511, 547.04375pt x 463.7325pt>
+File: img/gradergrade_v_residual.pdf Graphic file (type pdf)
+
+<use img/gradergrade_v_residual.pdf>
+Package pdftex.def Info: img/gradergrade_v_residual.pdf used on input line 164.
+
+(pdftex.def)             Requested size: 130.08731pt x 110.27205pt.
+
+<img/gradeegrade_v_residual.pdf, id=1512, 546.04pt x 445.665pt>
+File: img/gradeegrade_v_residual.pdf Graphic file (type pdf)
+
+<use img/gradeegrade_v_residual.pdf>
+Package pdftex.def Info: img/gradeegrade_v_residual.pdf used on input line 168.
+
+(pdftex.def)             Requested size: 130.08731pt x 106.17294pt.
+
+<img/grader_v_gradeebias_transparent.pdf, id=1513, 569.12625pt x 488.82625pt>
+File: img/grader_v_gradeebias_transparent.pdf Graphic file (type pdf)
+
+<use img/grader_v_gradeebias_transparent.pdf>
+Package pdftex.def Info: img/grader_v_gradeebias_transparent.pdf used on input 
+line 172.
+(pdftex.def)             Requested size: 130.08731pt x 111.734pt.
+ [77 <./img/gradergrade_v_residual.pdf> <./img/gradeegrade_v_residual.pdf> <./i
+mg/grader_v_gradeebias_transparent.pdf>] [78] [79]
+
+LaTeX Warning: Citation `geman84' on page 80 undefined on input line 364.
+
+[80]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 409.
+
+
+LaTeX Warning: Citation `kulkarni13' on page 81 undefined on input line 425.
+
+[81] <img/baseline.pdf, id=1599, 440.64626pt x 332.24126pt>
+File: img/baseline.pdf Graphic file (type pdf)
+
+<use img/baseline.pdf>
+Package pdftex.def Info: img/baseline.pdf used on input line 469.
+(pdftex.def)             Requested size: 99.73074pt x 75.19211pt.
+ <img/histogram.pdf, id=1600, 437.635pt x 332.24126pt>
+File: img/histogram.pdf Graphic file (type pdf)
+
+<use img/histogram.pdf>
+Package pdftex.def Info: img/histogram.pdf used on input line 474.
+(pdftex.def)             Requested size: 99.73074pt x 75.7092pt.
+
+<img/confidenceplot.pdf, id=1601, 583.17876pt x 470.75874pt>
+File: img/confidenceplot.pdf Graphic file (type pdf)
+
+<use img/confidenceplot.pdf>
+Package pdftex.def Info: img/confidenceplot.pdf used on input line 479.
+(pdftex.def)             Requested size: 95.39693pt x 77.0038pt.
+
+<img/piechart90.pdf, id=1602, 500.87125pt x 416.55624pt>
+File: img/piechart90.pdf Graphic file (type pdf)
+
+<use img/piechart90.pdf>
+Package pdftex.def Info: img/piechart90.pdf used on input line 484.
+(pdftex.def)             Requested size: 86.72267pt x 72.12299pt.
+ [82 <./img/baseline.pdf> <./img/histogram.pdf> <./img/confidenceplot.pdf> <./i
+mg/piechart90.pdf>] [83]
+<img/time_v_residual.pdf, id=1683, 548.0475pt x 409.53pt>
+File: img/time_v_residual.pdf Graphic file (type pdf)
+
+<use img/time_v_residual.pdf>
+Package pdftex.def Info: img/time_v_residual.pdf used on input line 588.
+(pdftex.def)             Requested size: 117.07924pt x 87.48482pt.
+ <img/roc.pdf, id=1684, 572.1375pt x 504.88625pt>
+File: img/roc.pdf Graphic file (type pdf)
+
+<use img/roc.pdf>
+Package pdftex.def Info: img/roc.pdf used on input line 592.
+(pdftex.def)             Requested size: 117.07924pt x 103.31744pt.
+
+<img/comments_v_residual.pdf, id=1685, 563.10374pt x 491.8375pt>
+File: img/comments_v_residual.pdf Graphic file (type pdf)
+
+<use img/comments_v_residual.pdf>
+Package pdftex.def Info: img/comments_v_residual.pdf used on input line 596.
+(pdftex.def)             Requested size: 117.07924pt x 102.26076pt.
+ [84 <./img/time_v_residual.pdf> <./img/roc.pdf> <./img/comments_v_residual.pdf
+>]
+
+LaTeX Warning: Citation `nielsen11' on page 85 undefined on input line 663.
+
+[85]
+
+LaTeX Warning: Citation `baker01' on page 86 undefined on input line 690.
+
+
+LaTeX Warning: Citation `johnson96' on page 86 undefined on input line 691.
+
+
+LaTeX Warning: Citation `rogers10' on page 86 undefined on input line 691.
+
+
+LaTeX Warning: Citation `mislevy99' on page 86 undefined on input line 691.
+
+
+LaTeX Warning: Citation `batchelder88' on page 86 undefined on input line 692.
+
+
+LaTeX Warning: Citation `karabatsos03' on page 86 undefined on input line 692.
+
+
+LaTeX Warning: Citation `whitehill09' on page 86 undefined on input line 692.
+
+
+LaTeX Warning: Citation `johnson96' on page 86 undefined on input line 693.
+
+
+LaTeX Warning: Citation `rogers10' on page 86 undefined on input line 693.
+
+
+LaTeX Warning: Citation `goldin11' on page 86 undefined on input line 720.
+
+
+LaTeX Warning: Citation `ashley11' on page 86 undefined on input line 720.
+
+
+LaTeX Warning: Citation `goldin12' on page 86 undefined on input line 720.
+
+
+LaTeX Warning: Citation `goldin12' on page 86 undefined on input line 721.
+
+
+LaTeX Warning: Citation `bachrach12' on page 86 undefined on input line 732.
+
+
+LaTeX Warning: Citation `kamar12' on page 86 undefined on input line 732.
+
+
+LaTeX Warning: Citation `whitehill09' on page 86 undefined on input line 733.
+
+
+LaTeX Warning: Citation `charlin11' on page 86 undefined on input line 750.
+
+[86]) [87]
+Chapter 7.
+(./chapters/7-conclusion.tex) (./main.bbl [88
+
+] [89
+
+]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+ [90]) [91] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 14675 strings out of 493089
+ 255129 string characters out of 6134842
+ 443338 words of memory out of 5000000
+ 17850 multiletter control sequences out of 15000+600000
+ 50471 words of font info for 119 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,18n,39p,10414b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courie
+r/ucrro8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (103 pages, 4970592 bytes).
+PDF statistics:
+ 1888 PDF objects out of 2073 (max. 8388607)
+ 1194 compressed objects within 12 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+

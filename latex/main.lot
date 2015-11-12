@@ -1,0 +1,18 @@
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Summary of datasets}}{5}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Knowledge tracing accuracy}}{16}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of the dataset analyzed.\relax }}{26}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Percent submissions with the ground truth edge correctly predicted. $^\dagger $ Algorithms applied to learning PSP's in other papers. $^\ddagger $ Desirable Path Algorithms.\relax }}{32}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Dataset summary. Programs are considered identical if they have equal ASTs. Unique states are different configurations of the gridworld which occur in student programs.\relax }}{47}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Test set postcondition prediction accuracy on the three programming problems. Training set results in parentheses.\relax }}{49}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Evaluation of composability of embedding matrices: Accuracy on 5k random triples with ASTs rooted at $\mathbf {block}$ nodes. NPM-0 does not jointly optimize. \relax }}{49}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Statistics of the ML class dataset. \relax }}{56}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Data Sets\relax }}{76}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of models on the two HCI courses\relax }}{81}
+\addvspace {10\p@ }

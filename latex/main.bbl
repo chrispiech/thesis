@@ -1,0 +1,144 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WWB{\etalchar{+}}09}
+
+\bibitem[AEH05]{ahmadzadeh2005analysis}
+Marzieh Ahmadzadeh, Dave Elliman, and Colin Higgins.
+\newblock An analysis of patterns of debugging among novice computer science
+  students.
+\newblock In {\em ACM SIGCSE Bulletin}, volume~37, pages 84--88. ACM, 2005.
+
+\bibitem[AK02]{aleven2002effective}
+Vincent~AWMM Aleven and Kenneth~R Koedinger.
+\newblock An effective metacognitive strategy: Learning by doing and explaining
+  with a computer-based cognitive tutor.
+\newblock {\em Cognitive science}, 26(2):147--179, 2002.
+
+\bibitem[BS08]{barnes2008toward}
+Tiffany Barnes and John Stamper.
+\newblock Toward automatic hint generation for logic proof tutoring using
+  historical student data.
+\newblock In {\em Intelligent Tutoring Systems}, pages 373--382. Springer,
+  2008.
+
+\bibitem[CKLO03]{cheang2003automated}
+Brenda Cheang, Andy Kurnia, Andrew Lim, and Wee-Chong Oon.
+\newblock On automated grading of programming assignments in an academic
+  institution.
+\newblock {\em Computers \& Education}, 41(2):121--131, 2003.
+
+\bibitem[FLM{\etalchar{+}}08]{fitzgerald2008debugging}
+Sue Fitzgerald, Gary Lewandowski, Renee McCauley, Laurie Murphy, Beth Simon,
+  Lynda Thomas, and Carol Zander.
+\newblock Debugging: finding, fixing and flailing, a multi-institutional study
+  of novice debuggers.
+\newblock {\em Computer Science Education}, 18(2):93--116, 2008.
+
+\bibitem[FLP81]{fleiss1981measurement}
+Joseph~L Fleiss, Bruce Levin, and Myunghee~Cho Paik.
+\newblock The measurement of interrater agreement.
+\newblock {\em Statistical methods for rates and proportions}, 2:212--236,
+  1981.
+
+\bibitem[HPNG13]{huang2013syntactic}
+Jonathan Huang, Chris Piech, Andy Nguyen, and Leonidas Guibas.
+\newblock Syntactic and functional variability of a million code submissions in
+  a machine learning mooc.
+\newblock In {\em AIED 2013 Workshops Proceedings Volume}, page~25. Citeseer,
+  2013.
+
+\bibitem[KWL{\etalchar{+}}13]{kulkarni2013peer}
+Chinmay Kulkarni, Koh~Pang Wei, Huy Le, Daniel Chia, Kathryn Papadopoulos,
+  Justin Cheng, Daphne Koller, and Scott~R Klemmer.
+\newblock Peer and self assessment in massive online classes.
+\newblock {\em ACM Transactions on Computer-Human Interaction (TOCHI)},
+  20(6):33, 2013.
+
+\bibitem[NPHG14]{nguyen2014codewebs}
+Andy Nguyen, Christopher Piech, Jonathan Huang, and Leonidas Guibas.
+\newblock Codewebs: scalable homework search for massive open online
+  programming courses.
+\newblock In {\em Proceedings of the 23rd international conference on World
+  wide web}, pages 491--502. International World Wide Web Conferences Steering
+  Committee, 2014.
+
+\bibitem[Pap12]{pappano2012year}
+Laura Pappano.
+\newblock The year of the mooc.
+\newblock {\em The New York Times}, 2(12):2012, 2012.
+
+\bibitem[PSK{\etalchar{+}}12]{piech2012modeling}
+Chris Piech, Mehran Sahami, Daphne Koller, Steve Cooper, and Paulo Blikstein.
+\newblock Modeling how students learn to program.
+\newblock In {\em Proceedings of the 43rd ACM technical symposium on Computer
+  Science Education}, pages 153--160. ACM, 2012.
+
+\bibitem[Put09]{puterman2009markov}
+Martin~L Puterman.
+\newblock {\em Markov decision processes: discrete stochastic dynamic
+  programming}, volume 414.
+\newblock John Wiley \& Sons, 2009.
+
+\bibitem[RAKC07]{ritter2007cognitive}
+Steven Ritter, John~R Anderson, Kenneth~R Koedinger, and Albert Corbett.
+\newblock Cognitive tutor: Applied research in mathematics education.
+\newblock {\em Psychonomic bulletin \& review}, 14(2):249--255, 2007.
+
+\bibitem[RBAK14]{roll2014benefits}
+Ido Roll, Ryan~SJd Baker, Vincent Aleven, and Kenneth~R Koedinger.
+\newblock On the benefits of seeking (and avoiding) help in online
+  problem-solving environments.
+\newblock {\em Journal of the Learning Sciences}, (just-accepted), 2014.
+
+\bibitem[RK12]{rivers2012canonicalizing}
+Kelly Rivers and Kenneth~R Koedinger.
+\newblock A canonicalizing model for building programming tutors.
+\newblock In {\em Intelligent Tutoring Systems}, pages 591--593. Springer,
+  2012.
+
+\bibitem[RK14]{rivers2014automating}
+Kelly Rivers and Kenneth~R Koedinger.
+\newblock Automating hint generation with solution space path construction.
+\newblock In {\em Intelligent Tutoring Systems}, pages 329--339. Springer,
+  2014.
+
+\bibitem[SGGT00]{szczerba2000robust}
+Robert~J Szczerba, Peggy Galkowski, IS~Glicktein, and Noah Ternullo.
+\newblock Robust algorithm for real-time route planning.
+\newblock {\em Aerospace and Electronic Systems, IEEE Transactions on},
+  36(3):869--878, 2000.
+
+\bibitem[SGSL13]{singh2013automated}
+Rishabh Singh, Sumit Gulwani, and Armando Solar-Lezama.
+\newblock Automated feedback generation for introductory programming
+  assignments.
+\newblock In {\em ACM SIGPLAN Notices}, volume~48, pages 15--26. ACM, 2013.
+
+\bibitem[Sha53]{shapley1953stochastic}
+Lloyd~S Shapley.
+\newblock Stochastic games.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 39(10):1095, 1953.
+
+\bibitem[WAC{\etalchar{+}}12]{weld2012personalized}
+Daniel~S Weld, Eytan Adar, Lydia Chilton, Raphael Hoffmann, Eric Horvitz,
+  Mitchell Koch, James Landay, Christopher~H Lin, and Mausam Mausam.
+\newblock Personalized online education—a crowdsourcing challenge.
+\newblock In {\em Workshops at the Twenty-Sixth AAAI Conference on Artificial
+  Intelligence}, 2012.
+
+\bibitem[WLG12]{watson2012bluefix}
+Christopher Watson, Frederick~WB Li, and Jamie~L Godwin.
+\newblock Bluefix: Using crowd-sourced feedback to support programming students
+  in error diagnosis and repair.
+\newblock In {\em Advances in Web-Based Learning-ICWL 2012}, pages 228--239.
+  Springer, 2012.
+
+\bibitem[WWB{\etalchar{+}}09]{whitehill2009whose}
+Jacob Whitehill, Ting-fan Wu, Jacob Bergsma, Javier~R Movellan, and Paul~L
+  Ruvolo.
+\newblock Whose vote should count more: Optimal integration of labels from
+  labelers of unknown expertise.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2035--2043, 2009.
+
+\end{thebibliography}
