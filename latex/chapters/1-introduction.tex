@@ -44,12 +44,14 @@ Feedback is a cornerstone of the educational experience. It is also one of the m
  \centering
  \ra{1.3}
  \begin{tabular}{ l l }
+ \toprule
 	Activity & Hours per Week \\
-   \toprule
+   \midrule
    Outside class, grading and preparring assessments & 8.5 \\
   Outside class, with students & 3.3 \\
   In class & 32.0 \\
-  Total time & 43.8
+  Total time & 43.8 \\
+  \bottomrule
   \end{tabular}
   \caption[Teacher time]{How public school teachers time is spent. Based on statistics from 1994 \cite{henke1996schools}}
  \label{tab:dataTable}
@@ -90,7 +92,7 @@ level. Learning is fundamentally a reflection of human cognition which is a high
 Two themes in the field of cognitive science that are particularly relevant are theories that the human
 mind, and its learning process, are recursive and driven by analogy.
 
-Programs are a medium which is highly expressive. They are unit testable though unit tests are a useful way to test if final solutions are correct they are not well suited for giving help to students with an intermediate solution and they are not able to give feedback on stylistic elements.
+Programs are a medium which is highly expressive. They are unit testable though unit tests are a useful way to test if final solutions are correct they are not well suited for giving help to students with an intermediate solution and they are not able to give feedback on stylistic elements. Moreover, because the datasets are so large (often on the order of millions of submissions) there are notable computational contraints. Algorithms that run in $O(N^2)$ time are prohibitively slow.
 
 It is largly for these reasons that there has been limited success in autonomous feedback to richly structured assignments.
 
@@ -120,8 +122,9 @@ best of my knowledge the largest online course to date) and Stanford University.
 \begin{figure}[h]
 \center
 \includegraphics[width=1.0\textwidth]{img/assnType_all}
-\caption{
+\caption[Assignment types]{
 The different types of assignments covered in this thesis.
+\label{fig:assnTypes}
 }
 \end{figure}
 
@@ -134,9 +137,7 @@ Specifically we identified different types of computer science assignments arran
 \item Natural Language assignments, in which students write up proposals and reports in english text.	
 \end{enumerate}
 
-This list is not exhaustive for all computer science assignment types. Of note, there is a range of assignment types such as parallel programming assignments or assignments from the theoretical branch of computer science. For each of the assignment types we collected at least one dataset.
-
-See table \ref{tab:dataTable} for details. 
+This list is not exhaustive for all computer science assignment types. Of note, it does not include parallel programming assignments or assignments from the theoretical branch of computer science. We collected at least one dataset for each of the different assignment types. See table \ref{tab:dataTable} for details. 
 
 \begin{table}[h]
  \centering
@@ -160,34 +161,39 @@ See table \ref{tab:dataTable} for details.
  \label{tab:dataTable}
 \end{table}
 
+When student submissions are programming assignments, we are often able to parse their submissions into Abstract Sytax Trees (ASTs) and execute them on arbitrary inputs. When we have temporal data, in addition to collecting the final submission that a student turns in for an assignment, we also collect the trajectory of partial solutions that they generate as they work their way from a blank project.
+
+\subsection{Program Submission Sparcity}
 
 
+An interesting observation that we made is that for every single programming assignment dataset that we analyse in this thesis, the frequency of submissions fits a Zipf's law distribution. 
+\begin{figure}[ht]
+\center
+\includegraphics[width=1.0\textwidth]{img/zipfAll}
+\caption[Submission Sparcity]{
+Log-log plots for four assignments with temporal data. Code.org A and B are two different assignments from the Code.org platform and Stanford A and B are two assignments form the Stanford CS1 course. All assignments that we analyzed simlarly fit Zipf distributions.
+}
+\label{fig:zipfAll}
+\end{figure}
+This is true for datasets where we have temporal data and datasets for which we only have final solutions. Interestingly it even applies to the simplest programming assignment in the Code.org dataset where learners are only able to concatenate three commands -- and do not use any control flow elements. We have also noticed that the distribution of sub-programs also follows a Zipf's law distribution. Zipf law distributions often arise when data is generated in a hierarchical maner. Since students likely make a series of hierarchical decisions when solving a problem, and since programs are writen in a way that produces hierarchical ASTs, it makes sense that the datasets are Ziphian. The implications are twofold. First, even for the most simple programming assignments that we look at there is a non-zero probability that a new submission will never be seen before and that will always be true regardless of how large a dataset we collect. The second implication is that we can use the exponent of the Zipf fit to compare the ``sparcity" of different programming assignments. This is particularly nice because the exponent is independent of the size of the dataset. Figure \ref{fig:zipfAll} shows the fit for all datasets for which we had temporal data. Sparcity can only be compared for datasets that were collected in a similar way (for example one cannot compare the Zipf fit for an assignment where we have all student partial solutions with one where we only have final solutions).
 
-
-Richness of assignments has a very high spearman correlation with the sparcity of the solution space: the probability that a randomly sampled intermediate solution is unseen. I assume that the sparcity measure is generally independent of dataset size (after a certain point) because the data we observe tends to follow Zipfs law distributions. A general rule of thumb that I follow is that 
-
-\begin{align}
-richness &\sim log(p_{unseen}) \\
-         &\sim log(u/n)
-\end{align}
+ An interesting observation is that the subjective ``complexity" ordering of assignment types that we chose matches the order of exponent parameters for the corresponding Zipf law distributions. This suggests one way to measure assignment complexity. Another observation is that the exponent of the Zipf distribution for the partial solutions to Stanford B is almost 3. This represents a very steep dropoff. For assignments that are more complex, the probability becomes increasingly small that one would ever observe two identical partial solutions.
 
 \section{Approaches}
 
+Our approach is to apply a disciplined machine learning paradigm to facilitate autonomous (or semi-autonomous) feedback at scale. Specifically we develop systems that try to capture emergent learner structures. There is an inherent balance between trying to maximize the quality of our feedback and to minimize teacher time. The general contraint that we held to was to keep teacher grading time the same as it would be in a traditional class of only a few dozen students.
 
-Neural networks. Try to first pose a testable machine learning task. \cite{piech2012modeling}
+\subsection{Simple Assignments First}
 
-Find patterns in the corpus of student work. Find patterns in how students traverse the material. Generally for more simple assignments we are able to use temporal information, which is a very rich source of information. For the more complex assignments we need another approach.
+The problem of adding autonomy to the provision of feedback is hard. But the difficulty varies widely between different assignment complexities (and submission sparcity). In this dissertation we are going to start with the simplest and least sparse computer science assignments and work up in increasing levels of feedback difficulty focusing on the thematic split made in figure \cite{fig:assnTypes}. The largest difference that arises as complexity increases is that quickly program submissions become so sparse that it is hard to find temporal patterns in student work. Thus for the two simplest categories (Incorrect/Correct and Maze Programming Problems) we develop systems for autonomous feedback based on trajectory information, which is a very rich source of information. However for the next two levels of complexity (Control Flow and Functional Programming) we have to first solve the problem of finding patterns in the space of submissions so that we can understand student trajectories in a more dense, latent space. 
 
-Some interesting things to try a
+\subsection{Testable Machine Learning}
 
-Very unsupervised!
+The ultimate goal of this line of research is to provide a scientific advance in our understanding of how to autonomously provide feedback to students. However there are unique challenges posed by the science of education. Three particularly notable challenges with regard to research on feedback is that (1) student experiments are expensive, (2) the mechanisms are complex so it is often hard to tease apart context or confounds and (3) learning outcomes are often multi-dimensional and long term.
 
-Nested milestones: Understand the space of partial solutions to an assignment.
-->
-Understand the path students take through partial solutions.
-->
-Understand student development across assignments. 
-For domains which are more complex, we need to first focus on the most basic milestone. For domains which are simple, using techniques presented in this thesis, we can show notable gains on the 
+It is ethical grey area to provide an experience for a student that is worse than what they would have otherwise received. There is a desire is similar to the, ``do no harm" hypocratic oath taken in the field of medicine (where harm includes leaking any private student data). A clear example of this is that there is tremendous desire to never give feedback to students that is misleading. As a direct result experiments on live students are expensive. It is hard to convince an instructor to run a study and when a study is done it has to be performed under strick guidelines. Moreover, it is difficult to measure costs and benefits in an educational setting. Educational outcomes are multi-dimensional and involve short term and long term effects. An intervention may have broad effects on learners and testing those effects often is too invasive. Finally, even when an experiment is run on students and a reasonable education objective is selected and evaluated, it is still difficult to understand how different parts of a complicated feedback system should be attributed for observed results. As an example providing feedback often involves first autonomously understanding a student and then turning that understanding into english text that is presented to a student. It is difficult to tease the two apart.
+
+To overcome these challenges we focused on developing and testing systems that can understand students. In every chapter we identify a machine learning problem that can be used as the basis for autonomous feedback and can be directly evaluated with \emph{offline} data. We will set out to solve these machine learning questions to the best of our ability. The task of then developing a human computer interaction system for optimally helping students is interesting and important, but outside the scope of this dissertation.
 
 \section{Novel Contribution}
 
@@ -202,31 +208,30 @@ For domains which are more complex, we need to first focus on the most basic mil
    \label{fig:introImpact}
 }
 
-\caption{
-\subref{fig:introProjects} What I did.
-\subref{fig:introImpact} How it fits in with previous research.
+\caption[Subjective contribution overview]{
+\subref{fig:introProjects} Subjective measure of the degree to which different algorithms are able to understand students over the range of assignments that they apply. 
+\subref{fig:introImpact} The big picture of our maximum ability to understand students and where we would like to go.
+\label{fig:bigPicture}
 }
+
 \end{figure*}
 
+The challenge of how to provide autonomous feedback to students at scale remains an open problem. However I have made substantial progress towards understanding students as they learn. In each chapter we explore machine learning solutions to understanding increasingly more complex classes of assignments. 
+In the first chapter we use recurrent neural networks to understand students as they solve correct/incorrect class of problems in Khan Academy. In the second chapter we find out what temporal patterns emerge when millions of students solve the same Code.org Maze assignments. In the third chapter we develop a neural network way to encode the functionality of control flow programming assignments. In the fourth chapter we present a way to autonomously discover equivalent sub-parts of general student programming assignments. Finally, in the fifth chapter we show how machine learning tools can be used to help in peer grading, the ubiquitous way to provide feedback online when autonomous methods are not availible.
 
+The most substantial contributions of this research are:
+\begin{itemize}
+\item We achieved state of the art in knowledge tracing (and a 25\% increase of AUC on a standard dataset). 
 
-State of the art in knowledge tracing
+\item Discovery of the Poison Path pattern in how students navigate solution spaces that both: predicts how teachers would suggest a learner make forward progress and has an almost perfect logrithmic relationship with the probability of a student succeeding in the future.
 
-A novel way to \'tune\' the network of peer grades to simultaneously learn grading ability and assignment true scores
+\item Two novel ways to simplify the solution space of programming assignments. A leading method to project program control flow functionality into euclidean space and an algorithm which can autonomously discover equivalent sub-parts of programs. Both means of simplifying solution expand the ability to propagate teacher feedback.
 
-Contemporary autonomous tutors generally trace student knowledge as they solve simple correct or incorrect questions.
+\item A novel way to `tune` the network of peer grades to simultaneously learn grading ability and assignment true scores (and a 33\% reduction in RMSE on an online design course).
 
+\end{itemize}
+However, there are dozens of smaller corrolaries that we arrived at as a result of our novel exploration of an unprecidented dataset. It is hard to quantify exactly where we stand with respect to autonomously providing feedback across the entire domain of programming assignments especially since the objectives we try to reach are slightly different for different problem types. However for each task I can subjectively express the degree to which the algorithms allow us to understand what students know. To do so I compose both (1) the degree to which a task reflects actionable understanding of a student and (2) the accuracy our algorithms were able to achieve on the task. As an example of the different utility of different prediction tasks: being able to predict exactly what a student will do represents a deeper understanding then being able to recognize that their last submissions was similar enough to another students that we can propagate feedback. For each of the new algorithms that we present I did my best to estimate algorithm ``understanding" over the range of assignments to which they are applicable. See figure \ref{fig:bigPicture}. While I have made substantial gains against the baselines of brute force annotation and propagation of feedback availible from unit tests, there is still a substantial amount of room for improvement between the hull of our contemporary ability to understand students and the level that is possible.
 
-In this book:
-Deep Knowledge Tracing
-Crowd source students?
-Finding Shared Substructure (programs)
-Problem Solving Policies (programs)
-Homework Embedding Spaces (programs)
-
-
-
-Exploration of the space of feedback for richly structured assignments
 
 \section{A Vision for the Future}
 Autonomous feedback from a system that understands learners as they navigate complex learning environments.

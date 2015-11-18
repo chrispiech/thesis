@@ -1,69 +1,72 @@
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The different types of assignments covered in this thesis. \relax }}{7}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \ref {sub@fig:introProjects} What I did. \ref {sub@fig:introImpact} How it fits in with previous research. \relax }}{9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{9}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{9}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Assignment types}}{7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Submission Sparcity}}{9}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Subjective contribution overview}}{11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A single student and her predicted responses as she solves 50 exercises on Khan Academy 8th grade math curriculum. She seems to master finding x and y intercepts and then has trouble transferring knowledge to graphing linear equations. \relax }}{11}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The connection between variables in a simple recurrent neural network. The inputs ($\mathbf x_t$) to the dynamic network are either one-hot encodings or compressed representations of a student action, and the prediction ($\mathbf y_t$) is a vector representing the probability of getting each of the dataset exercises correct. \relax }}{15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Left: Prediction results for (a) simulated data and (b) Khan Academy data. Right: (c) Predicted knowledge on Assistments data for different exercise curricula. Error bars are standard error of the mean.\relax }}{18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{18}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{18}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{18}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Graphs of conditional influence between exercises in DKT models. Above: We observe a perfect clustering of latent concepts in the synthetic data. Below: A convincing depiction of how 8th grade math Common Core exercises influence one another. Arrow size indicates connection strength. Note that nodes may be connected in both directions. Edges with a magnitude smaller than 0.1 have been thresholded. Cluster labels are added by hand, but are fully consistent with the exercises in each cluster. \relax }}{20}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Single Khan student trace}}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Recurrent neural network for knowledge tracing}}{18}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Deep Knowledge Tracing accuracies}}{21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Curriculum evaluation}}{22}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Conditional influences synthetic data}}{23}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Conditional influences Khan}}{24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A visualization of a problem solving policy generated for an early Hour of Code challenge. Each node is a unique partial solution, node 0 is the correct answer. The edges show what next partial solution we think an expert would suggest students move towards.\relax }}{24}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of the maze and example solution for P\textsubscript {A}\hspace {0.5mm}(left) and P\textsubscript {B}\hspace {0.5mm}(right). The arrow is the agent and the heart is the goal.\relax }}{26}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \ref {sub@fig:retention} Percent of students who finished the first problem in the hour of code that solve the remaining ones. \ref {sub@fig:coverage} The percent of submissions that are covered by annotating the most popular partial solutions. \relax }}{26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces How does node popularity relate to number of students who agree with experts?\relax }}{29}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Learning curve for P\textsubscript {A}\hspace {0.5mm}(above) and P\textsubscript {B}\hspace {0.5mm}(bellow). Students are subsampled randomly from dataset. Error bars are standard error.\relax }}{35}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Student path scores vs probability of completion of subsequent problems. Error bars are standard error. \relax }}{36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example problem solving policy}}{29}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of Code.org problems}}{31}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of Code.org data}}{31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Partial solution popularity vs probability of optimal progress}}{34}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Poison path learning curve}}{41}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Poisson path score predicts completion}}{42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces We learn matrices which capture functionality. Left: a student partial solution. Right: learned matrices for the syntax trees rooted at each node of placeRow.\relax }}{43}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram of the model for a program $A$ implementing a simple ``step forward'' behavior in a small 1-dimensional gridworld. Two of the $k$ Hoare triples that correspond with $A$ are shown. Typical worlds are larger and programs are more complex. \relax }}{44}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Recall of feedback propagation as a function of precision for three programming problems: \ref {sub@fig:fmHoc} $\Omega _1$, \ref {sub@fig:fmNews} $\Omega _2$, and \ref {sub@fig:fmMid} $\Omega _3$. On each, we compare our NPM-RNN against the RNN method and two other baselines (bag of trees and unit tests). \relax }}{52}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{52}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{52}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \ref {sub@fig:cycloPost} NPM and RNN postcondition prediction accuracy as a function of cyclomatic complexity of submitted programs; \ref {sub@fig:cycloFm} NPM-RNN and RNN feedback propagation recall (at 90\% precision). Note that the ratio of human graded assignments to number of programs is much higher in this experiment than Figure~\ref {fig:force}; \ref {sub@fig:whereWrong} A breakdown of the accuracy of the nonparametric model by feedback type for $\Omega _3$ (black dots). The gray bars histogram the feedback types by frequency. \relax }}{53}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{53}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces \ref {sub@fig:codeexample} Example code submission to the ``Gradient descent (for linear regression)'' problem; \ref {sub@fig:astexample2} Example abstract syntax tree for linear regression gradient expression: $X'*(X*\theta - y)$; \ref {sub@fig:subtreeexample} Example subtree from the AST from Figure~\ref {fig:astexample2}; \ref {sub@fig:contextexample} Context of the subtree with respect to the same AST. Note the additional node denoting the ``replacement site'' of the context. \relax }}{58}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic of program embedding hierarchy}}{48}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Encoding of Hoare triples}}{49}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Precision recall of feedback propagation}}{57}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{57}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Accuracy as a function of complexity}}{58}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{58}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{58}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Given a subtree $\mathcal {B}$ of an AST $\mathcal {A}$, we query the Codewebs index for other subtrees that also occur under the same context $(\mathcal {A}\delimiter "026E30F \mathcal {B})$. In this case, $\mathcal {B}_1, \dots , \mathcal {B}_4$ would each be considered as candidates for the equivalence class of subtree $\mathcal {B}$ if the unit test outcomes for their corresponding submissions matched that of the original AST $\mathcal {A}$. \relax }}{65}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Example code snippets corresponding to AST subtrees tagged by an instructor for the linear regression problem. \relax }}{66}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Selections of code snippets algorithmically determined for the linear regression homework. Note that not all subtrees from the equivalence classes are shown. \relax }}{67}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \ref {sub@fig:numastsvsruntime} Runtime in seconds for indexing a collection of ASTs (as a function of the number of ASTs) from the ``gradient descent (for linear regression)'' problem; \ref {sub@fig:astsizevsruntime} Runtime in seconds for indexing 1000 ASTs from each of the homework problems for Coursera's ML course plotted against average AST size (\# nodes) for each problem\relax }}{68}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{68}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{68}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \ref {sub@fig:zipfnoequiv} Zipf's Law: subtree frequency plotted against subtree rank (in the frequency table). \ref {sub@fig:reduction} Fraction of remaining unique ASTs after canonicalizing the $k$ most frequent ASTs with 1, 10 or 19 learned equivalence classes; \ref {sub@fig:reduction2} Number of submissions covered if an instructor were to mark the 25 or 200 most frequent ASTs after canonicalization \relax }}{69}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{69}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{69}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{69}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces \ref {sub@fig:bugsAll} F-score comparison of Codewebs based bug detection algorithm against baseline (5-nearest neighbors) for the 5000 most frequent ASTs for each assigned homework problem. Each circle corresponds to a single homework problem, with circle widths set to be proportional to the average \# of nodes per AST for that problem; \ref {sub@fig:bugIsolation} Codewebs based bug detection F-scores on the $k$ most frequent ASTs, with and without canonicalization on the ``linear regression with gradient descent'' homework problem. \relax }}{71}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Peer-grading network: Each node is a learner with edges depicting who graded whom. Node size represents the number of graders for that student. The highlighted learner shown above graded five students (circular nodes) and was in turn graded by four students (square nodes). \relax }}{76}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \ref {sub@fig:gradergrade_v_residual} The relationship between a grader's homework performance (her grade) and statistics (mean/standard deviation) of grading performance (residual from true grade). \ref {sub@fig:gradeegrade_v_residual} The relationship between a gradee's homework performance against statistics of assessments for her submissions. \ref {sub@fig:gradergradee} Visualization of all three variables simultaneously, where intensity reflects the mean residual $z$-score. Empty boxes mean that there is not enough data available to compute a reliable estimate. \relax }}{79}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{79}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \ref {sub@fig:baseline} Histogram of errors made using the baseline (median) scoring mechanism. \ref {sub@fig:improved} Histogram of errors using $\unhbox \voidb@x \hbox {\bf PG}_3$\tmspace +\thinmuskip {.1667em}. \ref {sub@fig:confidence} A comparison of model confidence ($x$-axis) and actual success rate of predictions ($y$-axis), where being above the diagonal (dark bars) is better. \ref {sub@fig:piechart} Number of submissions for which our model can declare ``confidence'' after $K$ rounds of grading. \relax }}{84}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example subtree}}{63}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{63}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{63}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{63}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{63}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Equivalence class candidates}}{70}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example tagged code}}{71}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Resulting equivalence classes}}{72}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Runtime of AST indexing}}{73}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{73}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{73}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces How use of equivalence classes change teacher impact}}{74}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{74}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{74}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{74}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Bug detection accuracy}}{76}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example peer grading network}}{81}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Relationship between grades received and grades given}}{84}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{84}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{84}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{84}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{84}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \ref {sub@fig:time_v_residual} Grader consistency (measured using standard deviation of grading residual) as a function of time spent grading. \ref {sub@fig:roc} ROC curve comparing performance (with linear SVM) at predicting future class participation given a student's grade, bias, reliability or all three. \ref {sub@fig:comments} Commenting style (length of comment and sentiment polarity) as a function of grading residual. \relax }}{86}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{86}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{86}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{86}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces How the histogram of errors changes}}{89}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{89}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{89}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Model confidence vs accuracy}}{90}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{90}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{90}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Insight into peer graders}}{91}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{91}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Predicting future class participation using peer grading}}{93}
 \addvspace {10\p@ }

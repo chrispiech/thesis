@@ -1,6 +1,13 @@
+Based on a paper: Autonomously Generating Hints by Inferring Problem
+Solving Policies \\ \emph{Learning at Scale 2015.}
+
+\vspace{7mm}
+
 \begin{figure}[h!]
 \includegraphics[width=0.2\textwidth]{img/assnType_2}
 \end{figure}
+
+\vspace{7mm}
 
 Deep Knowledge tracing is a powerful tool for the domain of assignments where student responses can be encoded as ``correct" or ``incorrect". For more complex domains where students produce rich, structured responses it is no longer sufficient to simply track their work on the granularity of one input per assignment. When a student solves a richly structured assignment they produce a series of partial solutions and need assistment intermediately.
 
@@ -36,7 +43,7 @@ A problem solving policy $\pi : S \rightarrow S$ specifies a partial-solution $s
 \begin{figure}
 \centering
 \includegraphics[width=1.0\columnwidth]{img/policy3}
-\caption{A visualization of a problem solving policy generated for an early Hour of Code challenge. Each node is a unique partial solution, node 0 is the correct answer. The edges show what next partial solution we think an expert would suggest students move towards.}
+\caption[Example problem solving policy]{A visualization of a problem solving policy generated for an early Hour of Code challenge. Each node is a unique partial solution, node 0 is the correct answer. The edges show what next partial solution we think an expert would suggest students move towards.}
 \label{fig:policy}
 \end{figure}
 
@@ -72,7 +79,7 @@ One of the aims of this work is to enable further comparative research. To this 
 \centering
 \includegraphics[width=1.0\columnwidth]{img/problems3.png}
 
-\caption{Schematic of the maze and example solution for \Pa (left) and \Pb (right). The arrow is the agent and the heart is the goal.}
+\caption[Schematic of Code.org problems]{Schematic of the maze and example solution for \Pa (left) and \Pb (right). The arrow is the agent and the heart is the goal.}
 \label{fig:hocExample}
 \end{figure}
 
@@ -89,7 +96,7 @@ One of the aims of this work is to enable further comparative research. To this 
 \label{fig:coverage}
 }
 
-\caption{
+\caption[Overview of Code.org data]{
 \subref{fig:retention} Percent of students who finished the first problem in the hour of code that solve the remaining ones.
  \subref{fig:coverage} The percent of submissions that are covered by annotating the most popular partial solutions. 
  }
@@ -122,7 +129,7 @@ In the raw series of data, a student could make incremental changes between runs
     Pass Rate & 97.8\% & 81.0\%\\
     \bottomrule
   \end{tabular}
-  \caption{Summary of the dataset analyzed.}
+  \caption[Problem solving policy dataset summary]{Summary of the dataset analyzed.}
   \label{tab:dataTable}
 \end{table}
 
@@ -145,7 +152,7 @@ Moreover, partial solutions that are further off the most common path-to-solutio
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{img/wrongVsPopularity.png}
-\caption{How does node popularity relate to number of students who agree with experts?}
+\caption[Partial solution popularity vs probability of optimal progress]{How does node popularity relate to number of students who agree with experts?}
 \label{fig:confidence}
 \end{figure}
 
@@ -315,7 +322,7 @@ Min Time & 67.2\%  &  42.2\%\\
      Poisson Interpolation & 94.6 \% & 83.2\% \\
     \bottomrule
   \end{tabular}
-  \captionof{table}{Percent submissions with the ground truth edge correctly predicted. $^\dagger$ Algorithms applied to learning PSP's in other papers. $^\ddagger$ Desirable Path Algorithms.}
+  \captionof{table}[Problem solving policy accuracies]{Percent submissions with the ground truth edge correctly predicted. $^\dagger$ Algorithms applied to learning PSP's in other papers. $^\ddagger$ Desirable Path Algorithms.}
   \label{tab:results1}
   \end{table}
 
@@ -325,7 +332,7 @@ The other algorithms had notably lower scores. Interestingly, algorithms that we
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{img/lcs}
-\caption{Learning curve for \Pa (above) and \Pb (bellow). Students are subsampled randomly from dataset. Error bars are standard error.}
+\caption[Poison path learning curve]{Learning curve for \Pa (above) and \Pb (bellow). Students are subsampled randomly from dataset. Error bars are standard error.}
 \label{fig:learningCurve}
 \end{figure}
 
@@ -345,7 +352,7 @@ We ran an experiment to understand the effect of dataset size on accuracy. On bo
 \includegraphics[width=1.0\textwidth]{img/future}
 
 \end{center}
-\caption{Student path scores vs probability of completion of subsequent problems. Error bars are standard error.
+\caption[Poisson path score predicts completion]{Student path scores vs probability of completion of subsequent problems. Error bars are standard error.
  }
 \label{fig:predacc}
 \end{figure*}

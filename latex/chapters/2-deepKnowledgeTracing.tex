@@ -1,6 +1,12 @@
+Based on a paper by the same name \\ \emph{Proceedings of Neural Information Processing Systems (NIPS) 2015.}
+
+\vspace{7mm}
+
 \begin{figure}[h!]
 \includegraphics[width=0.2\textwidth]{img/assnType_1}
 \end{figure}
+
+\vspace{7mm}
 
 The overall goal that I hold for autonomous tutors is to be able to give high quality feedback to students working on interesting and rich assignments, it is useful to start by understanding what is possible in the simplist of domains. In this chapter I explore teaching curricula where student responses are encoded as simply ``correct" or ``incorrect". 
 
@@ -33,7 +39,7 @@ The main contributions of this work are:
 \centering
 \includegraphics[width=1.0\textwidth]{img/singleStudent}
 
-\caption{A single student and her predicted responses as she solves 50 exercises on Khan Academy 8th grade math curriculum. She seems to master finding x and y intercepts and then has trouble transferring knowledge to graphing linear equations.
+\caption[Single Khan student trace]{A single student and her predicted responses as she solves 50 exercises on Khan Academy 8th grade math curriculum. She seems to master finding x and y intercepts and then has trouble transferring knowledge to graphing linear equations.
 \label{fig:singleStudent}
 }
 
@@ -132,7 +138,7 @@ Thus the prediction of $a_{t+1}$ can then be read from the entry in $y_{t}$ corr
 %\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
 \includegraphics[width=0.7\textwidth]{img/rnn}
 \end{center}
-\caption{The connection between variables in a simple recurrent neural network. The inputs ($\mb x_t$) to the dynamic network are either one-hot encodings or compressed representations of a student action, and the prediction ($\mb y_t$) is a vector representing the probability of getting each of the dataset exercises correct.
+\caption[Recurrent neural network for knowledge tracing]{The connection between variables in a simple recurrent neural network. The inputs ($\mb x_t$) to the dynamic network are either one-hot encodings or compressed representations of a student action, and the prediction ($\mb y_t$) is a vector representing the probability of getting each of the dataset exercises correct.
 \label{fig:rnn}
 }
 
@@ -240,24 +246,20 @@ On all three datasets Deep Knowledge Tracing substantially outperformed previous
 The prediction results from the synthetic dataset provide an interesting demonstration of the capacities of deep knowledge tracing. Both the LSTM and RNN models did \emph{as well} at predicting student responses as an oracle which had perfect knowledge of all model parameters (and only had to fit the latent student knowledge variables). See Figure~\ref{fig:toyAcc}. In order to get accuracy on par with an oracle the models would have to mimic a function that incorporates: latent concepts, the difficulty of each exercise, the prior distributions of student knowledge and the affine transformation of learning that happened after each exercise. In contrast, the BKT prediction degraded substantially as the number of hidden concepts increased as it doesn't have a mechanism to learn unlabelled concepts.
 
 
- \begin{figure*}[t]
+ \begin{figure*}[ht]
  \centering
  \subfigure[]
  {
- \includegraphics[width=0.31\textwidth]{img/toyAcc}
+ \includegraphics[width=0.45\textwidth]{img/toyAcc}
  \label{fig:toyAcc}
  }
  \subfigure[]
  {
- \includegraphics[width=0.31\textwidth]{img/khanRoc}
+ \includegraphics[width=0.45\textwidth]{img/khanRoc}
  \label{fig:khanRoc}
  }
- \subfigure[]
- {
- \includegraphics[width=0.31\textwidth]{img/curriculum}
- \label{fig:curriculum}
- }
- \caption{Left: Prediction results for (a) simulated data and (b) Khan Academy data. Right: (c) Predicted knowledge on Assistments data for different exercise curricula. Error bars are standard error of the mean.}
+ 
+ \caption[Deep Knowledge Tracing accuracies]{Prediction results for (a) simulated data and (b) Khan Academy data.}
 
  \end{figure*}
 
@@ -265,12 +267,28 @@ The prediction results from the synthetic dataset provide an interesting demonst
 
 We tested different curricula for selecting exercises on a subset of five concepts over the span of 30 exercises from the Assistment dataset. In this context blocking seemed to have a notable advantage over mixing. See Figure~\ref{fig:curriculum}. While blocking performs on par with solving $\mathrm{expectimax}$ one exercise deep (MDP-1) if we look further into the future when choosing the next problem we come up with curricula where students have higher predicted knowledge after solving fewer problems (MDP-8). 
 
+\begin{figure}
+ \centering
+ \includegraphics[width=0.45\textwidth]{img/curriculum}
+ \caption[Curriculum evaluation]{Predicted knowledge on Assistments data for different exercise curricula. Error bars are standard error of the mean.}
+ \label{fig:curriculum}
+\end{figure}
 
 \subsection{Discovered Exercise Relationships}\label{sec ex rel}
+
+
 
 The prediction accuracy on the synthetic dataset suggest that it may be possible to use DKT models to extract the latent structure between the assessments in the dataset. The graph of our model's conditional influences for the synthetic dataset reveals a perfect clustering of the five latent concepts (see Figure~\ref{fig:conceptClusters}),
 with directed edges set using the influence function in Equation \ref{eq influence}.
 An interesting observation is that some of the exercises from the same concept occurred far apart in time. For example, in the synthetic dataset, where node numbers depict sequence, the 5th exercise in the synthetic dataset was from hidden concept 1 and even though it wasn't until the 22nd problem that another problem from the same concept was asked, we were able to learn a strong conditional dependency between the two.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\textwidth]{img/conceptClusters_synth}
+\caption[Conditional influences synthetic data]{Graphs of conditional influence between exercises in the synthetic dataset according to the DKT. We observe a perfect clustering of latent concepts in the synthetic data. 
+\label{fig:conceptClusters}
+}
+\end{figure}
 
 We analyzed the Khan dataset using the same technique. The resulting graph is a compelling articulation of how the concepts in the 8th grade Common Core are related to each other (see Figure~\ref{fig:conceptClusters}. Node numbers depict exercise tags).
 We restricted the analysis to ordered pairs of exercises $\{A,B\}$ such that after $A$ appeared, $B$ appeared more than 1\% of the time in the remainder of the sequence).
@@ -278,11 +296,11 @@ To determine if the resulting conditional relationships are a product of obvious
 Both baseline methods generated discordant graphs, which are shown in the Appendix. While many of the relationships we uncovered may be unsurprising to an education expert, they did not require human intervention, and the subtleties may be useful for course design. Above all the results are an affirmation that the DKT network learned a coherent model.
 
 
-\begin{figure}[t]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=1.0\textwidth]{img/conceptClusters}
-\caption{Graphs of conditional influence between exercises in  DKT models. Above: We observe a perfect clustering of latent concepts in the synthetic data. Below: A convincing depiction of how 8th grade math Common Core exercises influence one another.
-Arrow size indicates connection strength. Note that nodes may be connected in both directions. Edges with a magnitude smaller than 0.1 have been thresholded. Cluster labels are added by hand, but are fully consistent with the exercises in each cluster.
+\includegraphics[width=0.7\textwidth]{img/conceptClusters_khan}
+\caption[Conditional influences Khan]{A convincing depiction of how 8th grade math Common Core exercises influence one another.
+Arrow size indicates connection strength. Note that nodes may be connected in both directions. Edges with a magnitude smaller than 0.1 have been thresholded. 
 \label{fig:conceptClusters}
 }
 

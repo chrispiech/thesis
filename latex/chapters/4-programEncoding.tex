@@ -1,6 +1,12 @@
+Based on a paper: Learning Program Embeddings to Propagate Feedback on Student Code \\ \emph{International Conference on Machine Learning 2015.}
+
+\vspace{7mm}
+
 \begin{figure}[h!]
 \includegraphics[width=0.2\textwidth]{img/assnType_3}
 \end{figure}
+
+\vspace{7mm}
 
 In elementary programming tasks that are used by millions of students we can use emergent patterns in how students navigate the space of solutions to autonomously generate hints. However this strategy relies on having a relatively dense coverage of the partial solutions. When we look at the next level of assignment richness, the space of intermediate solutions students produced is too sparse for the Problem Solving Policy approach. 
 
@@ -54,7 +60,7 @@ Learning embeddings of programs is fertile ground for machine learning research 
 \begin{figure}[t]
 \centering
 \includegraphics[width=.65\columnwidth]{img/splash2_noborder}
-\caption{We learn matrices which capture functionality. Left: a student partial solution. Right: learned matrices for the syntax trees rooted at each node of placeRow.}
+\caption[Schematic of program embedding hierarchy]{We learn matrices which capture functionality. Left: a student partial solution. Right: learned matrices for the syntax trees rooted at each node of placeRow.}
 \label{fig:splash}
 \end{figure}
 
@@ -112,7 +118,7 @@ with respect to the feature space.
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{img/overview}
-\caption{
+\caption[Encoding of Hoare triples]{
 Diagram of the model for a program $A$ implementing a simple ``step forward'' behavior
 in a small 1-dimensional gridworld. Two of the $k$ Hoare triples that correspond with $A$ are shown. Typical worlds are larger and programs are more complex.
 }
@@ -466,7 +472,7 @@ observe to be due to the fact that the most common submissions are all quite sim
     \bottomrule
   \end{tabular}
   }
-  \caption{Dataset summary. Programs are considered identical if they have equal ASTs. Unique states are different configurations of the gridworld which occur in student programs.}
+  \caption[Encoding dataset summary]{Dataset summary. Programs are considered identical if they have equal ASTs. Unique states are different configurations of the gridworld which occur in student programs.}
   \label{tab:datasummary}
 \end{table}
 
@@ -529,7 +535,7 @@ For the two simpler problems, the parametric (RNN) model achieves slightly bette
     Common & 58\%  &  51\% & 42\% \\
     \bottomrule
   \end{tabular}
-  \caption{Test set postcondition prediction accuracy on 
+  \caption[Postcondition prediction accuracy]{Test set postcondition prediction accuracy on 
   the three programming problems. Training set results in parentheses.}
   \label{tab:results1}
 \end{table}
@@ -565,7 +571,7 @@ accuracy drop only to 83\%.
 Compose-3 & 94\% & 83\% & 72\% & 28\% & 39\%\\
     \bottomrule
   \end{tabular}
-  \caption{Evaluation of composability of  embedding matrices: Accuracy on 5k random triples with ASTs rooted at $\mathbf{block}$ nodes. NPM-0 does not jointly optimize. }
+  \caption[Postcondition prediction composability]{Evaluation of composability of  embedding matrices: Accuracy on 5k random triples with ASTs rooted at $\mathbf{block}$ nodes. NPM-0 does not jointly optimize. }
   \label{tab:results2}
 \end{table}
 
@@ -599,7 +605,7 @@ an embedding of the state space that is more amenable to composition.
 \includegraphics[width=0.3\textwidth]{img/force_mult_3}
 \label{fig:fmMid}
 }
-\caption{
+\caption[Precision recall of feedback propagation]{
 Recall of feedback propagation as a function of precision for three programming problems:
 %Interplay between precision and the amount to which we can force multiply feedback for:
 \subref{fig:fmHoc} $\Omega_1$,
@@ -652,7 +658,7 @@ our model performs best on functional feedback with an average 44\% recall at 90
 }
 \label{fig:whereWrong}
 }
-\caption{
+\caption[Accuracy as a function of complexity]{
 \subref{fig:cycloPost} NPM and RNN postcondition prediction accuracy
 as a function of cyclomatic complexity of submitted programs;
 \subref{fig:cycloFm}

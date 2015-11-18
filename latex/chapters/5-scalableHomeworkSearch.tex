@@ -1,6 +1,13 @@
+Based on a paper: Scalable Homework Search for Massive Open
+Online Programming Courses \\ \emph{International Conference on the World Wide Web 2014.}
+
+\vspace{7mm}
+
 \begin{figure}[h!]
 \includegraphics[width=0.2\textwidth]{img/assnType_4}
 \end{figure}
+
+\vspace{7mm}
 
 The use of neural networks to learn a joint embedding space is useful for introductory control flow assignments. However for general programs that students would write in an undergraduate programming course, networks which represent recursive structures (such as programs) are currently not powerful enough to be the basis for understanding the space of student partial solutions.
 
@@ -139,7 +146,7 @@ fact that all submissions are implementations of the same function.
 %    Fraction of correct submissions & 1 \\
     \hline
 \end{tabular}
-\caption{Statistics of the ML class dataset. }
+\caption[Equivalence class dataset summary]{Statistics of the ML class dataset. }
 \label{tab:datasetsummary}
 \end{table}
 \begin{figure*}[t!]
@@ -167,7 +174,7 @@ fact that all submissions are implementations of the same function.
 \label{fig:contextexample}
 }
 
-\caption{
+\caption[Example subtree]{
 \subref{fig:codeexample} Example code submission to the ``Gradient descent (for linear regression)'' problem;
 \subref{fig:astexample2} Example abstract syntax tree for linear regression gradient expression: $X'*(X*\theta - y)$;
 \subref{fig:subtreeexample} Example subtree from the AST from Figure~\ref{fig:astexample2}; \subref{fig:contextexample} 
@@ -523,7 +530,7 @@ test outputs of $\AST$ and $\AST'$ agree should be high if $\mathcal{B}$ and $\m
 	}
 }
 \ \Return $\texttt{count}/\texttt{denominator}$ \;
-\caption{Pseudocode for estimating the semantic equivalence probability between two subtrees, $\mathcal{B}$ and $\mathcal{B}'$.  
+\caption[Algorithm for estimating semantic equivalence]{Pseudocode for estimating the semantic equivalence probability between two subtrees, $\mathcal{B}$ and $\mathcal{B}'$.  
 The function $\texttt{QueryIndex}(\mathcal{B})$ is assumed to return a list of pairs $(\AST_i,c_i)$ such that each $\AST_i$ contains $\mathcal{B}$
 and $c_i$ is the number of submissions matching $\AST_i$.   Note that the inner loop can be implemented efficiently using 
 the precomputed hashes of global contexts (described in Section~\ref{sec:indexing}).
@@ -584,7 +591,7 @@ of subtrees by iterating the following steps:
 \begin{figure}[t!]
 \center
 \includegraphics[width=.35\textwidth]{img/cartoon.pdf}
-\caption{
+\caption[Equivalence class candidates]{
 Given a subtree $\mathcal{B}$ of an AST $\AST$, we query the Codewebs index
 for other subtrees that also occur under the same context $(\AST\backslash\mathcal{B})$.
 In this case, $\mathcal{B}_1, \dots, \mathcal{B}_4$ would each be considered
@@ -636,7 +643,7 @@ distinct can now be transformed into the same tree.  Thus after finding an equiv
 \begin{figure}[t!]
 \center
 \includegraphics[width=.35\textwidth]{img/taggingexample.pdf}
-\caption{
+\caption[Example tagged code]{
 Example code snippets corresponding to AST subtrees tagged by an instructor for the linear regression problem.
 }
 \label{fig:tagging}
@@ -646,7 +653,7 @@ Example code snippets corresponding to AST subtrees tagged by an instructor for 
 \center
 \includegraphics[width=.68\textwidth]{img/equivalencesAll.pdf}
 
-\caption{
+\caption[Resulting equivalence classes]{
  Selections of code snippets algorithmically determined for the linear regression homework.  Note that not all subtrees from the equivalence classes are shown.
 }
 \label{fig:equivalences}
@@ -721,7 +728,7 @@ buggy by our index.  We then unmark any node with a marked descendant, and repor
 \label{fig:astsizevsruntime}
 }
 
-\caption{\subref{fig:numastsvsruntime} Runtime in seconds for indexing a collection of ASTs (as a function of the number of ASTs)
+\caption[Runtime of AST indexing]{\subref{fig:numastsvsruntime} Runtime in seconds for indexing a collection of ASTs (as a function of the number of ASTs)
 from the ``gradient descent (for linear regression)'' problem;
 \subref{fig:astsizevsruntime} Runtime in seconds for indexing 1000 ASTs from each of the homework problems for Coursera's ML course plotted
 against average AST size (\# nodes) for each problem}
@@ -742,7 +749,7 @@ against average AST size (\# nodes) for each problem}
 \label{fig:reduction2}
 }
 
-\caption{
+\caption[How use of equivalence classes change teacher impact]{
 \subref{fig:zipfnoequiv}
 Zipf's Law: subtree frequency plotted against subtree rank (in the frequency table). % with and without canonicalization.  
 %Note that our data closely follows Zipf's law (dotted line) except at an ``elbow'' at the top of the ranked list.
@@ -875,7 +882,7 @@ ASTs with $k=5$ (see our previous work,~\cite{huang13}).
 \label{fig:bugIsolation}
 }
 
-\caption{
+\caption[Bug detection accuracy]{
 \subref{fig:bugsAll}  F-score comparison of Codewebs based bug detection algorithm against baseline (5-nearest neighbors) 
 for the 5000 most frequent ASTs for each assigned homework problem.  Each circle corresponds to a single homework problem, 
 with circle widths  set to be proportional to the average \# of nodes per AST for that problem; 

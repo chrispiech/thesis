@@ -3,61 +3,13 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "sadler2006impact"
-Warning--I didn't find a database entry for "corbett2001cognitive"
-Warning--I didn't find a database entry for "polson2013foundations"
-Warning--I didn't find a database entry for "corbett1994knowledge"
-Warning--I didn't find a database entry for "linnenbrink2004role"
-Warning--I didn't find a database entry for "elliot2013handbook"
-Warning--I didn't find a database entry for "cohen2008identity"
-Warning--I didn't find a database entry for "fitch2005evolution"
-Warning--I didn't find a database entry for "gentner1983structure"
-Warning--I didn't find a database entry for "d2008more"
-Warning--I didn't find a database entry for "yudelson2013individualized"
-Warning--I didn't find a database entry for "pardos2011kt"
-Warning--I didn't find a database entry for "schraagen2000cognitive"
-Warning--I didn't find a database entry for "rafferty2011faster"
-Warning--I didn't find a database entry for "pavlik2009performance"
-Warning--I didn't find a database entry for "cen2006learning"
-Warning--I didn't find a database entry for "gong2010comparing"
-Warning--I didn't find a database entry for "d2011ensembling"
-Warning--I didn't find a database entry for "lan2014time"
-Warning--I didn't find a database entry for "khajah2014integrating"
-Warning--I didn't find a database entry for "khajah2014incorporating"
-Warning--I didn't find a database entry for "williams1989learning"
-Warning--I didn't find a database entry for "hochreiter1997long"
-Warning--I didn't find a database entry for "graves2013speech"
-Warning--I didn't find a database entry for "mikolov2010recurrent"
-Warning--I didn't find a database entry for "karpathy2014deep"
+Warning--entry type for "KAprivacy" isn't style-file defined
+--line 324 of file references.bib
+Warning--I didn't find a database entry for "annualOECDReport"
+Warning--I didn't find a database entry for "fig:assnTypes"
 Warning--I didn't find a database entry for "baraniuk2007compressive"
-Warning--I didn't find a database entry for "rohrer2009effects"
-Warning--I didn't find a database entry for "drasgow1990item"
-Warning--I didn't find a database entry for "KAprivacy"
-Warning--I didn't find a database entry for "feng2009addressing"
-Warning--I didn't find a database entry for "piech2015autonomously"
-Warning--I didn't find a database entry for "piechICML15"
-Warning--I didn't find a database entry for "huangetal13"
-Warning--I didn't find a database entry for "basu2013powergrading"
-Warning--I didn't find a database entry for "nguyen14"
-Warning--I didn't find a database entry for "brooks2014divide"
-Warning--I didn't find a database entry for "lan2015mathematical"
-Warning--I didn't find a database entry for "piech2015"
-Warning--I didn't find a database entry for "rogers2014aces"
-Warning--I didn't find a database entry for "mokbel2013domain"
-Warning--I didn't find a database entry for "socher2013recursive"
-Warning--I didn't find a database entry for "socher2011semi"
-Warning--I didn't find a database entry for "zaremba2014learningb"
-Warning--I didn't find a database entry for "bowman2013can"
 Warning--I didn't find a database entry for "ovsjanikov2012functional"
 Warning--I didn't find a database entry for "ovsjanikov2013analysis"
-Warning--I didn't find a database entry for "song2013kernel"
-Warning--I didn't find a database entry for "song2009hilbert"
-Warning--I didn't find a database entry for "hoare1969axiomatic"
-Warning--I didn't find a database entry for "bergstra2012random"
-Warning--I didn't find a database entry for "duchi2011adaptive"
-Warning--I didn't find a database entry for "goller1996learning"
-Warning--I didn't find a database entry for "mccabe1976complexity"
-Warning--I didn't find a database entry for "graves2014neural"
 Warning--I didn't find a database entry for "paul94"
 Warning--I didn't find a database entry for "thummalapenta07"
 Warning--I didn't find a database entry for "hummel08"
@@ -102,48 +54,50 @@ Warning--I didn't find a database entry for "goldin12"
 Warning--I didn't find a database entry for "bachrach12"
 Warning--I didn't find a database entry for "kamar12"
 Warning--I didn't find a database entry for "charlin11"
+Warning--to sort, need author or key in KAprivacy
 Warning--can't use both volume and number fields in ahmadzadeh2005analysis
+Warning--there's a number but no volume in mccabe1976complexity
 Warning--there's a number but no volume in roll2014benefits
 Warning--can't use both volume and number fields in singh2013automated
-You've used 22 entries,
+You've used 75 entries,
             2543 wiz_defined-function locations,
-            797 strings with 10288 characters,
-and the built_in function-call counts, 11200 in all, are:
-= -- 1130
-> -- 606
-< -- 16
-+ -- 226
-- -- 221
-* -- 851
-:= -- 1791
-add.period$ -- 75
-call.type$ -- 22
-change.case$ -- 168
-chr.to.int$ -- 22
-cite$ -- 25
-duplicate$ -- 429
-empty$ -- 762
-format.name$ -- 241
-if$ -- 2328
-int.to.chr$ -- 1
+            1016 strings with 19432 characters,
+and the built_in function-call counts, 35853 in all, are:
+= -- 3663
+> -- 1870
+< -- 44
++ -- 683
+- -- 670
+* -- 2590
+:= -- 5731
+add.period$ -- 249
+call.type$ -- 75
+change.case$ -- 532
+chr.to.int$ -- 72
+cite$ -- 81
+duplicate$ -- 1419
+empty$ -- 2483
+format.name$ -- 739
+if$ -- 7490
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 114
-num.names$ -- 66
-pop$ -- 165
+missing$ -- 78
+newline$ -- 377
+num.names$ -- 222
+pop$ -- 539
 preamble$ -- 1
-purify$ -- 191
+purify$ -- 613
 quote$ -- 0
-skip$ -- 363
+skip$ -- 1223
 stack$ -- 0
-substring$ -- 620
-swap$ -- 121
-text.length$ -- 16
-text.prefix$ -- 3
+substring$ -- 1975
+swap$ -- 377
+text.length$ -- 44
+text.prefix$ -- 9
 top$ -- 0
-type$ -- 172
-warning$ -- 3
-while$ -- 106
-width$ -- 23
-write$ -- 299
-(There were 102 warnings)
+type$ -- 580
+warning$ -- 5
+while$ -- 345
+width$ -- 79
+write$ -- 991
+(There were 55 warnings)

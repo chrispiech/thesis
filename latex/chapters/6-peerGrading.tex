@@ -1,6 +1,13 @@
+
+Based on a paper: Tuned Models of Peer Assessment in MOOCs \\ \emph{International Conference on Educational Data Mining 2013.}
+
+\vspace{7mm}
+
 \begin{figure}[h!]
 \includegraphics[width=0.2\textwidth]{img/assnType_5}
 \end{figure}
+
+\vspace{7mm}
 
 Another angle into providing feedback at scale is to leverage the crowd of students to provide feedback to one another. Peer assessment --- which has been historically used 
 for logistical, pedagogical, metacognitive, and affective benefits (\cite{sadler06})
@@ -15,7 +22,7 @@ In massive open online courses (MOOCs), peer grading serves as a critical tool f
 \begin{center}
 \includegraphics[width=.6\textwidth]{img/assn5GradingGraph_color}
 \end{center}
-\caption{Peer-grading network: Each node is a learner with edges depicting
+\caption[Example peer grading network]{Peer-grading network: Each node is a learner with edges depicting
 who graded whom. Node size represents the number of graders for that student.
 The highlighted learner shown above graded five students (circular nodes)
 and was in turn graded by four students (square nodes). }
@@ -83,7 +90,7 @@ class only after having finalized our theories about which
 models were useful.
 
 \begin{table}[t!]
-\caption{Data Sets}
+\caption[Tuned peer grading dataset summary]{Data Sets}
 \begin{center}
 \begin{tabular}{rcc}
 \hline
@@ -171,7 +178,7 @@ The collection of all observed peer grades is denoted as  $Z=\{z^v_u\}$.
 \label{fig:gradergradee}
 }
 \end{center}
-\caption{%Relationship between grading performance  and
+\caption[Relationship between grades received and grades given]{%Relationship between grading performance  and
 %homework performance of graders and gradees:
 \subref{fig:gradergrade_v_residual} The relationship between a grader's homework performance (her grade)
 and statistics (mean/standard deviation) of grading performance (residual from true grade).
@@ -399,7 +406,7 @@ We refer the reader to the appendix for the full algorithmic details of Gibbs as
 
 
 \begin{table*}
-\caption{Comparison of models on the two HCI courses}
+\caption[Tuned peer grading accuracy]{Comparison of models on the two HCI courses}
 \centering\footnotesize
 \ra{1.3}
 \begin{tabular}{@{}rcccccccccccc@{}}
@@ -460,36 +467,24 @@ estimation does not take into account individual grader's
 biases and reliabilities. Nor does it incorporate prior knowledge about the distribution of true grades. 
 
 \section{Experimental results}\label{sec:experiments}
+
+
 \begin{figure*}
 \begin{center}
 \subfigure[]
 {
-\includegraphics[width=.23\textwidth]{img/baseline.pdf}
+\includegraphics[width=.44\textwidth]{img/baseline.pdf}
 \label{fig:baseline}
 }
 \subfigure[]
 {
-\includegraphics[width=.23\textwidth]{img/histogram.pdf}
+\includegraphics[width=.44\textwidth]{img/histogram.pdf}
 \label{fig:improved}
 }
-\subfigure[]
-{
-\includegraphics[width=.22\textwidth]{img/confidenceplot.pdf}
-\label{fig:confidence}
-}
-\subfigure[]
-{
-\includegraphics[width=.20\textwidth]{img/piechart90.pdf}
-\label{fig:piechart}
-}
 \end{center}
-\caption{
+\caption[How the histogram of errors changes]{
 \subref{fig:baseline} Histogram of errors made using the baseline (median) scoring mechanism. 
  \subref{fig:improved} Histogram of errors using \PGthree.  
- \subref{fig:confidence}  A comparison of model confidence ($x$-axis) and actual success rate of predictions ($y$-axis), where
- being above the diagonal (dark bars) is better.
- \subref{fig:piechart} Number of submissions for which our model can declare ``confidence''
- after $K$ rounds of grading.
  }
 \label{tab:predacc}
 
@@ -568,6 +563,29 @@ of the true score, we
 add that estimate to the set of predictions in the 70\% to 75\%
 confidence range. When we test this confidence range the example prediction ``passes'' if its estimate is in fact within 5pp of the ground truth score.
 
+\begin{figure*}
+\begin{center}
+\subfigure[]
+{
+\includegraphics[width=.4\textwidth]{img/confidenceplot.pdf}
+\label{fig:confidence}
+}
+\subfigure[]
+{
+\includegraphics[width=.36\textwidth]{img/piechart90.pdf}
+\label{fig:piechart}
+}
+\end{center}
+\caption[Model confidence vs accuracy]{
+ \subref{fig:confidence}  A comparison of model confidence ($x$-axis) and actual success rate of predictions ($y$-axis), where
+ being above the diagonal (dark bars) is better.
+ \subref{fig:piechart} Number of submissions for which our model can declare ``confidence''
+ after $K$ rounds of grading.
+ }
+\label{tab:predacc}
+
+\end{figure*}
+
 One worry is that our model might be overconfident about
 its predictions even when wrong. However the results, shown in Figure~\ref{fig:confidence}, demonstrate
 that our confidence estimates are on the conservative side ---
@@ -582,27 +600,22 @@ After only two rounds of grading we are highly confident in our estimated grade 
 \begin{center}
 \subfigure[]{
 \raisebox{3mm}{
-\includegraphics[width=.27\textwidth]{img/time_v_residual.pdf}
+\includegraphics[width=.44\textwidth]{img/time_v_residual.pdf}
 }
 \label{fig:time_v_residual}
 }\;\;
 \subfigure[]{
-\includegraphics[width=.27\textwidth]{img/roc.pdf}
-\label{fig:roc}
-}\;\;
-\subfigure[]{
-\includegraphics[width=.27\textwidth]{img/comments_v_residual.pdf}
+\includegraphics[width=.44\textwidth]{img/comments_v_residual.pdf}
 \label{fig:comments}
 }
 \end{center}
-\caption{
+\caption[Insight into peer graders]{
 \subref{fig:time_v_residual}  Grader consistency (measured using standard deviation of grading residual) as
 a function of time spent grading.
-\subref{fig:roc} ROC curve comparing performance (with linear SVM) at predicting future class participation given
-a student's grade, bias, reliability or all three.
 \subref{fig:comments} Commenting style (length of comment and sentiment polarity) as a function of grading residual.
 }
 \end{figure*}
+
 Applying probabilistic models to peer grading networks allows us to increase our grade accuracy and better allocate
 what submissions students should grade. Another product
 of our work is an assignment --- with a belief distribution --- for a true score, grader bias and grader reliability
@@ -684,6 +697,17 @@ Our results (Figure~\ref{fig:roc}) show that including grader bias and
 reliability improved our predictive ability by 5pp from an
 area under the curve (AUC) score of 0.93 to an AUC of 0.98.
 Properties about how a student grades, captures a dimension of their engagement which is missed by their assignment grade.
+
+\begin{figure}[h]
+\begin{center}
+
+\includegraphics[width=.44\textwidth]{img/roc.pdf}
+\label{fig:roc}
+\end{center}
+\caption[Predicting future class participation using peer grading]{ROC curve comparing performance (with linear SVM) at predicting future class participation given
+a student's grade, bias, reliability or all three.
+}
+\end{figure}
 
 \section{Related work}\label{sec:relatedwork}
 The statistical models we present in this paper can be seen as part of a long tradition of models which have been proposed for the purposes of aggregating information from noisy human labelers or workers.
