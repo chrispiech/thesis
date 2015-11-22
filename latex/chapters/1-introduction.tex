@@ -1,5 +1,7 @@
 This dissertation shows ways to provide autonomous feedback for a range of assignment types in online computer science education. I believe that the ideas presented in this thesis are a step towards inclusive, quality education at scale.
 
+\section{A New Grand Challenge}
+
 \section{The Shortage of Quality Education}
 
 To put it simply there is great need to increase the productivity of education.
@@ -12,8 +14,6 @@ We are a month away from the Millenium Development Goals deadline. As such, it a
 This year the Millenium Development Goals will be replaced by the United Nations Sustainable Development Goals. The new education objective is to, ``Ensure inclusive and quality education for all and promote lifelong learning." It includes subgoals for universal access to both primary and secondary education with expanded chanels for tertiary and adult education opporunities. The deadline to meet this new goal is 2030. 
 
 To me this high bar makes sense: inclusive high quality education. Lack of access to education is a great injustice and the sooner we address it, the sooner we can reap the rewards of a more equal world. But the magnitude of the equal access to quality education challenge is titanic. 
-
-\subsection{Increase Productivity}
 
 I am absolutly in favor of the most obvious way forward: we could allocate the necessary resources to train and hire enough teachers to achieve high quality accessible education using the same hundred year old formula. Though as shown by the limited success of the Millenium Development Goals, it is not a pancea. There are a few shortcomings to this strategy. Quality education at scale is expensive. The average OECD nation spent \$9,313 per young person \cite{annualOECDReport} and the most optimistic estimates for the cost of the Sustanable Development Goals is on the order of US\$239 billion. The cost can be taken on by governments, aid donations or individually. Based on the inability to achieve the Millenium Development Goal it seems there is not enough political will to foot the necessary cost, and there is appreciable fear of aid dependency on the part of developing nations. 
 
@@ -34,7 +34,7 @@ And it can be increased by either making it easier for teachers to do the same a
 The fanfare that accompanied the creation of Coursera and EdX, education platforms that promissed free access to the materials of premier universities, largly built off of a recognition of the need for higher education productivity. Massive Open Access Courses (MOOCs) engendered hope that constant iterative
 improvement and economies of scale of the internet could counter the cost disease.
 
-\subsection{Feedback}
+\section{Feedback}
 
 While there has been notable progress in our ability to deliver educational material, the ability to scale up the delivery of feedback to assignments that are more difficult than trivial multiple-choice questions or simple answers, has remained elusive. We define assignment feedback as both getting a grade and comments on a submitted piece of work \emph{and} providing help to learners who are stuck. These types of feedback correspond to two high level forms of assessment from education literature: Formative assessment, where the goal of an assignment is to help a student learn and summative assessment, where the goal of an assignment is to measure what a student knows.
 
@@ -61,7 +61,9 @@ This matches with my anecdotal experience. While the statistics we have only app
 
 Moreover, providing feedback, especially grading, has the tenor of being a highly repetitive task. There is a palpable sensation that when I am helping students who are stuck, or grading assignments, once I have seen enough student work I have a good idea of most ways that students will need feedback. As such it seems ideal for automation. Can we develop a technological solution to increase teacher productivity when grading? Solving this problem could substantially help towards the goal of inclusive quality education. If feedback can be personalized and istantanous it can have benefits beyond those enjoyed in a conventional classroom. In his now famous work, the Two-Sigma Problem, Benjamin Bloom notes that on average students who are taught by a tutor with feedback-corrective procedures perform better that 98\% of students in conventional classroom \cite{corbett2001cognitive}.
 
-\subsection{Online Programming Case Study}
+Aside: Maybe we wont have to spend as much time testing students if we understand their work.  
+
+\section{Online Programming Case Study}
 
 Online learning has engendered hope. Maybe the constant interative improvement and economies of scale of the internet can help answer the question: How does high quality, inclusive, education scale? 
 That hope gained substantial traction in 2011 when Stanford, Harvard and MIT opened up access to the materials for some of the most prestigeous courses in the world for free. These online versions of university courses were dubbed MOOC (Massive Open Online Courses).  virtual, distributed classrooms that
@@ -106,11 +108,10 @@ Interestingly, an elegant solution to the high cost of giving feedback in massiv
 \end{enumerate}
 Collectively I refer to these three scales of patterns as Emergent Learner-Assignment Structure. I first enountered these patterns in prelimilary work on understanding students over time. By clustering student submissions we found patterns in the Using a simple Markov Model of students working through introductory CS assignments. courses, I found that there were prototypical patterns in \emph{how} students navigated their way to the final solution that could predict their exam scores more accurately than the students final assignment grade \cite{piech2012modeling}. 
 
-\begin{mdframed}
 My leading hypothesis in this this is that we can autonomously (or semi autonomously) generate feedback to rich assignments at scale by finding meaningful patterns in Emergent Learner-Assignment Structure. 
-\end{mdframed}
-
 If we are able to understand the patterns in Emergent Learner-Assignment Structure that enable autonomous feedback, we will have a solid foundation from which to generate new scientific understanding about the process of learning. While this is not the primary objective of my research, it is an important corollary.
+
+
 
 
 \section{Unique Access to Data}
@@ -163,7 +164,7 @@ This list is not exhaustive for all computer science assignment types. Of note, 
 
 When student submissions are programming assignments, we are often able to parse their submissions into Abstract Sytax Trees (ASTs) and execute them on arbitrary inputs. When we have temporal data, in addition to collecting the final submission that a student turns in for an assignment, we also collect the trajectory of partial solutions that they generate as they work their way from a blank project.
 
-\subsection{Program Submission Sparcity}
+\section{Program Submission Sparcity}
 
 
 An interesting observation that we made is that for every single programming assignment dataset that we analyse in this thesis, the frequency of submissions fits a Zipf's law distribution. 
@@ -183,38 +184,35 @@ This is true for datasets where we have temporal data and datasets for which we 
 
 Our approach is to apply a disciplined machine learning paradigm to facilitate autonomous (or semi-autonomous) feedback at scale. Specifically we develop systems that try to capture emergent learner structures. There is an inherent balance between trying to maximize the quality of our feedback and to minimize teacher time. The general contraint that we held to was to keep teacher grading time the same as it would be in a traditional class of only a few dozen students.
 
-\subsection{Simple Assignments First}
+\subsection{Big Picture First}
 
-The problem of adding autonomy to the provision of feedback is hard. But the difficulty varies widely between different assignment complexities (and submission sparcity). In this dissertation we are going to start with the simplest and least sparse computer science assignments and work up in increasing levels of feedback difficulty focusing on the thematic split made in figure \cite{fig:assnTypes}. The largest difference that arises as complexity increases is that quickly program submissions become so sparse that it is hard to find temporal patterns in student work. Thus for the two simplest categories (Incorrect/Correct and Maze Programming Problems) we develop systems for autonomous feedback based on trajectory information, which is a very rich source of information. However for the next two levels of complexity (Control Flow and Functional Programming) we have to first solve the problem of finding patterns in the space of submissions so that we can understand student trajectories in a more dense, latent space. 
+The problem of adding autonomy to the provision of feedback is hard. But the difficulty varies widely between different assignment complexities (and submission sparcity). In this dissertation we are going to start with the simplest and least sparse computer science assignments and work up in increasing levels of feedback difficulty focusing on the thematic split made in figure \cite{fig:assnTypes}. The largest difference that arises as complexity increases is that quickly program submissions become so sparse that it is hard to find temporal patterns in student work. Thus for the two simplest categories (Incorrect/Correct and Maze Programming Problems) we develop systems for autonomous feedback based on trajecties, which is a very rich source of information. However for the next two levels of complexity (Control Flow and Functional Programming) we have to first solve the problem of finding patterns in the space of submissions so that we can understand student trajectories in a more dense, latent space. One way to understand this is that we are marching down the different layers of emergent structure. The first question we ask is: can we understand students across a curriculum? Then for harder problems we ask, can we understand students as they work through a single question? For absolute hardest class of assignments, general programming tasks, we ask ourselves, can we understand how a single partial solution relates to others?
 
-\subsection{Testable Machine Learning}
+\subsection{Understand Students}
 
 The ultimate goal of this line of research is to provide a scientific advance in our understanding of how to autonomously provide feedback to students. However there are unique challenges posed by the science of education. Three particularly notable challenges with regard to research on feedback is that (1) student experiments are expensive, (2) the mechanisms are complex so it is often hard to tease apart context or confounds and (3) learning outcomes are often multi-dimensional and long term.
 
 It is ethical grey area to provide an experience for a student that is worse than what they would have otherwise received. There is a desire is similar to the, ``do no harm" hypocratic oath taken in the field of medicine (where harm includes leaking any private student data). A clear example of this is that there is tremendous desire to never give feedback to students that is misleading. As a direct result experiments on live students are expensive. It is hard to convince an instructor to run a study and when a study is done it has to be performed under strick guidelines. Moreover, it is difficult to measure costs and benefits in an educational setting. Educational outcomes are multi-dimensional and involve short term and long term effects. An intervention may have broad effects on learners and testing those effects often is too invasive. Finally, even when an experiment is run on students and a reasonable education objective is selected and evaluated, it is still difficult to understand how different parts of a complicated feedback system should be attributed for observed results. As an example providing feedback often involves first autonomously understanding a student and then turning that understanding into english text that is presented to a student. It is difficult to tease the two apart.
 
+You can think of giving feedback 
 To overcome these challenges we focused on developing and testing systems that can understand students. In every chapter we identify a machine learning problem that can be used as the basis for autonomous feedback and can be directly evaluated with \emph{offline} data. We will set out to solve these machine learning questions to the best of our ability. The task of then developing a human computer interaction system for optimally helping students is interesting and important, but outside the scope of this dissertation.
+
+Aside: understanding can be measured either by predicting what s student will do, or by predicting what a teacher would tell a student.
+
+\subsection{Easy to Author}
+
+The autonomous feedback engine must be easy to author so that new activities and inspired ideas can be incorporated without much friction.
 
 \section{Novel Contribution}
 
-\begin{figure*}[h]
+\begin{figure}[h]
 \center
-\subfigure[]{
-   \includegraphics[width=.45\textwidth]{img/intro-projects.pdf}
-   \label{fig:introProjects}
-}
-\subfigure[]{
-   \includegraphics[width=.45\textwidth]{img/intro-impact.pdf}
-   \label{fig:introImpact}
-}
-
+   \includegraphics[width=1.0\textwidth]{img/intro-blocks.pdf}
 \caption[Subjective contribution overview]{
-\subref{fig:introProjects} Subjective measure of the degree to which different algorithms are able to understand students over the range of assignments that they apply. 
-\subref{fig:introImpact} The big picture of our maximum ability to understand students and where we would like to go.
+Subjective measure of the degree to which different algorithms are able to understand students over the range of assignments that they apply.}
 \label{fig:bigPicture}
-}
 
-\end{figure*}
+\end{figure}
 
 The challenge of how to provide autonomous feedback to students at scale remains an open problem. However I have made substantial progress towards understanding students as they learn. In each chapter we explore machine learning solutions to understanding increasingly more complex classes of assignments. 
 In the first chapter we use recurrent neural networks to understand students as they solve correct/incorrect class of problems in Khan Academy. In the second chapter we find out what temporal patterns emerge when millions of students solve the same Code.org Maze assignments. In the third chapter we develop a neural network way to encode the functionality of control flow programming assignments. In the fourth chapter we present a way to autonomously discover equivalent sub-parts of general student programming assignments. Finally, in the fifth chapter we show how machine learning tools can be used to help in peer grading, the ubiquitous way to provide feedback online when autonomous methods are not availible.
@@ -232,32 +230,39 @@ The most substantial contributions of this research are:
 \end{itemize}
 However, there are dozens of smaller corrolaries that we arrived at as a result of our novel exploration of an unprecidented dataset. It is hard to quantify exactly where we stand with respect to autonomously providing feedback across the entire domain of programming assignments especially since the objectives we try to reach are slightly different for different problem types. However for each task I can subjectively express the degree to which the algorithms allow us to understand what students know. To do so I compose both (1) the degree to which a task reflects actionable understanding of a student and (2) the accuracy our algorithms were able to achieve on the task. As an example of the different utility of different prediction tasks: being able to predict exactly what a student will do represents a deeper understanding then being able to recognize that their last submissions was similar enough to another students that we can propagate feedback. For each of the new algorithms that we present I did my best to estimate algorithm ``understanding" over the range of assignments to which they are applicable. See figure \ref{fig:bigPicture}. While I have made substantial gains against the baselines of brute force annotation and propagation of feedback availible from unit tests, there is still a substantial amount of room for improvement between the hull of our contemporary ability to understand students and the level that is possible.
 
+The thesis is split into three parts. In the first part we explore how to understand students as they learn across curricula of simple answers. In the second part we will explore how to model student trajectories as they solve multi step programming tasks. In the third part we explore how to understand patterns in sparse student programs.
 
-\section{A Vision for the Future}
-Autonomous feedback from a system that understands learners as they navigate complex learning environments.
-In the far future, we may have powerful autonomous tutors. They will be able to understand what humans know and help them achieve learning goals in optimal ways. They will be free, or close to free. Their experience will persist. 
+% include 
+%One-on-one human tutoring can produce learning gains for the average student on the order of two standard deviations \cite{corbett2001cognitive}.
 
-The core emphasis is two solve two problems (1) Provide feedback, (2) Select appropraite material for students. 
 
-Achieving these milestones often involve sub-goals such as being able to predict what students will do, or how teachers would respond.
 
-The autonomous feedback engine must be easy to author so that new activities and inspired ideas can be incorporated without much friction.
+%\section{A Vision for the Future}
+%Autonomous feedback from a system that understands learners as they navigate complex learning environments.
+%In the far future, we may have powerful autonomous tutors. They will be able to understand what humans know and help them achieve learning goals in optimal ways. They will be free, or close to free. Their experience will persist. 
 
-There are many different paths to an improved education landscape. This is just one interesting avenue.
+%The core emphasis is two solve two problems (1) Provide feedback, (2) Select appropraite material for students. 
 
-One reason that online is interesting is that it may enable scientific insights into learning
+%Achieving these milestones often involve sub-goals such as being able to predict what students will do, or how teachers would respond.
 
-Disiterata:
-Easy to author.
-Handle Richly Structured Activities
+%The autonomous feedback engine must be easy to author so that new activities and inspired ideas can be incorporated without much friction.
 
-Teachers have historically been faced with a difficult decision on how much personalized
-feedback to provide students on open-ended homework submissions
-such as mathematical proofs, computer programs or essays. On one hand, feedback
-is a cornerstone of the educational experience which enables students to
-learn from their mistakes. On the other hand, giving comments to each student
-can be an overwhelming time commitment. Hopefully autonomous feedback can be a powerful tool to help teachers of the future.
+%There are many different paths to an improved education landscape. This is just one interesting avenue.
 
-In this work we present a set of approaches that are appropriate for different types of assignments. Ideally in the future we will be able to achieve the level of autonomous feedback we see for khan data for more complex assignments. 
+%One reason that online is interesting is that it may enable scientific insights into learning
 
-http://data.worldbank.org/indicator/SE.ENR.TERT.FM.ZS/countries/1W?display=graph
+%Disiterata:
+%Easy to author.
+%Handle Richly Structured Activities
+
+
+%Teachers have historically been faced with a difficult decision on how much personalized
+%feedback to provide students on open-ended homework submissions
+%such as mathematical proofs, computer programs or essays. On one hand, feedback
+%is a cornerstone of the educational experience which enables students to
+%learn from their mistakes. On the other hand, giving comments to each student
+%can be an overwhelming time commitment. Hopefully autonomous feedback can be a powerful tool to help teachers of the future.
+
+%In this work we present a set of approaches that are appropriate for different types of assignments. Ideally in the future we will be able to achieve the level of autonomous feedback we see for khan data for more complex assignments. 
+
+%http://data.worldbank.org/indicator/SE.ENR.TERT.FM.ZS/countries/1W?display=graph

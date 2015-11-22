@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{KHGB{\etalchar{+}}14}
+\begin{thebibliography}{KPWL{\etalchar{+}}13}
 
 \bibitem[AEH05]{ahmadzadeh2005analysis}
 Marzieh Ahmadzadeh, Dave Elliman, and Colin Higgins.
@@ -7,11 +7,23 @@ Marzieh Ahmadzadeh, Dave Elliman, and Colin Higgins.
   students.
 \newblock In {\em ACM SIGCSE Bulletin}, volume~37, pages 84--88. ACM, 2005.
 
+\bibitem[AG11]{ashley11}
+Kevin Ashley and Ilya Goldin.
+\newblock Toward ai-enhanced computer-supported peer review in legal education.
+\newblock In {\em 24th International Conference on Legal Knowledge and
+  Information Systems (JURIX)}, volume 235, 2011.
+
 \bibitem[AK02]{aleven2002effective}
 Vincent~AWMM Aleven and Kenneth~R Koedinger.
 \newblock An effective metacognitive strategy: Learning by doing and explaining
   with a computer-based cognitive tutor.
 \newblock {\em Cognitive science}, 26(2):147--179, 2002.
+
+\bibitem[Bak01]{baker01}
+Frank Baker.
+\newblock {\em The basics of item response theory}.
+\newblock ERIC Clearinghouse on Assessment and Evaluation, University of
+  Maryland, College Park, 2001.
 
 \bibitem[BB12]{bergstra2012random}
 James Bergstra and Yoshua Bengio.
@@ -24,6 +36,13 @@ Michael Brooks, Sumit Basu, Charles Jacobs, and Lucy Vanderwende.
 \newblock In {\em Proceedings of the first ACM conference on Learning@ scale
   conference}, pages 89--98. ACM, 2014.
 
+\bibitem[BCF{\etalchar{+}}99]{breslau99}
+Lee Breslau, Pei Cao, Li~Fan, Graham Phillips, and Scott Shenker.
+\newblock Web caching and zipf-like distributions: Evidence and implications.
+\newblock In {\em INFOCOM'99. Eighteenth Annual Joint Conference of the IEEE
+  Computer and Communications Societies. Proceedings. IEEE}, volume~1, pages
+  126--134. IEEE, 1999.
+
 \bibitem[BJV13]{basu2013powergrading}
 Sumit Basu, Chuck Jacobs, and Lucy Vanderwende.
 \newblock Powergrading: a clustering approach to amplify human effort for short
@@ -31,10 +50,22 @@ Sumit Basu, Chuck Jacobs, and Lucy Vanderwende.
 \newblock {\em Transactions of the Association for Computational Linguistics},
   1:391--402, 2013.
 
+\bibitem[BMGG12]{bachrach12}
+Yoram Bachrach, Tom Minka, John Guiver, and Thore Graepel.
+\newblock {How To Grade a Test Without Knowing the Answers - A Bayesian
+  Graphical Model for Adaptive Crowdsourcing and Aptitude Testing}.
+\newblock In {\em The 29th Annual International Conference on Machine
+  Learning}, ICML '12, 2012.
+
 \bibitem[Bow13]{bowman2013can}
 Samuel~R Bowman.
 \newblock Can recursive neural tensor networks learn logical reasoning?
 \newblock {\em arXiv preprint arXiv:1312.6192}, 2013.
+
+\bibitem[BR88]{batchelder88}
+William~H. Batchelder and A.~Kimball Romney.
+\newblock Test theory without an answer key.
+\newblock {\em Psychometrika}, 53:71--92, 1988.
 
 \bibitem[BS08]{barnes2008toward}
 Tiffany Barnes and John Stamper.
@@ -42,6 +73,13 @@ Tiffany Barnes and John Stamper.
   historical student data.
 \newblock In {\em Intelligent Tutoring Systems}, pages 373--382. Springer,
   2008.
+
+\bibitem[BYM{\etalchar{+}}98]{baxter98}
+Ira~D Baxter, Andrew Yahin, Leonardo Moura, Marcelo Sant'Anna, and Lorraine
+  Bier.
+\newblock Clone detection using abstract syntax trees.
+\newblock In {\em Software Maintenance, 1998. Proceedings. International
+  Conference on}, pages 368--377. IEEE, 1998.
 
 \bibitem[CA94]{corbett1994knowledge}
 Albert~T Corbett and John~R Anderson.
@@ -74,6 +112,12 @@ Albert Corbett.
 \newblock Cognitive computer tutors: Solving the two-sigma problem.
 \newblock In {\em User Modeling 2001}, pages 137--147. Springer, 2001.
 
+\bibitem[CZB11]{charlin11}
+Laurent Charlin, Richard Zemel, and Craig Boutilier.
+\newblock A framework for optimizing paper matching.
+\newblock In {\em Proceedings of Uncertainty in Artificial Intelligence
+  (UAI'11)}, 2011.
+
 \bibitem[dBCA08]{d2008more}
 Ryan S~J d~Baker, Albert~T Corbett, and Vincent Aleven.
 \newblock {More accurate student modeling through contextual estimation of slip
@@ -101,6 +145,11 @@ John Duchi, Elad Hazan, and Yoram Singer.
   optimization.
 \newblock {\em The Journal of Machine Learning Research}, 12:2121--2159, 2011.
 
+\bibitem[EBH97]{eaton97}
+John~W Eaton, David Bateman, and S{\o}ren Hauberg.
+\newblock {\em Gnu octave}.
+\newblock Free Software Foundation, 1997.
+
 \bibitem[ED13]{elliot2013handbook}
 Andrew~J Elliot and Carol~S Dweck.
 \newblock {\em Handbook of competence and motivation}.
@@ -119,6 +168,13 @@ Mingyu Feng, Neil Heffernan, and Kenneth Koedinger.
 \newblock {\em User Modeling and User-Adapted Interaction}, 19(3):243--266,
   2009.
 
+\bibitem[FLA{\etalchar{+}}13]{fast13}
+Ethan Fast, Colleen Lee, Alex Aiken, Michael Bernstein, Daphne Koller, and Eric
+  Smith.
+\newblock Crowd-scale interactive formal reasoning and analytics.
+\newblock In {\em UIST: ACM Symposium on User Interface Software and
+  Technology,}, 2013.
+
 \bibitem[FLM{\etalchar{+}}08]{fitzgerald2008debugging}
 Sue Fitzgerald, Gary Lewandowski, Renee McCauley, Laurie Murphy, Beth Simon,
   Lynda Thomas, and Carol Zander.
@@ -132,6 +188,13 @@ Joseph~L Fleiss, Bruce Levin, and Myunghee~Cho Paik.
 \newblock {\em Statistical methods for rates and proportions}, 2:212--236,
   1981.
 
+\bibitem[GA11]{goldin11}
+Ilya~M. Goldin and Kevin~D. Ashley.
+\newblock Peering inside peer review with bayesian models.
+\newblock In {\em Proceedings of the 15th international conference on
+  Artificial intelligence in education}, AIED'11, pages 90--97, Berlin,
+  Heidelberg, 2011. Springer-Verlag.
+
 \bibitem[GBH10]{gong2010comparing}
 Yue Gong, Joseph~E Beck, and Neil~T Heffernan.
 \newblock {Comparing knowledge tracing and performance factor analysis by using
@@ -142,6 +205,19 @@ Yue Gong, Joseph~E Beck, and Neil~T Heffernan.
 Dedre Gentner.
 \newblock Structure-mapping: A theoretical framework for analogy.
 \newblock {\em Cognitive science}, 7(2), 1983.
+
+\bibitem[GG84]{geman84}
+Stuart Geman and Donald Geman.
+\newblock Stochastic relaxation, gibbs distributions, and the bayesian
+  restoration of images.
+\newblock {\em IEEE PAMI}, (6):721--741, 1984.
+
+\bibitem[GGM13]{glassman13}
+Elena~L Glassman, Ned Gulley, and Robert~C Miller.
+\newblock Toward facilitating assistance to students attempting engineering
+  design problems.
+\newblock In {\em Proceedings of the ninth annual international ACM conference
+  on International computing education research}, pages 41--46. ACM, 2013.
 
 \bibitem[GK96]{goller1996learning}
 Christoph Goller and Andreas Kuchler.
@@ -156,16 +232,56 @@ Alex Graves, A-R Mohamed, and Geoffrey Hinton.
 \newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
   International Conference on}, pages 6645--6649. IEEE, 2013.
 
+\bibitem[GMHP13]{gross13}
+Sebastian Gross, Bassam Mokbel, Barbara Hammer, and Niels Pinkwart.
+\newblock Towards providing feedback to students in absence of formalized
+  domain models.
+\newblock In {\em Artificial Intelligence in Education}, pages 644--648.
+  Springer, 2013.
+
+\bibitem[Gol12]{goldin12}
+Ilya Goldin.
+\newblock Accounting for peer reviewer bias with bayesian models.
+\newblock In {\em Proceedings of the Workshop on Intelligent Support for
+  Learning Groups at the 11th International Conference on Intelligent Tutoring
+  Systems}, 2012.
+
 \bibitem[GWD14]{graves2014neural}
 Alex Graves, Greg Wayne, and Ivo Danihelka.
 \newblock Neural turing machines.
 \newblock {\em arXiv preprint arXiv:1410.5401}, 2014.
+
+\bibitem[GZHP12]{gross12}
+Sebastian Gross, Xibin Zhu, Barbara Hammer, and Niels Pinkwart.
+\newblock Cluster based feedback provision strategies in intelligent tutoring
+  systems.
+\newblock In {\em Intelligent Tutoring Systems}, pages 699--700. Springer,
+  2012.
 
 \bibitem[H{\etalchar{+}}96]{henke1996schools}
 Robin~R Henke et~al.
 \newblock {\em Schools and Staffing in the United States: A Statistical
   Profile, 1993-94.}
 \newblock ERIC, 1996.
+
+\bibitem[HFW07]{hoffmann07}
+Raphael Hoffmann, James Fogarty, and Daniel~S Weld.
+\newblock Assieme: finding and leveraging implicit references in a web search
+  interface for programmers.
+\newblock In {\em Proceedings of the 20th annual ACM symposium on User
+  interface software and technology}, pages 13--22. ACM, 2007.
+
+\bibitem[HJA08]{hummel08}
+Oliver Hummel, Werner Janjic, and Colin Atkinson.
+\newblock Code conjurer: Pulling reusable software out of thin air.
+\newblock {\em Software, IEEE}, 25(5):45--52, 2008.
+
+\bibitem[HMBK10]{hartmann10}
+Bj{\"o}rn Hartmann, Daniel MacDougall, Joel Brandt, and Scott~R Klemmer.
+\newblock What would other programmers do: suggesting solutions to error
+  messages.
+\newblock In {\em Proceedings of the 28th international conference on Human
+  factors in computing systems}, pages 1019--1028. ACM, 2010.
 
 \bibitem[Hoa69]{hoare1969axiomatic}
 Charles Antony~Richard Hoare.
@@ -179,7 +295,13 @@ Jonathan Huang, Chris Piech, Andy Nguyen, and Leonidas Guibas.
 \newblock In {\em AIED 2013 Workshops Proceedings Volume}, page~25. Citeseer,
   2013.
 
-\bibitem[HPNG13b]{huangetal13}
+\bibitem[HPNG13b]{huang13}
+Jonathan Huang, Chris Piech, Andy Nguyen, and Leonidas Guibas.
+\newblock Syntactic and functional variability of a million code submissions in
+  a machine learning mooc.
+\newblock In {\em AIED 2013 Workshops Proceedings Volume}, page~25, 2013.
+
+\bibitem[HPNG13c]{huangetal13}
 Jonathan Huang, Chris Piech, Andy Nguyen, and Leonidas~J. Guibas.
 \newblock Syntactic and functional variability of a million code submissions in
   a machine learning mooc.
@@ -192,9 +314,21 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural computation}, 9(8), 1997.
 
+\bibitem[Joh96]{johnson96}
+Valen~E. Johnson.
+\newblock On bayesian analysis of multi-rater ordinal data: An application to
+  automated essay grading.
+\newblock {\em Journal of the American Statistical Association}, 91:42--51,
+  1996.
+
 \bibitem[KAp15]{KAprivacy}
 Khan academy privacy notice https://www.khanacademy.org/about/privacy-policy,
   2015.
+
+\bibitem[KB03]{karabatsos03}
+George Karabatsos and William Batchelder.
+\newblock Markov chain estimation for test theory without an answer key.
+\newblock {\em Psychometrika}, 68(3):373--389, 2003.
 
 \bibitem[KFF14]{karpathy2014deep}
 Andrej Karpathy and Li~Fei-Fei.
@@ -209,6 +343,29 @@ Mohammad~M Khajah, Yun Huang, Jos\'{e}~P Gonz\'{a}lez-Brenes, Michael~C Mozer,
 \newblock {\em Proceedings of the 4th International Workshop on Personalization
   Approaches in Learning Environments}, 2014.
 
+\bibitem[KHH12]{kamar12}
+Ece Kamar, Severin Hacker, and Eric Horvitz.
+\newblock Combining human and machine intelligence in large-scale
+  crowdsourcing.
+\newblock In {\em In AAMAS}, 2012.
+
+\bibitem[KLHK10]{kim10}
+Jinhan Kim, Sanghoon Lee, Seung-won Hwang, and Sunghun Kim.
+\newblock Towards an intelligent code search engine.
+\newblock In {\em AAAI}, 2010.
+
+\bibitem[KPWL{\etalchar{+}}13]{kulkarni13}
+Chinmay Kulkarni, Koh Pang-Wei, Huy Le, Daniel Chia, Kathryn Papadopoulos,
+  Daphne Koller, and Scott~R Klemmer.
+\newblock Scaling self and peer assessment to the global design classroom.
+\newblock In {\em Proceedings of CHI'13 (to appear)}, 2013.
+
+\bibitem[KS06]{kohlhase06}
+Michael Kohlhase and Ioan Sucan.
+\newblock A search engine for mathematical formulae.
+\newblock In {\em Artificial Intelligence and Symbolic Computation}, pages
+  241--253. Springer, 2006.
+
 \bibitem[KWL{\etalchar{+}}13]{kulkarni2013peer}
 Chinmay Kulkarni, Koh~Pang Wei, Huy Le, Daniel Chia, Kathryn Papadopoulos,
   Justin Cheng, Daphne Koller, and Scott~R Klemmer.
@@ -222,6 +379,14 @@ M~Khajah, Rowan~M Wing, Robert~V Lindsey, and Michael~C Mozer.
   individual differences in learning}.
 \newblock {\em Proceedings of the 7th International Conference on Educational
   Data Mining}, 2014.
+
+\bibitem[LLBO{\etalchar{+}}09]{lazzarini09}
+Ot{\'a}vio~Augusto Lazzarini~Lemos, Sushil Bajracharya, Joel Ossher,
+  Paulo~Cesar Masiero, and Cristina Lopes.
+\newblock Applying test-driven code search to the reuse of auxiliary
+  functionality.
+\newblock In {\em Proceedings of the 2009 ACM symposium on Applied Computing},
+  pages 476--482. ACM, 2009.
 
 \bibitem[LP04]{linnenbrink2004role}
 Elizabeth~A Linnenbrink and Paul~R Pintrich.
@@ -241,6 +406,19 @@ Andrew~S Lan, Divyanshu Vats, Andrew~E Waters, and Richard~G Baraniuk.
 \newblock Mathematical language processing: Automatic grading and feedback for
   open response mathematical questions.
 \newblock {\em arXiv preprint arXiv:1501.04346}, 2015.
+
+\bibitem[LZZ10]{lu10}
+Linyuan L{\"u}, Zi-Ke Zhang, and Tao Zhou.
+\newblock Zipf's law leads to heaps' law: Analyzing their relation in
+  finite-size systems.
+\newblock {\em PloS one}, 5(12):e14139, 2010.
+
+\bibitem[MAYS99]{mislevy99}
+Robert~J Mislevy, Russell~G Almond, Duanli Yan, and Linda~S Steinberg.
+\newblock Bayes nets in educational assessment: Where the numbers come from.
+\newblock In {\em Proceedings of the fifteenth conference on uncertainty in
+  artificial intelligence}, pages 437--446. Morgan Kaufmann Publishers Inc.,
+  1999.
 
 \bibitem[McC76]{mccabe1976complexity}
 Thomas~J McCabe.
@@ -263,20 +441,26 @@ Tomas Mikolov, Martin Karafi{\'a}t, Lukas Burget, Jan Cernock{\`y}, and Sanjeev
   Speech Communication Association, Makuhari, Chiba, Japan, 2010}, pages
   1045--1048, 2010.
 
-\bibitem[NPHG14a]{nguyen2014codewebs}
+\bibitem[MKS{\etalchar{+}}15]{mnih2015human}
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei~A Rusu, Joel Veness,
+  Marc~G Bellemare, Alex Graves, Martin Riedmiller, Andreas~K Fidjeland, Georg
+  Ostrovski, et~al.
+\newblock Human-level control through deep reinforcement learning.
+\newblock {\em Nature}, 518(7540):529--533, 2015.
+
+\bibitem[Nie11]{nielsen11}
+Finn~{\AA}rup Nielsen.
+\newblock A new anew: Evaluation of a word list for sentiment analysis in
+  microblogs.
+\newblock {\em arXiv preprint arXiv:1103.2903}, 2011.
+
+\bibitem[NPHG14]{nguyen2014codewebs}
 Andy Nguyen, Christopher Piech, Jonathan Huang, and Leonidas Guibas.
 \newblock Codewebs: scalable homework search for massive open online
   programming courses.
 \newblock In {\em Proceedings of the 23rd international conference on World
   wide web}, pages 491--502. International World Wide Web Conferences Steering
   Committee, 2014.
-
-\bibitem[NPHG14b]{nguyen14}
-Andy Nguyen, Christopher Piech, Jonathan Huang, and Leonidas Guibas.
-\newblock Codewebs: Scalable homework search for massive open online
-  programming courses.
-\newblock In {\em Proceedings of the 23rd International World Wide Web
-  Conference (WWW 2014)}, Seoul, Korea, 2014.
 
 \bibitem[Pap12]{pappano2012year}
 Laura Pappano.
@@ -295,28 +479,41 @@ Zachary~A Pardos and Neil~T Heffernan.
 \newblock In {\em User Modeling, Adaption and Personalization}, pages 243--254.
   Springer, 2011.
 
+\bibitem[PHC{\etalchar{+}}13]{piech13}
+Chris Piech, Jonathan Huang, Zhenghao Chen, Chuong Do, Andrew Ng, and Daphne
+  Koller.
+\newblock Tuned models of peer assessment in {MOOC}s.
+\newblock In {\em Proceedings of The 6th International Conference on
+  Educational Data Mining (EDM 2013)}, 2013.
+
 \bibitem[PHN{\etalchar{+}}15]{piechICML15}
 Chris Piech, Jonathan Huang, Andy Nguyen, Mike Phulsuksombati, Mehran Sahami,
   and Leonidas~J. Guibas.
 \newblock Learning program embeddings to propagate feedback on student code.
 \newblock {\em CoRR}, abs/1505.05969, 2015.
 
+\bibitem[PP94]{paul94}
+Santanu Paul and Atul Prakash.
+\newblock A framework for source code search using program patterns.
+\newblock {\em Software Engineering, IEEE Transactions on}, 20(6):463--475,
+  1994.
+
 \bibitem[PR13]{polson2013foundations}
 Martha~C Polson and J~Jeffrey Richardson.
 \newblock {\em {Foundations of intelligent tutoring systems}}.
 \newblock Psychology Press, 2013.
 
-\bibitem[PSHG15a]{piech2015autonomously}
+\bibitem[PSH{\etalchar{+}}15]{piech2015deep}
+Chris {Piech}, Johnathan {Spencer}, Jonathan. {Huang}, Surya {Ganguli}, Mehran
+  {Sahami}, Leonidas {Guibas}, and Jascha {Sohl-Dickstein}.
+\newblock {Deep Knowledge Tracing}.
+\newblock {\em ArXiv e-prints}, June 2015.
+
+\bibitem[PSHG15]{piech2015autonomously}
 Chris Piech, Mehran Sahami, Jonathan Huang, and Leonidas Guibas.
 \newblock Autonomously generating hints by inferring problem solving policies.
 \newblock In {\em Proceedings of the Second (2015) ACM Conference on Learning @
   Scale}, L@S '15, pages 195--204, New York, NY, USA, 2015. ACM.
-
-\bibitem[PSHG15b]{piech2015}
-Chris Piech, Mehran Sahami, Jonathan Huang, and Leonidas Guibas.
-\newblock Autonomously generating hints by inferring problem solving policies.
-\newblock In {\em Proceedings of the Second (2015) ACM Conference on Learning @
-  Scale}, L@S '15, pages 195--204. ACM, 2015.
 
 \bibitem[PSK{\etalchar{+}}12]{piech2012modeling}
 Chris Piech, Mehran Sahami, Daphne Koller, Steve Cooper, and Paulo Blikstein.
@@ -353,11 +550,28 @@ Stephanie Rogers, Dan Garcia, John~F Canny, Steven Tang, and Daniel Kang.
 \newblock PhD thesis, Master’s thesis, EECS Department, University of
   California, Berkeley, 2014.
 
-\bibitem[RK12]{rivers2012canonicalizing}
+\bibitem[RGP10]{rogers10}
+Simon Rogers, Mark Girolami, and Tamara Polajnar.
+\newblock Semi-parametric analysis of multi-rater data.
+\newblock {\em Statistics and Computing}, 20(3):317--334, July 2010.
+
+\bibitem[RK12a]{rivers2012canonicalizing}
 Kelly Rivers and Kenneth~R Koedinger.
 \newblock A canonicalizing model for building programming tutors.
 \newblock In {\em Intelligent Tutoring Systems}, pages 591--593. Springer,
   2012.
+
+\bibitem[RK12b]{rivers12}
+Kelly Rivers and Kenneth~R Koedinger.
+\newblock A canonicalizing model for building programming tutors.
+\newblock In {\em Intelligent Tutoring Systems}, pages 591--593. Springer,
+  2012.
+
+\bibitem[RK13]{rivers13}
+Kelly Rivers and Kenneth~R Koedinger.
+\newblock Automatic generation of programming feedback: A data-driven approach.
+\newblock In {\em The First Workshop on AI-supported Education for Computer
+  Science (AIEDCS 2013)}, page~50, 2013.
 
 \bibitem[RK14]{rivers2014automating}
 Kelly Rivers and Kenneth~R Koedinger.
@@ -370,6 +584,13 @@ Doug Rohrer.
 \newblock {The effects of spacing and mixing practice problems}.
 \newblock {\em Journal for Research in Mathematics Education}, pages 4--17,
   2009.
+
+\bibitem[Rus04]{russell04}
+Arlene~A Russell.
+\newblock Calibrated peer review - a writing and critical-thinking
+  instructional tool.
+\newblock {\em Teaching Tips: Innovations in Undergraduate Science
+  Instruction}, page~54, 2004.
 
 \bibitem[SCS00]{schraagen2000cognitive}
 Jan~Maarten Schraagen, Susan~F Chipman, and Valerie~L Shalin.
@@ -412,6 +633,13 @@ Le~Song, Jonathan Huang, Alex Smola, and Kenji Fukumizu.
 \newblock In {\em Proceedings of the 26th Annual International Conference on
   Machine Learning}, pages 961--968. ACM, 2009.
 
+\bibitem[Sin06]{sindhgatta06}
+Renuka Sindhgatta.
+\newblock Using an information retrieval system to retrieve source code
+  samples.
+\newblock In {\em Proceedings of the 28th international conference on Software
+  engineering}, pages 905--908. ACM, 2006.
+
 \bibitem[SPH{\etalchar{+}}11]{socher2011semi}
 Richard Socher, Jeffrey Pennington, Eric~H Huang, Andrew~Y Ng, and
   Christopher~D Manning.
@@ -429,6 +657,19 @@ Richard Socher, Alex Perelygin, Jean~Y Wu, Jason Chuang, Christopher~D Manning,
 \newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
   Language Processing (EMNLP)}, pages 1631--1642. Citeseer, 2013.
 
+\bibitem[SWZS94]{shasha94}
+Dennis Shasha, Jason Tsong-Li Wang, Kaizhong Zhang, and Frank~Y. Shih.
+\newblock Exact and approximate algorithms for unordered tree matching.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics},
+  24(4):668--678, 1994.
+
+\bibitem[TX07]{thummalapenta07}
+Suresh Thummalapenta and Tao Xie.
+\newblock Parseweb: a programmer assistant for reusing open source code on the
+  web.
+\newblock In {\em Proceedings of the twenty-second IEEE/ACM international
+  conference on Automated software engineering}, pages 204--213. ACM, 2007.
+
 \bibitem[WAC{\etalchar{+}}12]{weld2012personalized}
 Daniel~S Weld, Eytan Adar, Lydia Chilton, Raphael Hoffmann, Eric Horvitz,
   Mitchell Koch, James Landay, Christopher~H Lin, and Mausam Mausam.
@@ -442,6 +683,13 @@ Christopher Watson, Frederick~WB Li, and Jamie~L Godwin.
   in error diagnosis and repair.
 \newblock In {\em Advances in Web-Based Learning-ICWL 2012}, pages 228--239.
   Springer, 2012.
+
+\bibitem[WRfW{\etalchar{+}}09]{whitehill09}
+Jacob Whitehill, Paul Ruvolo, Ting fan Wu, Jacob Bergsma, and Javier Movellan.
+\newblock Whose vote should count more: Optimal integration of labels from
+  labelers of unknown expertise.
+\newblock In {\em Advances in Neural Information Processing Systems 22}, pages
+  2035--2043. MIT Press, 2009.
 
 \bibitem[WWB{\etalchar{+}}09]{whitehill2009whose}
 Jacob Whitehill, Ting-fan Wu, Jacob Bergsma, Javier~R Movellan, and Paul~L
@@ -457,16 +705,33 @@ Ronald~J Williams and David Zipser.
   networks.
 \newblock {\em Neural computation}, 1(2):270--280, 1989.
 
+\bibitem[XSC03]{xu03}
+Songwen Xu and Yam San~Chee.
+\newblock Transformation-based diagnosis of student programs for programming
+  tutoring systems.
+\newblock {\em Software Engineering, IEEE Transactions on}, 29(4):360--384,
+  2003.
+
 \bibitem[YKG13]{yudelson2013individualized}
 Michael~V Yudelson, Kenneth~R Koedinger, and Geoffrey~J Gordon.
 \newblock {Individualized bayesian knowledge tracing models}.
 \newblock In {\em Artificial Intelligence in Education}, pages 171--180.
   Springer, 2013.
 
+\bibitem[Zip49]{zipf1949human}
+George~Kingsley Zipf.
+\newblock Human behavior and the principle of least effort.
+\newblock 1949.
+
 \bibitem[ZKF14]{zaremba2014learningb}
 Wojciech Zaremba, Karol Kurach, and Rob Fergus.
 \newblock Learning to discover efficient mathematical identities.
 \newblock In {\em Advances in Neural Information Processing Systems}, pages
   1278--1286, 2014.
+
+\bibitem[ZM06]{zobel06}
+Justin Zobel and Alistair Moffat.
+\newblock Inverted files for text search engines.
+\newblock {\em ACM Computing Surveys (CSUR)}, 38(2):6, 2006.
 
 \end{thebibliography}

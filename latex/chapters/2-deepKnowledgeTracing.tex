@@ -1,4 +1,4 @@
-Based on a paper by the same name \\ \emph{Proceedings of Neural Information Processing Systems (NIPS) 2015.}
+Based on a paper by the same name \cite{piech2015deep}\\ \emph{Proceedings of Neural Information Processing Systems (NIPS) 2015.}
 
 \vspace{7mm}
 
@@ -8,28 +8,19 @@ Based on a paper by the same name \\ \emph{Proceedings of Neural Information Pro
 
 \vspace{7mm}
 
-The overall goal that I hold for autonomous tutors is to be able to give high quality feedback to students working on interesting and rich assignments, it is useful to start by understanding what is possible in the simplist of domains. In this chapter I explore teaching curricula where student responses are encoded as simply ``correct" or ``incorrect". 
+An especially high level of student understanding is involved in understanding how students learn across curricula. It is an important and inspiring goal of autonomous understanding of students to be able to identify that a student is not reaching their goals because they do not understand a particular foundational piece well enough. Often the signal of such a ``deal breaker" concept can be hidden in interactions with previous problems, potentially long ago in time.
+In order to paint a picture of what sort of understanding we can develop about students as they learn over time, it is useful to start by understanding what is possible in a simple problem domain where it is trivial to codify student interactions with individual problems. In this chapter I explore teaching curricula from Khan Academy, and other sources, where student responses are encoded as simply ``correct" or ``incorrect". While we found it useful to start with curricula where students interacted with easily coded problems, the solutions we developed are meant to be extended to more complex domains.
 
-In this context I found that by using recurrent neural networks results in substantial improvements in the state of the art for understanding what students know. Given this rich ability to predict student responses the learned model can be used for intelligent curriculum design and allows straightforward interpretation and discovery of structure in student tasks. 
-
-\section{Knowledge Tracing Task}
-
-%Knowledge tracing---where a machine models the knowledge of a student as they interact with coursework---is a well established problem in computer supported education. Though effectively modeling student knowledge would have high educational impact, the task has many inherent challenges. In this chapter I explore the utility of using Recurrent Neural Networks (RNNs) to model student learning. The RNN family of models have important advantages over previous methods in that they do not require the explicit encoding of human domain knowledge, and can capture more complex representations of student knowledge. Using neural networks results in substantial improvements in prediction performance when students are answering question that are encoded as correct or incorrect. As a corrolary, the learned model can be used for intelligent curriculum design and allows straightforward interpretation and discovery of structure in student tasks. 
-
-Knowledge tracing is the task of modelling student knowledge over time so that we can accurately predict how students will perform on future interactions.  Improvement on this task means that resources can be suggested to students based on their individual needs, and content which is predicted to be too easy or too hard
+Knowledge tracing---where a machine models the knowledge of a student as they interact with a series of coursework items---is a well established problem in computer supported education that has been studied for over 20 years \cite{corbett1994knowledge}. Knowledge tracing is evaluated by its ability to predict how students will perform on future questions. This ability to predict student preformance, if achieved, demonstrates a profound understanding of both a student and the material that they are working on, and as such the task has been identified as a central problem in comptuer supported education. It is the foundation beneath autonomous tutors. Improvement on this task means that resources can be suggested to students based on their individual needs, and content which is predicted to be too easy or too hard
 can be skipped or delayed. Already, hand-tuned intelligent tutoring systems that attempt to tailor content show promising results \cite{polson2013foundations}. %[include ka blog post in citations]
-One-on-one human tutoring 
-can produce learning gains for the average student on the order of two standard deviations \cite{corbett2001cognitive}.
-Machine learning solutions could provide these benefits of 
-high quality personalized teaching to anyone in the world for free. The knowledge tracing problem is inherently difficult as human learning is grounded in the complexity of both the human brain and human knowledge.
-Thus, the use of rich models seems appropriate.
-However most previous work in education relies on first order Markov models with restricted functional forms.
 
-In this paper we present a formulation that we call Deep Knowledge Tracing (DKT) in which we apply flexible recurrent neural networks that are `deep' in time to the task of knowledge tracing. 
+The knowledge tracing problem is inherently difficult as human learning is grounded in the complexity of both the human brain and human knowledge.
+Thus, the use of rich models seems appropriate.
+However most previous work in education relies on first order Markov models with restricted functional forms. In this chapter we present a formulation that we call Deep Knowledge Tracing (DKT) in which we apply flexible recurrent neural networks that are `deep' in time to the task of knowledge tracing. 
 This family of models represents latent knowledge state, along with its temporal dynamics, using large vectors of artificial `neurons', and allows the latent variable representation of student knowledge to be learned from data rather than hard-coded.
 The main contributions of this work are:
 \begin{enumerate}
-\item A novel application of recurrent neural networks to tracing student knowledge.
+\item A novel way to encode student interactions as input to a recurrent neural network.
 \item A 25\% gain in AUC over the best previous result on a knowledge tracing benchmark. 
 \item Demonstration that our knowledge tracing model does not need expert annotations.
 \item Discovery of exercise influence and generation of improved exercise curricula.
@@ -45,10 +36,12 @@ The main contributions of this work are:
 
 \end{figure}
 
+\section{Knowledge Tracing}
+
 The task of knowledge tracing can be formalized as: given observations of interactions $\mb x_0 \dots \mb x_{t}$ taken by a student on a particular learning task, predict aspects of their next interaction $\mb x_{t+1}$ \cite{corbett1994knowledge}. In the most ubiquitous instantiation of knowledge tracing, interactions take the form of a tuple of $\mb x_t = \{q_t, a_t\}$ that combines a tag for the exercise being answered $q_t$ with whether or not the exercise was answered correctly $a_t$.  When making a prediction the model is provided the tag of the exercise being answered $q_t$ and must predict whether the student will get the exercise correct $a_t$. Figure~\ref{fig:singleStudent} shows a visualization of tracing knowledge for a single student learning 8th grade math. The student first answers two square root problems correctly and then gets a single x-intercept exercise incorrect. In the subsequent 47 interactions the student solves a series of x-intercept, y-intercept and graphing exercises. Each time the student answers an exercise we can make a prediction as to whether or not she would answer an exercise of each type correctly on her next interaction. In the visualization we only show predictions over time for a relevant subset of exercise types.
 
-In most previous work, exercise tags denote the single ``concept" that human experts assign to an exercise.
-Our model can leverage, but does not require, such expert annotation. We demonstrate that in the absence of annotations the model can autonomously learn content substructure.
+In most previous work, exercise tags denote the single ``concept" that human experts assign to an exercise. These annotations are tedious to author and add friction to the introduction of new assignments.
+Our model can leverage, but does not require, such expert annotation. We demonstrate that in the absence of annotations the model can autonomously learn content substructure. In the presence of annotation we can describe the relationships between the labels.
 
 \section{Related Work}
 
@@ -172,13 +165,7 @@ Given a student with an estimated hidden knowledge state, we can query our RNN t
 For instance, in Figure~\ref{fig:singleStudent} after the student has answered 50 exercises we can test every possible next exercise we could show her and compute her expected knowledge state given that choice.
 The predicted optimal next problem for this student is to revisit solving for the y-intercept.
 
-
-In general choosing the entire sequence of next exercises so as to maximize predicted accuracy can be phrased as a Markov decision problem.
-In Section \ref{sec expectimax}
-we compare solving this problem using $\mathrm{expectimax}$ to two classic curricula rules from education literature: {\em mixing} where exercises from different topics are intermixed, and {\em blocking} where students answer series of exercises of the same type \cite{rohrer2009effects}. Curricula are tested by a particle filter with 500 particles where probabilities are drawn from a trained DKT model. 
-
-
-
+We use a trained DKT to test two classic curricula rules from education literature: {\em mixing} where exercises from different topics are intermixed, and {\em blocking} where students answer series of exercises of the same type \cite{rohrer2009effects}. Since choosing the entire sequence of next exercises so as to maximize predicted accuracy can be phrased as a Markov decision problem we can also evaluate the benefits of using the $\mathrm{expectimax}$ algorithm (see Appendix) to chose an optimal sequence of problems.
 
 
 \subsection{Discovering Exercise Relationships}
@@ -189,32 +176,35 @@ We approached this problem by assigning an influence $J_{ij}$ to every directed 
 \label{eq influence}
 J_{ij} = \frac{y\left(j|i\right)}{\sum_k y\left(j|k\right)},
 \end{align}
-where $y\left(j|i\right)$ is the correctness probability assigned by the RNN to exercise $j$ when exercise $i$ is answered correctly in the first time step.
-In Section \ref{sec ex rel} we show that this characterization of the dependencies captured by the RNN recovers the pre-requisites associated with exercises.
-
+where $y\left(j|i\right)$ is the correctness probability assigned by the RNN to exercise $j$ on the second timestep, given that a student answered exercise $i$ correctly on the first.
+We show that this characterization of the dependencies captured by the RNN recovers the pre-requisites associated with exercises.
 
 
 
 
 \section{Datasets}
 
-To evaluate performance we test knowledge tracing models on three datasets: simulated data, Khan Academy Data, and the Assistments benchmark dataset. On each dataset we measure area under the curve (AUC). For the non-simulated data we evaluate our results using 5-fold cross validation and in all cases hyper-parameters are learned on training data. We compare the results of Deep Knowledge Tracing to standard BKT and, when possible to optimal variations of BKT. Additionally we compare our results to predictions made by simply calculating the marginal probability of a student getting a particular exercise correct.
+We test the ability to predict student performance on three datasets: simulated data, Khan Academy Data, and the Assistments benchmark dataset. On each dataset we measure area under the curve (AUC). For the non-simulated data we evaluate our results using 5-fold cross validation and in all cases hyper-parameters are learned on training data. We compare the results of Deep Knowledge Tracing to standard BKT and, when possible to optimal variations of BKT. Additionally we compare our results to predictions made by simply calculating the marginal probability of a student getting a particular exercise correct.
 
-\textbf{Simulated Data}: We simulate virtual students learning virtual concepts and test how well we can predict responses in this controlled setting.
-For each run of this experiment we generate two thousand students who answer 50 exercises drawn from $k \in {1 \dots 5}$ concepts.
-Each student has a latent knowledge state for each concept, and each exercise has both a single concept and a difficulty.
+\textbf{Simulated Data}: We simulate virtual students learning virtual concepts and test how well we can predict responses in this controlled setting. 
+For each run of this experiment we generate two thousand students who answer 50 exercises drawn from $k \in {1 \dots 5}$ concepts. 
+For this dataset only, all students answer the same sequence of 50 exercises. 
+Each student has a latent knowledge state ``skill" for each concept, and each exercise has both a single concept and a difficulty.
 The probability of a student getting a exercise with difficulty $\beta$ correct if the student had concept skill $\alpha$ is modelled using classic Item Response Theory \cite{drasgow1990item} as:
 %\begin{equation}
 %  \begin{aligned}
        $p(\text{correct} | \alpha, \beta) = c + \frac{1 - c}{1 + e^{\beta -\alpha}}$
 %  \end{aligned}
 %\end{equation}
-where $c$ is the probability of a random guess (set to be 0.25). Students ``learn" over time via a simple affine change to the skill which corresponded to the exercise they answered. To understand how the different models can incorporate unlabelled data, we do \emph{not} provide models with the hidden concept labels (instead the input is simply the exercise index and whether or not the exercise was answered correctly). We evaluate prediction performance on an additional two thousand simulated test students. For each number of concepts we repeat the experiment 20 times with different randomly generated data to understand accuracy mean and variance.
+where $c$ is the probability of a random guess (set to be 0.25). Students ``learn" over time via an increase to the concept skill which corresponded to the exercise they answered. To understand how the different models can incorporate unlabelled data, we do \emph{not} provide models with the hidden concept labels (instead the input is simply the exercise index and whether or not the exercise was answered correctly). We evaluate prediction performance on an additional two thousand simulated test students. For each number of concepts we repeat the experiment 20 times with different randomly generated data to evaluate accuracy mean and standard error.
 
-\textbf{Khan Academy Data}: We used a sample of anonymized student usage interactions from the eighth grade Common Core curriculum on Khan Academy. The dataset included 1.4 million exercises completed by 47,495 students across 69 different exercise types. It did not contain any personal information. Only the researchers working on this paper had access to this anonymized dataset, and its use was governed by an agreement designed to protect student privacy in accordance with Khan Academy’s privacy notice \cite{KAprivacy}. Khan Academy provides a particularly relevant source of learning data, since students often interact with the site for an extended period of time and for a variety of content, and because students are often self-directed in the topics they work on and in the trajectory they take through material.
+\textbf{Khan Academy Data}: We used a sample of anonymized student usage interactions from the eighth grade Common Core curriculum on Khan Academy. The dataset included 1.4 million exercises completed by 47,495 students across 69 different exercise types. 
+% NOTE -- shouldn't change this block of text -- was agreed to in email exchange with KA, and is designed to reassure that we were very careful of student privacy
+It did not contain any personal information. Only the researchers working on this paper had access to this anonymized dataset, and  its use was governed by an agreement designed to protect student privacy in accordance with Khan Academy's privacy notice \cite{KAprivacy}. 
+Khan Academy provides a particularly relevant source of learning data, since students often interact with the site for an extended period of time and for a variety of content, and because students are often self-directed in the topics they work on and in the trajectory they take through material.
 
-\textbf{Benchmark Dataset}: In order to understand how our model compared to other models we evaluated models on the Assistments 2009-2010 public benchmark dataset \cite{feng2009addressing} %\footnote{https://sites.google.com/site/assistmentsdata/home/assistment-2009-2010-data}
-. Assistments is an online tutor that simultaneously teaches and assesses students in grade school mathematics. It is, to the best of our knowledge, the largest publicly available knowledge tracing dataset.
+\textbf{Benchmark Dataset}: In order to understand how our model compared to other models we evaluated models on the Assistments 2009-2010 ``skill builder" public benchmark dataset\footnote{https://sites.google.com/site/assistmentsdata/home/assistment-2009-2010-data}
+. Assistments is an online tutor that simultaneously teaches and assesses students in grade school mathematics. It is, to the best of our knowledge, the largest publicly available knowledge tracing dataset \cite{feng2009addressing}. 
 
 \section{Results}\label{sec results}
 
@@ -228,7 +218,7 @@ where $c$ is the probability of a random guess (set to be 0.25). Students ``lear
 \cmidrule{6-9}  
 Dataset & Students & Exercise Tags & Answers && Marginal & BKT & BKT* & DKT \\ 
 \midrule
-Simulated-5 & 4,000 & 50 & 200 K && ? & 0.54 & - & 0.75 \\
+Simulated-5 & 4,000 & 50 & 200 K && 0.64 & 0.54 & - & 0.75 \\
 Khan Math  & 47,495 & 69 & 1,435 K && 0.63 & 0.68 & - & 0.85 \\
 % Bridge to Algebra & 3,310 & 1,829 & 8,918,000 && ? & ? & ? \\
 Assistments & 15,931 & 124 & 526 K && 0.62 & 0.67 & 0.69 & 0.86 \\
@@ -263,16 +253,18 @@ The prediction results from the synthetic dataset provide an interesting demonst
 
  \end{figure*}
 
-\subsection{$\mathrm{Expectimax}$ Curricula}\label{sec expectimax}
+ \subsection{Optimal Curriculum}
+We tested our ability to intelligently chose exercises on a subset of five concepts from the Assistment dataset. For each curricula method, we used our DKT model to simulate how a student would answer questions and evaluate how much a student knew after 30 exercises. We repeated student simulations 500 times and measured the average predicted probability of a student getting future questions correct. In the Assistment context the blocking strategy had a notable advantage over mixing. See Figure~\ref{fig:curriculum}. 
 
-We tested different curricula for selecting exercises on a subset of five concepts over the span of 30 exercises from the Assistment dataset. In this context blocking seemed to have a notable advantage over mixing. See Figure~\ref{fig:curriculum}. While blocking performs on par with solving $\mathrm{expectimax}$ one exercise deep (MDP-1) if we look further into the future when choosing the next problem we come up with curricula where students have higher predicted knowledge after solving fewer problems (MDP-8). 
-
-\begin{figure}
+\begin{figure}[h]
  \centering
  \includegraphics[width=0.45\textwidth]{img/curriculum}
  \caption[Curriculum evaluation]{Predicted knowledge on Assistments data for different exercise curricula. Error bars are standard error of the mean.}
  \label{fig:curriculum}
 \end{figure}
+
+While blocking performs on par with solving $\mathrm{expectimax}$ one exercise deep (MDP-1), if we look further into the future when choosing the next problem we come up with curricula where students have higher predicted knowledge after solving fewer problems (MDP-8). 
+
 
 \subsection{Discovered Exercise Relationships}\label{sec ex rel}
 
@@ -293,7 +285,7 @@ An interesting observation is that some of the exercises from the same concept o
 We analyzed the Khan dataset using the same technique. The resulting graph is a compelling articulation of how the concepts in the 8th grade Common Core are related to each other (see Figure~\ref{fig:conceptClusters}. Node numbers depict exercise tags).
 We restricted the analysis to ordered pairs of exercises $\{A,B\}$ such that after $A$ appeared, $B$ appeared more than 1\% of the time in the remainder of the sequence).
 To determine if the resulting conditional relationships are a product of obvious underlying trends in the data we compared our results to two baseline measures (1) the transition probabilities of students answering $B$ given they had just answered $A$ and (2) the probability in the dataset (without using a DKT model) of answering $B$ correct given a student had answered $A$ correct.
-Both baseline methods generated discordant graphs, which are shown in the Appendix. While many of the relationships we uncovered may be unsurprising to an education expert, they did not require human intervention, and the subtleties may be useful for course design. Above all the results are an affirmation that the DKT network learned a coherent model.
+Both baseline methods generated discordant graphs, which are shown in the Appendix. While many of the relationships we uncovered may be unsurprising to an education expert, they were derived autonomously from data, and the subtleties may be useful for course design. Above all the results are an affirmation that the DKT network learned a coherent model.
 
 
 \begin{figure}[!h]
@@ -314,14 +306,8 @@ Two particularly interesting novel properties of our new model are that (1) it d
 
 The application of RNNs to knowledge tracing provides many directions for future research. Further investigations could incorporate other features as inputs (such as time taken), explore other educational impacts (such as hint generation, dropout prediction), and validate hypotheses posed in education literature (such as spaced repetition, modeling how students forget).
 Because DKTs take vector input it would be theoretically possible for us to track knowledge over more complex learning activities.
-An especially interesting extension is to trace student knowledge as they solve open-ended programming tasks \cite{piech2015autonomously,piech2012modeling}.
-Using the recently developed vectorization of programs \cite{piechICML15} we hope to be able to intelligently model student knowledge over time as they learn to program.  To facilitate research in DKTs code is included in the Supplemental Material. 
 
 In an ongoing collaboration with Khan Academy, we plan to test the efficacy of DKT for curriculum planning in a controlled experiment, by using it to propose exercises on the site. 
 
-%% no acknowledgements in anonymous submission
-
- \subsubsection*{Acknowledgments}
-
-
-Many thanks to John Mitchell for his guidance and Khan Academy for its support. CP is supported by NSF-GRFP grant number DGE-114747.
+A foundational piece to our ablity to understand students learning over the span of a curriculum is that we were working with assignments where it was trivial to encode the students work (they either answered a question correctly or incorrectly). The future of education will incoporate more nuanced questions than multiple choice or short answer. Thus an especially interesting extension is to trace student knowledge as they solve open-ended programming tasks, and importantly incorporating these sorts of interactions is possible in Deep Knowledge Tracing in a way that was not possible with Bayesian methods since the take vector input
+. The next crucial question to ask is: how can we understand student learning trajectories as they work on rich assignments?

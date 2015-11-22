@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 NOV 2015 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 NOV 2015 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -755,26 +755,27 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 ] (./main.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
  [6
 
-] [7])
+] [7] [8])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [8] (./main.lot)
+ [9] (./main.lot)
 \tf@lot=\write4
 \openout4 = `main.lot'.
 
+[10
 
-[9
-
-] (./main.lof [10
+] (./main.lof [11
 
 ])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [11]
+ [12]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 149.
@@ -785,9 +786,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-
 
 LaTeX Warning: Citation `annualOECDReport' on page 2 undefined on input line 18
 .
@@ -796,273 +794,416 @@ LaTeX Warning: Citation `annualOECDReport' on page 2 undefined on input line 18
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] [4] [5] [6] <img/assnType_all.pdf, id=64, 1444.39626pt x 362.35374pt>
+[3] [4] [5] <img/assnType_all.pdf, id=64, 1444.39626pt x 362.35374pt>
 File: img/assnType_all.pdf Graphic file (type pdf)
 
 <use img/assnType_all.pdf>
-Package pdftex.def Info: img/assnType_all.pdf used on input line 124.
+Package pdftex.def Info: img/assnType_all.pdf used on input line 121.
 (pdftex.def)             Requested size: 433.62pt x 108.77884pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 145.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\OT1/ptm/b/n/9 Khan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\OT1/ptm/b/n/9 Code.org
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\OT1/ptm/b/n/9 Stanford
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\OT1/ptm/b/n/9 Coursera
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 []\OT1/ptm/b/n/9 Coursera
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []\OT1/ptm/m/n/10 Elementary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []\OT1/ptm/m/n/10 Control
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []\OT1/ptm/m/n/10 Functional
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/zipfAll.pdf, id=65, 955.57pt x 714.67pt>
+<img/zipfAll.pdf, id=68, 955.57pt x 715.67375pt>
 File: img/zipfAll.pdf Graphic file (type pdf)
  <use img/zipfAll.pdf>
-Package pdftex.def Info: img/zipfAll.pdf used on input line 172.
-(pdftex.def)             Requested size: 433.62pt x 324.30295pt.
+Package pdftex.def Info: img/zipfAll.pdf used on input line 169.
+(pdftex.def)             Requested size: 433.62pt x 324.75844pt.
  [7 <./img/assnType_all.pdf>]
-Overfull \hbox (12.25546pt too wide) in paragraph at lines 184--185
+Overfull \hbox (12.25546pt too wide) in paragraph at lines 181--182
 \OT1/ptm/m/n/10 Our ap-proach is to ap-ply a dis-ci-plined ma-chine learn-ing p
 aradigm to fa-cil-i-tate au-tonomous (or semi-autonomous)
  []
 
 [8]
 
-LaTeX Warning: Citation `fig:assnTypes' on page 9 undefined on input line 188.
+LaTeX Warning: Citation `fig:assnTypes' on page 9 undefined on input line 185.
 
-[9 <./img/zipfAll.pdf>] <img/intro-projects.pdf, id=201, 455.7025pt x 481.8pt>
-File: img/intro-projects.pdf Graphic file (type pdf)
+[9 <./img/zipfAll.pdf>]
+<img/intro-blocks.pdf, id=216, 1216.545pt x 430.60875pt>
+File: img/intro-blocks.pdf Graphic file (type pdf)
 
-<use img/intro-projects.pdf>
-Package pdftex.def Info: img/intro-projects.pdf used on input line 205.
-(pdftex.def)             Requested size: 195.12767pt x 206.30246pt.
-
-<img/intro-impact.pdf, id=202, 460.72125pt x 481.8pt>
-File: img/intro-impact.pdf Graphic file (type pdf)
-
-<use img/intro-impact.pdf>
-Package pdftex.def Info: img/intro-impact.pdf used on input line 209.
-(pdftex.def)             Requested size: 195.12767pt x 204.05284pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10]
+<use img/intro-blocks.pdf>
+Package pdftex.def Info: img/intro-blocks.pdf used on input line 204.
+(pdftex.def)             Requested size: 433.62pt x 153.4815pt.
+ [10]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
- [11 <./img/intro-projects.pdf> <./img/intro-impact.pdf>]) [12]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
+ [11 <./img/intro-blocks.pdf>]) [12] [13
+
+]
 Chapter 2.
 (./chapters/2-deepKnowledgeTracing.tex
-<img/assnType_1.pdf, id=254, 273.02pt x 271.0125pt>
+<img/assnType_1.pdf, id=275, 273.02pt x 271.0125pt>
 File: img/assnType_1.pdf Graphic file (type pdf)
  <use img/assnType_1.pdf>
 Package pdftex.def Info: img/assnType_1.pdf used on input line 6.
 (pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
 
-[13
+[14
 
  <./img/assnType_1.pdf>]
-<img/singleStudent.pdf, id=277, 761.84625pt x 163.61125pt>
+<img/singleStudent.pdf, id=298, 761.84625pt x 163.61125pt>
 File: img/singleStudent.pdf Graphic file (type pdf)
 
 <use img/singleStudent.pdf>
-Package pdftex.def Info: img/singleStudent.pdf used on input line 40.
+Package pdftex.def Info: img/singleStudent.pdf used on input line 31.
 (pdftex.def)             Requested size: 433.62pt x 93.12206pt.
- [14 <./img/singleStudent.pdf>] [15] [16]
+ [15 <./img/singleStudent.pdf>] [16] [17]
 
-LaTeX Warning: Reference `app LSTM' on page 17 undefined on input line 110.
+LaTeX Warning: Reference `app LSTM' on page 18 undefined on input line 103.
 
+[18]
 
-LaTeX Warning: Citation `baraniuk2007compressive' on page 17 undefined on input
- line 126.
+LaTeX Warning: Citation `baraniuk2007compressive' on page 19 undefined on input
+ line 119.
 
-[17] <img/rnn.pdf, id=318, 637.38126pt x 415.5525pt>
+<img/rnn.pdf, id=338, 637.38126pt x 415.5525pt>
 File: img/rnn.pdf Graphic file (type pdf)
  <use img/rnn.pdf>
-Package pdftex.def Info: img/rnn.pdf used on input line 139.
+Package pdftex.def Info: img/rnn.pdf used on input line 132.
 (pdftex.def)             Requested size: 303.53267pt x 197.89041pt.
- [18 <./img/rnn.pdf>] [19]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
- [20] <img/toyAcc.pdf, id=355, 464.73625pt x 451.6875pt>
+ [19] [20 <./img/rnn.pdf>] [21] <img/toyAcc.pdf, id=375, 464.73625pt x 451.6875
+pt>
 File: img/toyAcc.pdf Graphic file (type pdf)
 
 <use img/toyAcc.pdf>
-Package pdftex.def Info: img/toyAcc.pdf used on input line 255.
+Package pdftex.def Info: img/toyAcc.pdf used on input line 245.
 (pdftex.def)             Requested size: 195.12767pt x 189.64542pt.
- <img/khanRoc.pdf, id=356, 463.7325pt x 450.68375pt>
+ <img/khanRoc.pdf, id=376, 463.7325pt x 450.68375pt>
 File: img/khanRoc.pdf Graphic file (type pdf)
 
 <use img/khanRoc.pdf>
-Package pdftex.def Info: img/khanRoc.pdf used on input line 260.
+Package pdftex.def Info: img/khanRoc.pdf used on input line 250.
 (pdftex.def)             Requested size: 195.12767pt x 189.6366pt.
- [21 <./img/toyAcc.pdf> <./img/khanRoc.pdf>]
-<img/curriculum.pdf, id=438, 464.73625pt x 451.6875pt>
+ [22]
+<img/curriculum.pdf, id=380, 464.73625pt x 451.6875pt>
 File: img/curriculum.pdf Graphic file (type pdf)
 
 <use img/curriculum.pdf>
-Package pdftex.def Info: img/curriculum.pdf used on input line 272.
+Package pdftex.def Info: img/curriculum.pdf used on input line 261.
 (pdftex.def)             Requested size: 195.12767pt x 189.64542pt.
 
-<img/conceptClusters_synth.pdf, id=439, 706.64pt x 447.6725pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/conceptClusters_synth.pdf, id=381, 706.64pt x 447.6725pt>
 File: img/conceptClusters_synth.pdf Graphic file (type pdf)
 
 <use img/conceptClusters_synth.pdf>
-Package pdftex.def Info: img/conceptClusters_synth.pdf used on input line 287.
+Package pdftex.def Info: img/conceptClusters_synth.pdf used on input line 279.
 (pdftex.def)             Requested size: 260.17464pt x 164.82335pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./img/curriculum.pdf>]
-<img/conceptClusters_khan.pdf, id=463, 561.09625pt x 871.255pt>
+[23 <./img/toyAcc.pdf> <./img/khanRoc.pdf>] [24 <./img/curriculum.pdf> <./img/c
+onceptClusters_synth.pdf>]
+<img/conceptClusters_khan.pdf, id=509, 561.09625pt x 871.255pt>
 File: img/conceptClusters_khan.pdf Graphic file (type pdf)
 
 <use img/conceptClusters_khan.pdf>
-Package pdftex.def Info: img/conceptClusters_khan.pdf used on input line 301.
+Package pdftex.def Info: img/conceptClusters_khan.pdf used on input line 293.
 (pdftex.def)             Requested size: 303.53267pt x 471.30824pt.
+ [25 <./img/conceptClusters_khan.pdf>])
+[26] [27
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[23 <./img/conceptClusters_synth.pdf>]) [24 <./img/conceptClusters_khan.pdf>]
-[25]
+]
 Chapter 3.
 (./chapters/3-problemSolvingPolicies.tex
-<img/assnType_2.pdf, id=521, 273.02pt x 271.0125pt>
+<img/assnType_2.pdf, id=544, 273.02pt x 271.0125pt>
 File: img/assnType_2.pdf Graphic file (type pdf)
  <use img/assnType_2.pdf>
 Package pdftex.def Info: img/assnType_2.pdf used on input line 7.
 (pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
 
-[26
+[28
 
- <./img/assnType_2.pdf>] [27]
-<img/policy3.png, id=548, 1150.2975pt x 979.66pt>
+ <./img/assnType_2.pdf>] <img/policy3.png, id=567, 1150.2975pt x 979.66pt>
 File: img/policy3.png Graphic file (type png)
- <use img/policy3.png>
-Package pdftex.def Info: img/policy3.png used on input line 45.
-(pdftex.def)             Requested size: 433.62pt x 369.29994pt.
 
-[28] [29 <./img/policy3.png>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 74.
+<use img/policy3.png>
+Package pdftex.def Info: img/policy3.png used on input line 39.
+(pdftex.def)             Requested size: 433.62pt x 369.29994pt.
+ [29] [30 <./img/policy3.png>] [31]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 68.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<img/problems3.png, id=557, 2326.6925pt x 588.1975pt>
+<img/problems3.png, id=580, 2326.6925pt x 588.1975pt>
 File: img/problems3.png Graphic file (type png)
  <use img/problems3.png>
-Package pdftex.def Info: img/problems3.png used on input line 80.
+Package pdftex.def Info: img/problems3.png used on input line 74.
 (pdftex.def)             Requested size: 433.62pt x 109.61362pt.
 
-<img/retention.png, id=558, 434.1018pt x 361.8318pt>
+<img/retention.png, id=581, 434.1018pt x 361.8318pt>
 File: img/retention.png Graphic file (type png)
  <use img/retention.png>
-Package pdftex.def Info: img/retention.png used on input line 92.
+Package pdftex.def Info: img/retention.png used on input line 86.
 (pdftex.def)             Requested size: 208.13574pt x 173.48405pt.
 
-<img/annotationImpact.png, id=559, 434.1018pt x 361.8318pt>
+<img/annotationImpact.png, id=582, 434.1018pt x 361.8318pt>
 File: img/annotationImpact.png Graphic file (type png)
 
 <use img/annotationImpact.png>
-Package pdftex.def Info: img/annotationImpact.png used on input line 97.
+Package pdftex.def Info: img/annotationImpact.png used on input line 91.
 (pdftex.def)             Requested size: 208.13574pt x 173.48405pt.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [30] [31 <./img/problems3.png> <./img/retention.png> <./img/annotationImpact.p
+ [32 <./img/problems3.png>] [33 <./img/retention.png> <./img/annotationImpact.p
 ng>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
- [32]
-<img/wrongVsPopularity.png, id=574, 434.1018pt x 362.7954pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 118.
+ [34]
+<img/wrongVsPopularity.png, id=596, 434.1018pt x 362.7954pt>
 File: img/wrongVsPopularity.png Graphic file (type png)
 
 <use img/wrongVsPopularity.png>
-Package pdftex.def Info: img/wrongVsPopularity.png used on input line 154.
+Package pdftex.def Info: img/wrongVsPopularity.png used on input line 148.
 (pdftex.def)             Requested size: 216.81pt x 181.19795pt.
- [33] [34 <./img/wrongVsPopularity.png>]
-[35] [36] [37] [38] <img/lcs.png, id=595, 580.569pt x 640.794pt>
+ [35 <./img/wrongVsPopularity.png>] [36]
+[37] [38] [39] [40] <img/lcs.png, id=617, 580.569pt x 640.794pt>
 File: img/lcs.png Graphic file (type png)
 
 <use img/lcs.png>
-Package pdftex.def Info: img/lcs.png used on input line 334.
+Package pdftex.def Info: img/lcs.png used on input line 328.
 (pdftex.def)             Requested size: 216.81pt x 239.29984pt.
- [39] <img/future.png, id=599, 823.878pt x 759.3168pt>
+ [41] <img/future.png, id=621, 823.878pt x 759.3168pt>
 File: img/future.png Graphic file (type png)
 
 <use img/future.png>
-Package pdftex.def Info: img/future.png used on input line 352.
+Package pdftex.def Info: img/future.png used on input line 346.
 (pdftex.def)             Requested size: 433.62pt x 399.63213pt.
- [40] [41 <./img/lcs.png>] [42 <./img/future.png>] [43]
-[44]) [45]
+ [42 <./img/lcs.png>] [43 <./img/future.png>] [44] [45])
+[46] [47
+
+]
 Chapter 4.
+(./chapters/5-scalableHomeworkSearch.tex
+<img/assnType_4.pdf, id=643, 273.02pt x 271.0125pt>
+File: img/assnType_4.pdf Graphic file (type pdf)
+ <use img/assnType_4.pdf>
+Package pdftex.def Info: img/assnType_4.pdf used on input line 7.
+(pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
+
+[48
+
+ <./img/assnType_4.pdf>] [49] [50]
+<img/goodimplementation.pdf, id=684, 684.5575pt x 222.8325pt>
+File: img/goodimplementation.pdf Graphic file (type pdf)
+
+<use img/goodimplementation.pdf>
+Package pdftex.def Info: img/goodimplementation.pdf used on input line 157.
+(pdftex.def)             Requested size: 143.09538pt x 46.57858pt.
+
+<img/astexample2.pdf, id=685, 706.64pt x 380.42125pt>
+File: img/astexample2.pdf Graphic file (type pdf)
+
+<use img/astexample2.pdf>
+Package pdftex.def Info: img/astexample2.pdf used on input line 163.
+(pdftex.def)             Requested size: 91.0631pt x 49.02113pt.
+
+<img/subtreeexample.pdf, id=686, 498.86375pt x 158.5925pt>
+File: img/subtreeexample.pdf Graphic file (type pdf)
+
+<use img/subtreeexample.pdf>
+Package pdftex.def Info: img/subtreeexample.pdf used on input line 169.
+(pdftex.def)             Requested size: 56.37271pt x 17.91953pt.
+
+<img/contextexample.pdf, id=687, 706.64pt x 330.23375pt>
+File: img/contextexample.pdf Graphic file (type pdf)
+
+<use img/contextexample.pdf>
+Package pdftex.def Info: img/contextexample.pdf used on input line 175.
+(pdftex.def)             Requested size: 91.0631pt x 42.55397pt.
+ [51 <./img/goodimplementation.pdf> <./img/astexample2.pdf> <./img/subtreeexamp
+le.pdf> <./img/contextexample.pdf>] [52] [53]
+[54]
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 417.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 422.
+ [55] [56]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 556.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [57]
+<img/cartoon.pdf, id=815, 630.355pt x 446.66875pt>
+File: img/cartoon.pdf Graphic file (type pdf)
+ <use img/cartoon.pdf>
+Package pdftex.def Info: img/cartoon.pdf used on input line 593.
+(pdftex.def)             Requested size: 151.76964pt x 107.54346pt.
+
+[58 <./img/cartoon.pdf>]
+<img/taggingexample.pdf, id=983, 694.595pt x 176.66pt>
+File: img/taggingexample.pdf Graphic file (type pdf)
+
+<use img/taggingexample.pdf>
+Package pdftex.def Info: img/taggingexample.pdf used on input line 645.
+(pdftex.def)             Requested size: 151.76964pt x 38.60114pt.
+
+<img/equivalencesAll.pdf, id=984, 676.5275pt x 521.95pt>
+File: img/equivalencesAll.pdf Graphic file (type pdf)
+
+<use img/equivalencesAll.pdf>
+Package pdftex.def Info: img/equivalencesAll.pdf used on input line 654.
+(pdftex.def)             Requested size: 294.85841pt x 227.49242pt.
+ [59 <./img/taggingexample.pdf>] [60 <./img/equivalencesAll.pdf>] <img/numastsv
+sruntime.pdf, id=1047, 392.46625pt x 156.585pt>
+File: img/numastsvsruntime.pdf Graphic file (type pdf)
+
+<use img/numastsvsruntime.pdf>
+Package pdftex.def Info: img/numastsvsruntime.pdf used on input line 725.
+(pdftex.def)             Requested size: 205.97214pt x 82.17967pt.
+
+<img/astsizevsruntime.pdf, id=1048, 402.50375pt x 152.57pt>
+File: img/astsizevsruntime.pdf Graphic file (type pdf)
+
+<use img/astsizevsruntime.pdf>
+Package pdftex.def Info: img/astsizevsruntime.pdf used on input line 729.
+(pdftex.def)             Requested size: 205.97214pt x 78.07272pt.
+
+<img/zipfnoequivalence.pdf, id=1049, 389.455pt x 278.03876pt>
+File: img/zipfnoequivalence.pdf Graphic file (type pdf)
+
+<use img/zipfnoequivalence.pdf>
+Package pdftex.def Info: img/zipfnoequivalence.pdf used on input line 742.
+(pdftex.def)             Requested size: 130.08731pt x 92.86885pt.
+
+<img/reduction.pdf, id=1050, 373.395pt x 262.9825pt>
+File: img/reduction.pdf Graphic file (type pdf)
+ <use img/reduction.pdf>
+Package pdftex.def Info: img/reduction.pdf used on input line 746.
+(pdftex.def)             Requested size: 130.08731pt x 91.61989pt.
+
+<img/reduction2.pdf, id=1051, 402.50375pt x 238.8925pt>
+File: img/reduction2.pdf Graphic file (type pdf)
+
+<use img/reduction2.pdf>
+Package pdftex.def Info: img/reduction2.pdf used on input line 750.
+(pdftex.def)             Requested size: 130.08731pt x 77.209pt.
+ [61 <./img/numastsvsruntime.pdf> <./img/astsizevsruntime.pdf>] [62 <./img/zipf
+noequivalence.pdf> <./img/reduction.pdf> <./img/reduction2.pdf>] <img/bugsFscor
+eDiffs.pdf, id=1166, 506.89375pt x 357.335pt>
+File: img/bugsFscoreDiffs.pdf Graphic file (type pdf)
+
+<use img/bugsFscoreDiffs.pdf>
+Package pdftex.def Info: img/bugsFscoreDiffs.pdf used on input line 878.
+(pdftex.def)             Requested size: 134.42113pt x 94.75874pt.
+
+<img/bugIsolation.pdf, id=1167, 406.51875pt x 276.03125pt>
+File: img/bugIsolation.pdf Graphic file (type pdf)
+
+<use img/bugIsolation.pdf>
+Package pdftex.def Info: img/bugIsolation.pdf used on input line 883.
+(pdftex.def)             Requested size: 130.08731pt x 88.32758pt.
+ [63]
+Overfull \hbox (32.44878pt too wide) in paragraph at lines 933--941
+\OT1/ptm/m/n/10 writ-ing the er-ro-neous ex-pres-sion (e.g., $[]$, $[]$,
+ []
+
+[64 <./img/bugsFscoreDiffs.pdf> <./img/bugIsolation.pdf>]
+
+LaTeX Warning: Citation `piech12' on page 65 undefined on input line 978.
+
+[65]) [66] [67]
+Chapter 5.
 (./chapters/4-programEncoding.tex
-<img/assnType_3.pdf, id=621, 273.02pt x 271.0125pt>
+<img/assnType_3.pdf, id=1242, 273.02pt x 271.0125pt>
 File: img/assnType_3.pdf Graphic file (type pdf)
  <use img/assnType_3.pdf>
 Package pdftex.def Info: img/assnType_3.pdf used on input line 6.
 (pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
 
-[46
+[68
 
  <./img/assnType_3.pdf>]
-<img/splash2_noborder.pdf, id=645, 745.78625pt x 494.84875pt>
+<img/splash2_noborder.pdf, id=1265, 745.78625pt x 494.84875pt>
 File: img/splash2_noborder.pdf Graphic file (type pdf)
 
 <use img/splash2_noborder.pdf>
 Package pdftex.def Info: img/splash2_noborder.pdf used on input line 62.
 (pdftex.def)             Requested size: 281.85034pt x 187.01003pt.
- [47]
 
-LaTeX Warning: Citation `ovsjanikov2012functional' on page 48 undefined on inpu
+
+LaTeX Warning: Citation `nguyen14' on page 69 undefined on input line 71.
+
+
+LaTeX Warning: Citation `piech2015' on page 69 undefined on input line 71.
+
+[69]
+
+LaTeX Warning: Citation `nguyen14' on page 70 undefined on input line 85.
+
+
+LaTeX Warning: Citation `ovsjanikov2012functional' on page 70 undefined on inpu
 t line 104.
 
 
-LaTeX Warning: Citation `ovsjanikov2013analysis' on page 48 undefined on input 
+LaTeX Warning: Citation `ovsjanikov2013analysis' on page 70 undefined on input 
 line 104.
 
-<img/overview.pdf, id=649, 741.77126pt x 134.5025pt>
+<img/overview.pdf, id=1269, 741.77126pt x 134.5025pt>
 File: img/overview.pdf Graphic file (type pdf)
  <use img/overview.pdf>
 Package pdftex.def Info: img/overview.pdf used on input line 120.
 (pdftex.def)             Requested size: 433.62pt x 78.62718pt.
 
-[48 <./img/splash2_noborder.pdf>]
+[70 <./img/splash2_noborder.pdf>]
 Overfull \hbox (7.95511pt too wide) in paragraph at lines 130--142
 []\OT1/ptm/m/n/10 While there are many di-men-sions that ``char-ac-ter-ize'' a 
 pro-gram in-clud-ing as-pects such as style or time/space
@@ -1075,34 +1216,37 @@ t of $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; A; Q\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/1
 0 -triples --- so-called \OT1/ptm/m/it/10 Hoare triples \OT1/ptm/m/n/10 [[]]
  []
 
-[49 <./img/overview.pdf>] [50] [51] [52] [53]
+[71 <./img/overview.pdf>] [72] [73] [74] [75]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [54] [55]
-<img/force_mult_1.pdf, id=785, 474.77374pt x 405.515pt>
+ [76] [77]
+<img/force_mult_1.pdf, id=1406, 474.77374pt x 405.515pt>
 File: img/force_mult_1.pdf Graphic file (type pdf)
 
 <use img/force_mult_1.pdf>
 Package pdftex.def Info: img/force_mult_1.pdf used on input line 597.
 (pdftex.def)             Requested size: 130.08731pt x 111.11166pt.
 
-<img/force_mult_2.pdf, id=786, 474.77374pt x 405.515pt>
+<img/force_mult_2.pdf, id=1407, 474.77374pt x 405.515pt>
 File: img/force_mult_2.pdf Graphic file (type pdf)
 
 <use img/force_mult_2.pdf>
 Package pdftex.def Info: img/force_mult_2.pdf used on input line 602.
 (pdftex.def)             Requested size: 130.08731pt x 111.11166pt.
 
-<img/force_mult_3.pdf, id=787, 474.77374pt x 405.515pt>
+<img/force_mult_3.pdf, id=1408, 474.77374pt x 405.515pt>
 File: img/force_mult_3.pdf Graphic file (type pdf)
 
 <use img/force_mult_3.pdf>
 Package pdftex.def Info: img/force_mult_3.pdf used on input line 607.
 (pdftex.def)             Requested size: 130.08731pt x 111.11166pt.
- [56] [57 <./img/force_mult_1.pdf> <./img/force_mult_2.pdf> <./img/force_mult_3
-.pdf>]
-<img/prediction_acc_v_cyclomatic.pdf, id=880, 474.77374pt x 409.53pt>
+ [78]
+
+LaTeX Warning: Citation `nguyen14' on page 79 undefined on input line 636.
+
+[79 <./img/force_mult_1.pdf> <./img/force_mult_2.pdf> <./img/force_mult_3.pdf>]
+<img/prediction_acc_v_cyclomatic.pdf, id=1501, 474.77374pt x 409.53pt>
 File: img/prediction_acc_v_cyclomatic.pdf Graphic file (type pdf)
 
 <use img/prediction_acc_v_cyclomatic.pdf>
@@ -1110,7 +1254,7 @@ Package pdftex.def Info: img/prediction_acc_v_cyclomatic.pdf used on input line
  648.
 (pdftex.def)             Requested size: 125.74689pt x 108.46243pt.
 
-<img/forcemulti_v_cyclomatic.pdf, id=881, 474.77374pt x 409.53pt>
+<img/forcemulti_v_cyclomatic.pdf, id=1502, 474.77374pt x 409.53pt>
 File: img/forcemulti_v_cyclomatic.pdf Graphic file (type pdf)
 
 <use img/forcemulti_v_cyclomatic.pdf>
@@ -1118,286 +1262,23 @@ Package pdftex.def Info: img/forcemulti_v_cyclomatic.pdf used on input line 653
 .
 (pdftex.def)             Requested size: 125.74689pt x 108.46243pt.
 
-<img/force_mult_bystrategy.pdf, id=882, 427.5975pt x 282.05376pt>
+<img/force_mult_bystrategy.pdf, id=1503, 427.5975pt x 282.05376pt>
 File: img/force_mult_bystrategy.pdf Graphic file (type pdf)
 
 <use img/force_mult_bystrategy.pdf>
 Package pdftex.def Info: img/force_mult_bystrategy.pdf used on input line 660.
 (pdftex.def)             Requested size: 143.09538pt x 94.38637pt.
- [58 <./img/prediction_acc_v_cyclomatic.pdf> <./img/forcemulti_v_cyclomatic.pdf
+ [80 <./img/prediction_acc_v_cyclomatic.pdf> <./img/forcemulti_v_cyclomatic.pdf
 > <./img/force_mult_bystrategy.pdf>])
-[59]
-Chapter 5.
-(./chapters/5-scalableHomeworkSearch.tex
-<img/assnType_4.pdf, id=984, 273.02pt x 271.0125pt>
-File: img/assnType_4.pdf Graphic file (type pdf)
- <use img/assnType_4.pdf>
-Package pdftex.def Info: img/assnType_4.pdf used on input line 7.
-(pdftex.def)             Requested size: 86.72267pt x 86.0848pt.
+[81] [82
 
-[60
-
- <./img/assnType_4.pdf>]
-
-LaTeX Warning: Citation `paul94' on page 61 undefined on input line 38.
-
-
-LaTeX Warning: Citation `thummalapenta07' on page 61 undefined on input line 38
-.
-
-
-LaTeX Warning: Citation `hummel08' on page 61 undefined on input line 38.
-
-
-LaTeX Warning: Citation `kim10' on page 61 undefined on input line 38.
-
-
-LaTeX Warning: Citation `piech13' on page 61 undefined on input line 77.
-
-[61] [62] <img/goodimplementation.pdf, id=1024, 684.5575pt x 222.8325pt>
-File: img/goodimplementation.pdf Graphic file (type pdf)
-
-<use img/goodimplementation.pdf>
-Package pdftex.def Info: img/goodimplementation.pdf used on input line 157.
-(pdftex.def)             Requested size: 143.09538pt x 46.57858pt.
-
-<img/astexample2.pdf, id=1025, 706.64pt x 380.42125pt>
-File: img/astexample2.pdf Graphic file (type pdf)
-
-<use img/astexample2.pdf>
-Package pdftex.def Info: img/astexample2.pdf used on input line 163.
-(pdftex.def)             Requested size: 91.0631pt x 49.02113pt.
-
-<img/subtreeexample.pdf, id=1026, 498.86375pt x 158.5925pt>
-File: img/subtreeexample.pdf Graphic file (type pdf)
-
-<use img/subtreeexample.pdf>
-Package pdftex.def Info: img/subtreeexample.pdf used on input line 169.
-(pdftex.def)             Requested size: 56.37271pt x 17.91953pt.
-
-<img/contextexample.pdf, id=1027, 706.64pt x 330.23375pt>
-File: img/contextexample.pdf Graphic file (type pdf)
-
-<use img/contextexample.pdf>
-Package pdftex.def Info: img/contextexample.pdf used on input line 175.
-(pdftex.def)             Requested size: 91.0631pt x 42.55397pt.
- [63 <./img/goodimplementation.pdf> <./img/astexample2.pdf> <./img/subtreeexamp
-le.pdf> <./img/contextexample.pdf>]
-
-LaTeX Warning: Citation `eaton97' on page 64 undefined on input line 225.
-
-[64]
-
-LaTeX Warning: Citation `zobel06' on page 65 undefined on input line 281.
-
-[65]
-
-LaTeX Warning: Citation `shasha94' on page 66 undefined on input line 380.
-
-
-LaTeX Warning: Citation `kim10' on page 66 undefined on input line 381.
-
-
-LaTeX Warning: Citation `huang13' on page 66 undefined on input line 381.
-
-
-LaTeX Warning: Citation `rivers13' on page 66 undefined on input line 381.
-
-
-LaTeX Warning: Citation `paul94' on page 66 undefined on input line 383.
-
-
-LaTeX Warning: Citation `xu03' on page 66 undefined on input line 383.
-
-
-LaTeX Warning: Citation `rivers12' on page 66 undefined on input line 383.
-
-
-LaTeX Warning: Citation `rivers13' on page 66 undefined on input line 383.
-
-
-LaTeX Warning: Citation `rivers12' on page 66 undefined on input line 386.
-
-[66]
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 417.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 422.
- [67] [68]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 556.
-
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [69]
-<img/cartoon.pdf, id=1155, 630.355pt x 446.66875pt>
-File: img/cartoon.pdf Graphic file (type pdf)
- <use img/cartoon.pdf>
-Package pdftex.def Info: img/cartoon.pdf used on input line 593.
-(pdftex.def)             Requested size: 151.76964pt x 107.54346pt.
-
-[70 <./img/cartoon.pdf>]
-<img/taggingexample.pdf, id=1323, 694.595pt x 176.66pt>
-File: img/taggingexample.pdf Graphic file (type pdf)
-
-<use img/taggingexample.pdf>
-Package pdftex.def Info: img/taggingexample.pdf used on input line 645.
-(pdftex.def)             Requested size: 151.76964pt x 38.60114pt.
-
-<img/equivalencesAll.pdf, id=1324, 676.5275pt x 521.95pt>
-File: img/equivalencesAll.pdf Graphic file (type pdf)
-
-<use img/equivalencesAll.pdf>
-Package pdftex.def Info: img/equivalencesAll.pdf used on input line 654.
-(pdftex.def)             Requested size: 294.85841pt x 227.49242pt.
- [71 <./img/taggingexample.pdf>] [72 <./img/equivalencesAll.pdf>] <img/numastsv
-sruntime.pdf, id=1387, 392.46625pt x 156.585pt>
-File: img/numastsvsruntime.pdf Graphic file (type pdf)
-
-<use img/numastsvsruntime.pdf>
-Package pdftex.def Info: img/numastsvsruntime.pdf used on input line 725.
-(pdftex.def)             Requested size: 205.97214pt x 82.17967pt.
-
-<img/astsizevsruntime.pdf, id=1388, 402.50375pt x 152.57pt>
-File: img/astsizevsruntime.pdf Graphic file (type pdf)
-
-<use img/astsizevsruntime.pdf>
-Package pdftex.def Info: img/astsizevsruntime.pdf used on input line 729.
-(pdftex.def)             Requested size: 205.97214pt x 78.07272pt.
-
-<img/zipfnoequivalence.pdf, id=1389, 389.455pt x 278.03876pt>
-File: img/zipfnoequivalence.pdf Graphic file (type pdf)
-
-<use img/zipfnoequivalence.pdf>
-Package pdftex.def Info: img/zipfnoequivalence.pdf used on input line 742.
-(pdftex.def)             Requested size: 130.08731pt x 92.86885pt.
-
-<img/reduction.pdf, id=1390, 373.395pt x 262.9825pt>
-File: img/reduction.pdf Graphic file (type pdf)
- <use img/reduction.pdf>
-Package pdftex.def Info: img/reduction.pdf used on input line 746.
-(pdftex.def)             Requested size: 130.08731pt x 91.61989pt.
-
-<img/reduction2.pdf, id=1391, 402.50375pt x 238.8925pt>
-File: img/reduction2.pdf Graphic file (type pdf)
-
-<use img/reduction2.pdf>
-Package pdftex.def Info: img/reduction2.pdf used on input line 750.
-(pdftex.def)             Requested size: 130.08731pt x 77.209pt.
-
-
-LaTeX Warning: Citation `eaton97' on page 73 undefined on input line 768.
-
-[73 <./img/numastsvsruntime.pdf> <./img/astsizevsruntime.pdf>]
-
-LaTeX Warning: Citation `zipf1949human' on page 74 undefined on input line 806.
-
-
-
-LaTeX Warning: Citation `breslau99' on page 74 undefined on input line 811.
-
-
-LaTeX Warning: Citation `lu10' on page 74 undefined on input line 813.
-
-[74 <./img/zipfnoequivalence.pdf> <./img/reduction.pdf> <./img/reduction2.pdf>]
-
-LaTeX Warning: Citation `huang13' on page 75 undefined on input line 864.
-
-<img/bugsFscoreDiffs.pdf, id=1506, 506.89375pt x 357.335pt>
-File: img/bugsFscoreDiffs.pdf Graphic file (type pdf)
-
-<use img/bugsFscoreDiffs.pdf>
-Package pdftex.def Info: img/bugsFscoreDiffs.pdf used on input line 878.
-(pdftex.def)             Requested size: 134.42113pt x 94.75874pt.
-
-<img/bugIsolation.pdf, id=1507, 406.51875pt x 276.03125pt>
-File: img/bugIsolation.pdf Graphic file (type pdf)
-
-<use img/bugIsolation.pdf>
-Package pdftex.def Info: img/bugIsolation.pdf used on input line 883.
-(pdftex.def)             Requested size: 130.08731pt x 88.32758pt.
- [75]
-Overfull \hbox (32.44878pt too wide) in paragraph at lines 933--941
-\OT1/ptm/m/n/10 writ-ing the er-ro-neous ex-pres-sion (e.g., $[]$, $[]$,
- []
-
-[76 <./img/bugsFscoreDiffs.pdf> <./img/bugIsolation.pdf>]
-
-LaTeX Warning: Citation `sindhgatta06' on page 77 undefined on input line 952.
-
-
-LaTeX Warning: Citation `hoffmann07' on page 77 undefined on input line 952.
-
-
-LaTeX Warning: Citation `hummel08' on page 77 undefined on input line 955.
-
-
-LaTeX Warning: Citation `hartmann10' on page 77 undefined on input line 955.
-
-
-LaTeX Warning: Citation `paul94' on page 77 undefined on input line 957.
-
-
-LaTeX Warning: Citation `thummalapenta07' on page 77 undefined on input line 95
-7.
-
-
-LaTeX Warning: Citation `kim10' on page 77 undefined on input line 957.
-
-
-LaTeX Warning: Citation `baxter98' on page 77 undefined on input line 958.
-
-
-LaTeX Warning: Citation `xu03' on page 77 undefined on input line 958.
-
-
-LaTeX Warning: Citation `rivers12' on page 77 undefined on input line 963.
-
-
-LaTeX Warning: Citation `rivers13' on page 77 undefined on input line 963.
-
-
-LaTeX Warning: Citation `hummel08' on page 77 undefined on input line 968.
-
-
-LaTeX Warning: Citation `lazzarini09' on page 77 undefined on input line 968.
-
-
-LaTeX Warning: Citation `piech12' on page 77 undefined on input line 978.
-
-
-LaTeX Warning: Citation `glassman13' on page 77 undefined on input line 979.
-
-
-LaTeX Warning: Citation `gross12' on page 77 undefined on input line 982.
-
-
-LaTeX Warning: Citation `gross13' on page 77 undefined on input line 982.
-
-
-LaTeX Warning: Citation `rivers12' on page 77 undefined on input line 982.
-
-
-LaTeX Warning: Citation `rivers13' on page 77 undefined on input line 982.
-
-
-LaTeX Warning: Citation `huang13' on page 77 undefined on input line 983.
-
-[77]
-
-LaTeX Warning: Citation `fast13' on page 78 undefined on input line 1025.
-
-
-LaTeX Warning: Citation `kohlhase06' on page 78 undefined on input line 1025.
-
-[78]) [79]
+]
 Chapter 6.
 (./chapters/6-peerGrading.tex
-<img/assnType_5.pdf, id=1581, 283.0575pt x 271.0125pt>
+
+LaTeX Warning: Citation `piech2013tuned' on page 83 undefined on input line 2.
+
+<img/assnType_5.pdf, id=1607, 283.0575pt x 271.0125pt>
 File: img/assnType_5.pdf Graphic file (type pdf)
 
 <use img/assnType_5.pdf>
@@ -1405,32 +1286,19 @@ Package pdftex.def Info: img/assnType_5.pdf used on input line 7.
 (pdftex.def)             Requested size: 86.72267pt x 83.03293pt.
 
 
-LaTeX Warning: Citation `sadler06' on page 80 undefined on input line 13.
+LaTeX Warning: Citation `sadler06' on page 83 undefined on input line 13.
 
-<img/assn5GradingGraph_color.png, id=1582, 401.5pt x 401.5pt>
+<img/assn5GradingGraph_color.png, id=1608, 401.5pt x 401.5pt>
 File: img/assn5GradingGraph_color.png Graphic file (type png)
 
 <use img/assn5GradingGraph_color.png>
 Package pdftex.def Info: img/assn5GradingGraph_color.png used on input line 23.
 
 (pdftex.def)             Requested size: 260.17464pt x 260.19385pt.
- [80
+ [83
 
- <./img/assnType_5.pdf>]
-
-LaTeX Warning: Citation `kulkarni13' on page 81 undefined on input line 35.
-
-[81 <./img/assn5GradingGraph_color.png>]
-
-LaTeX Warning: Citation `russell04' on page 82 undefined on input line 60.
-
-
-LaTeX Warning: Citation `kulkarni13' on page 82 undefined on input line 73.
-
-
-LaTeX Warning: Citation `kulkarni13' on page 82 undefined on input line 79.
-
-[82] [83] <img/gradergrade_v_residual.pdf, id=1626, 547.04375pt x 463.7325pt>
+ <./img/assnType_5.pdf>] [84 <./img/assn5GradingGraph_color.png>] [85] [86]
+<img/gradergrade_v_residual.pdf, id=1652, 547.04375pt x 463.7325pt>
 File: img/gradergrade_v_residual.pdf Graphic file (type pdf)
 
 <use img/gradergrade_v_residual.pdf>
@@ -1438,7 +1306,7 @@ Package pdftex.def Info: img/gradergrade_v_residual.pdf used on input line 171.
 
 (pdftex.def)             Requested size: 130.08731pt x 110.27205pt.
 
-<img/gradeegrade_v_residual.pdf, id=1627, 546.04pt x 445.665pt>
+<img/gradeegrade_v_residual.pdf, id=1653, 546.04pt x 445.665pt>
 File: img/gradeegrade_v_residual.pdf Graphic file (type pdf)
 
 <use img/gradeegrade_v_residual.pdf>
@@ -1446,148 +1314,103 @@ Package pdftex.def Info: img/gradeegrade_v_residual.pdf used on input line 175.
 
 (pdftex.def)             Requested size: 130.08731pt x 106.17294pt.
 
-<img/grader_v_gradeebias_transparent.pdf, id=1628, 569.12625pt x 488.82625pt>
+<img/grader_v_gradeebias_transparent.pdf, id=1654, 569.12625pt x 488.82625pt>
 File: img/grader_v_gradeebias_transparent.pdf Graphic file (type pdf)
 
 <use img/grader_v_gradeebias_transparent.pdf>
 Package pdftex.def Info: img/grader_v_gradeebias_transparent.pdf used on input 
 line 179.
 (pdftex.def)             Requested size: 130.08731pt x 111.734pt.
- [84 <./img/gradergrade_v_residual.pdf> <./img/gradeegrade_v_residual.pdf> <./i
-mg/grader_v_gradeebias_transparent.pdf>] [85] [86]
-
-LaTeX Warning: Citation `geman84' on page 87 undefined on input line 371.
-
+ [87 <./img/gradergrade_v_residual.pdf> <./img/gradeegrade_v_residual.pdf> <./i
+mg/grader_v_gradeebias_transparent.pdf>] [88] [89]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 416.
-
-LaTeX Warning: Citation `kulkarni13' on page 87 undefined on input line 432.
-
-[87] <img/baseline.pdf, id=1712, 440.64626pt x 332.24126pt>
+ [90] <img/baseline.pdf, id=1737, 440.64626pt x 332.24126pt>
 File: img/baseline.pdf Graphic file (type pdf)
 
 <use img/baseline.pdf>
 Package pdftex.def Info: img/baseline.pdf used on input line 478.
 (pdftex.def)             Requested size: 190.79385pt x 143.85458pt.
- <img/histogram.pdf, id=1713, 437.635pt x 332.24126pt>
+ <img/histogram.pdf, id=1738, 437.635pt x 332.24126pt>
 File: img/histogram.pdf Graphic file (type pdf)
 
 <use img/histogram.pdf>
 Package pdftex.def Info: img/histogram.pdf used on input line 483.
 (pdftex.def)             Requested size: 190.79385pt x 144.84822pt.
- [88] [89 <./img/baseline.pdf> <./img/histogram.pdf>]
-<img/confidenceplot.pdf, id=1758, 583.17876pt x 470.75874pt>
+ [91] [92 <./img/baseline.pdf> <./img/histogram.pdf>]
+<img/confidenceplot.pdf, id=1784, 583.17876pt x 470.75874pt>
 File: img/confidenceplot.pdf Graphic file (type pdf)
 
 <use img/confidenceplot.pdf>
 Package pdftex.def Info: img/confidenceplot.pdf used on input line 572.
 (pdftex.def)             Requested size: 173.44534pt x 140.00757pt.
 
-<img/piechart90.pdf, id=1759, 500.87125pt x 416.55624pt>
+<img/piechart90.pdf, id=1785, 500.87125pt x 416.55624pt>
 File: img/piechart90.pdf Graphic file (type pdf)
 
 <use img/piechart90.pdf>
 Package pdftex.def Info: img/piechart90.pdf used on input line 577.
 (pdftex.def)             Requested size: 156.10345pt x 129.82391pt.
- [90 <./img/confidenceplot.pdf> <./img/piechart90.pdf>] <img/time_v_residual.pd
-f, id=1798, 548.0475pt x 409.53pt>
+ [93 <./img/confidenceplot.pdf> <./img/piechart90.pdf>] <img/time_v_residual.pd
+f, id=1824, 579.16376pt x 434.62375pt>
 File: img/time_v_residual.pdf Graphic file (type pdf)
 
 <use img/time_v_residual.pdf>
 Package pdftex.def Info: img/time_v_residual.pdf used on input line 606.
-(pdftex.def)             Requested size: 190.79385pt x 142.56902pt.
+(pdftex.def)             Requested size: 190.79385pt x 143.17427pt.
 
-<img/comments_v_residual.pdf, id=1799, 563.10374pt x 491.8375pt>
+<img/comments_v_residual.pdf, id=1825, 563.10374pt x 491.8375pt>
 File: img/comments_v_residual.pdf Graphic file (type pdf)
 
 <use img/comments_v_residual.pdf>
 Package pdftex.def Info: img/comments_v_residual.pdf used on input line 610.
 (pdftex.def)             Requested size: 190.79385pt x 166.64465pt.
- [91 <./img/time_v_residual.pdf> <./img/comments_v_residual.pdf>]
-
-LaTeX Warning: Citation `nielsen11' on page 92 undefined on input line 676.
-
+ [94 <./img/time_v_residual.pdf> <./img/comments_v_residual.pdf>] [95]
 
 Package caption Warning: \label without proper \caption on input line 705.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:roc' on page 92 undefined on input line 696.
+LaTeX Warning: Reference `fig:roc' on page 96 undefined on input line 696.
 
-[92] <img/roc.pdf, id=1856, 572.1375pt x 504.88625pt>
+<img/roc.pdf, id=1883, 572.1375pt x 504.88625pt>
 File: img/roc.pdf Graphic file (type pdf)
  <use img/roc.pdf>
 Package pdftex.def Info: img/roc.pdf used on input line 704.
 (pdftex.def)             Requested size: 190.79385pt x 168.36946pt.
-
-
-LaTeX Warning: Citation `baker01' on page 93 undefined on input line 714.
-
-
-LaTeX Warning: Citation `johnson96' on page 93 undefined on input line 715.
-
-
-LaTeX Warning: Citation `rogers10' on page 93 undefined on input line 715.
-
-
-LaTeX Warning: Citation `mislevy99' on page 93 undefined on input line 715.
-
-
-LaTeX Warning: Citation `batchelder88' on page 93 undefined on input line 716.
-
-
-LaTeX Warning: Citation `karabatsos03' on page 93 undefined on input line 716.
-
-
-LaTeX Warning: Citation `whitehill09' on page 93 undefined on input line 716.
-
-
-LaTeX Warning: Citation `johnson96' on page 93 undefined on input line 717.
-
-
-LaTeX Warning: Citation `rogers10' on page 93 undefined on input line 717.
-
-
-LaTeX Warning: Citation `goldin11' on page 93 undefined on input line 744.
-
-
-LaTeX Warning: Citation `ashley11' on page 93 undefined on input line 744.
-
-
-LaTeX Warning: Citation `goldin12' on page 93 undefined on input line 744.
-
-
-LaTeX Warning: Citation `goldin12' on page 93 undefined on input line 745.
-
-[93 <./img/roc.pdf>]
-
-LaTeX Warning: Citation `bachrach12' on page 94 undefined on input line 756.
-
-
-LaTeX Warning: Citation `kamar12' on page 94 undefined on input line 756.
-
-
-LaTeX Warning: Citation `whitehill09' on page 94 undefined on input line 757.
-
-
-LaTeX Warning: Citation `charlin11' on page 94 undefined on input line 774.
-
-[94]) [95]
+ [96 <./img/roc.pdf>] [97]) [98]
 Chapter 7.
-(./chapters/7-conclusion.tex) (./main.bbl [96
+(./chapters/7-conclusion.tex [99
 
-] [97
+]
+<img/deepTutor_basic.pdf, id=1924, 359.3425pt x 478.78876pt>
+File: img/deepTutor_basic.pdf Graphic file (type pdf)
 
-] [98] [99] [100]
+<use img/deepTutor_basic.pdf>
+Package pdftex.def Info: img/deepTutor_basic.pdf used on input line 19.
+(pdftex.def)             Requested size: 151.76964pt x 202.22229pt.
+
+<img/deepTutor_vector.pdf, id=1925, 360.34625pt x 478.78876pt>
+File: img/deepTutor_vector.pdf Graphic file (type pdf)
+
+<use img/deepTutor_vector.pdf>
+Package pdftex.def Info: img/deepTutor_vector.pdf used on input line 24.
+(pdftex.def)             Requested size: 151.76964pt x 201.65244pt.
+ [100 <./img/deepTutor_basic.pdf> <./img/deepTutor_vector.pdf>]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+ [101] [102]) (./main.bbl [103] [104
+
+] [105] [106] [107] [108]
+[109] [110]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [101]
+ [111] [112]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
-
-[102]) [103] (./main.aux)
+) [113] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1596,11 +1419,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14689 strings out of 493089
- 255466 string characters out of 6134842
- 444873 words of memory out of 5000000
+ 14687 strings out of 493089
+ 255550 string characters out of 6134842
+ 446269 words of memory out of 5000000
  17862 multiletter control sequences out of 15000+600000
- 50471 words of font info for 119 fonts, out of 8000000 for 9000
+ 48876 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,18n,39p,10414b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1615,29 +1438,28 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courie
-r/ucrro8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (114 pages, 5056131 bytes).
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/cour
+ier/ucrro8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8
+a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (125 pages, 5384895 bytes).
 PDF statistics:
- 2020 PDF objects out of 2073 (max. 8388607)
- 1276 compressed objects within 13 object streams
+ 2124 PDF objects out of 2487 (max. 8388607)
+ 1340 compressed objects within 14 object streams
  0 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

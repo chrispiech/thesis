@@ -3,70 +3,71 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Assignment types}}{7}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Submission Sparcity}}{9}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Subjective contribution overview}}{11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Single Khan student trace}}{14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Recurrent neural network for knowledge tracing}}{18}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Deep Knowledge Tracing accuracies}}{21}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Curriculum evaluation}}{22}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Conditional influences synthetic data}}{23}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Conditional influences Khan}}{24}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Single Khan student trace}}{15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Recurrent neural network for knowledge tracing}}{20}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Deep Knowledge Tracing accuracies}}{23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{23}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Curriculum evaluation}}{24}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Conditional influences synthetic data}}{24}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Conditional influences Khan}}{25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example problem solving policy}}{29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of Code.org problems}}{31}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of Code.org data}}{31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{31}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{31}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Partial solution popularity vs probability of optimal progress}}{34}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Poison path learning curve}}{41}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Poisson path score predicts completion}}{42}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example problem solving policy}}{30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of Code.org problems}}{32}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of Code.org data}}{33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{33}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Partial solution popularity vs probability of optimal progress}}{35}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Poison path learning curve}}{42}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Poisson path score predicts completion}}{43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic of program embedding hierarchy}}{48}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Encoding of Hoare triples}}{49}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Precision recall of feedback propagation}}{57}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{57}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Accuracy as a function of complexity}}{58}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{58}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example subtree}}{51}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{51}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{51}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Equivalence class candidates}}{58}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example tagged code}}{59}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resulting equivalence classes}}{60}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Runtime of AST indexing}}{61}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{61}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{61}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces How use of equivalence classes change teacher impact}}{62}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{62}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{62}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{62}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bug detection accuracy}}{64}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{64}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{64}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Example subtree}}{63}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{63}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{63}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{63}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{63}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Equivalence class candidates}}{70}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Example tagged code}}{71}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Resulting equivalence classes}}{72}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Runtime of AST indexing}}{73}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{73}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{73}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces How use of equivalence classes change teacher impact}}{74}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{74}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{74}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{74}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Bug detection accuracy}}{76}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic of program embedding hierarchy}}{70}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Encoding of Hoare triples}}{71}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Precision recall of feedback propagation}}{79}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{79}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Accuracy as a function of complexity}}{80}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{80}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{80}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{80}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Example peer grading network}}{81}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Relationship between grades received and grades given}}{84}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{84}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{84}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{84}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces How the histogram of errors changes}}{89}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{89}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{89}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Model confidence vs accuracy}}{90}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{90}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{90}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Insight into peer graders}}{91}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{91}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{91}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Predicting future class participation using peer grading}}{93}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example peer grading network}}{84}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Relationship between grades received and grades given}}{87}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{87}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{87}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{87}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces How the histogram of errors changes}}{92}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{92}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{92}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Model confidence vs accuracy}}{93}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{93}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{93}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Insight into peer graders}}{94}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{94}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{94}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Predicting future class participation using peer grading}}{96}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Deep tutor models}}{100}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{100}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{100}

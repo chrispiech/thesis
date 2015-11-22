@@ -4,100 +4,63 @@ The top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: references.bib
 Warning--entry type for "KAprivacy" isn't style-file defined
---line 324 of file references.bib
+--line 317 of file references.bib
 Warning--I didn't find a database entry for "annualOECDReport"
 Warning--I didn't find a database entry for "fig:assnTypes"
 Warning--I didn't find a database entry for "baraniuk2007compressive"
+Warning--I didn't find a database entry for "piech12"
+Warning--I didn't find a database entry for "nguyen14"
+Warning--I didn't find a database entry for "piech2015"
 Warning--I didn't find a database entry for "ovsjanikov2012functional"
 Warning--I didn't find a database entry for "ovsjanikov2013analysis"
-Warning--I didn't find a database entry for "paul94"
-Warning--I didn't find a database entry for "thummalapenta07"
-Warning--I didn't find a database entry for "hummel08"
-Warning--I didn't find a database entry for "kim10"
-Warning--I didn't find a database entry for "piech13"
-Warning--I didn't find a database entry for "eaton97"
-Warning--I didn't find a database entry for "zobel06"
-Warning--I didn't find a database entry for "shasha94"
-Warning--I didn't find a database entry for "huang13"
-Warning--I didn't find a database entry for "rivers13"
-Warning--I didn't find a database entry for "xu03"
-Warning--I didn't find a database entry for "rivers12"
-Warning--I didn't find a database entry for "zipf1949human"
-Warning--I didn't find a database entry for "breslau99"
-Warning--I didn't find a database entry for "lu10"
-Warning--I didn't find a database entry for "sindhgatta06"
-Warning--I didn't find a database entry for "hoffmann07"
-Warning--I didn't find a database entry for "hartmann10"
-Warning--I didn't find a database entry for "baxter98"
-Warning--I didn't find a database entry for "lazzarini09"
-Warning--I didn't find a database entry for "piech12"
-Warning--I didn't find a database entry for "glassman13"
-Warning--I didn't find a database entry for "gross12"
-Warning--I didn't find a database entry for "gross13"
-Warning--I didn't find a database entry for "fast13"
-Warning--I didn't find a database entry for "kohlhase06"
+Warning--I didn't find a database entry for "piech2013tuned"
 Warning--I didn't find a database entry for "sadler06"
-Warning--I didn't find a database entry for "kulkarni13"
-Warning--I didn't find a database entry for "russell04"
-Warning--I didn't find a database entry for "geman84"
-Warning--I didn't find a database entry for "nielsen11"
-Warning--I didn't find a database entry for "baker01"
-Warning--I didn't find a database entry for "johnson96"
-Warning--I didn't find a database entry for "rogers10"
-Warning--I didn't find a database entry for "mislevy99"
-Warning--I didn't find a database entry for "batchelder88"
-Warning--I didn't find a database entry for "karabatsos03"
-Warning--I didn't find a database entry for "whitehill09"
-Warning--I didn't find a database entry for "goldin11"
-Warning--I didn't find a database entry for "ashley11"
-Warning--I didn't find a database entry for "goldin12"
-Warning--I didn't find a database entry for "bachrach12"
-Warning--I didn't find a database entry for "kamar12"
-Warning--I didn't find a database entry for "charlin11"
 Warning--to sort, need author or key in KAprivacy
 Warning--can't use both volume and number fields in ahmadzadeh2005analysis
+Warning--there's a number but no volume in geman84
 Warning--there's a number but no volume in mccabe1976complexity
 Warning--there's a number but no volume in roll2014benefits
 Warning--can't use both volume and number fields in singh2013automated
-You've used 75 entries,
+Warning--empty journal in zipf1949human
+You've used 117 entries,
             2543 wiz_defined-function locations,
-            1016 strings with 19432 characters,
-and the built_in function-call counts, 35853 in all, are:
-= -- 3663
-> -- 1870
-< -- 44
-+ -- 683
-- -- 670
-* -- 2590
-:= -- 5731
-add.period$ -- 249
-call.type$ -- 75
-change.case$ -- 532
-chr.to.int$ -- 72
-cite$ -- 81
-duplicate$ -- 1419
-empty$ -- 2483
-format.name$ -- 739
-if$ -- 7490
+            1186 strings with 26700 characters,
+and the built_in function-call counts, 55602 in all, are:
+= -- 5633
+> -- 2915
+< -- 70
++ -- 1060
+- -- 1041
+* -- 3997
+:= -- 8887
+add.period$ -- 389
+call.type$ -- 117
+change.case$ -- 833
+chr.to.int$ -- 114
+cite$ -- 125
+duplicate$ -- 2225
+empty$ -- 3892
+format.name$ -- 1150
+if$ -- 11628
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 78
-newline$ -- 377
-num.names$ -- 222
-pop$ -- 539
+missing$ -- 122
+newline$ -- 587
+num.names$ -- 348
+pop$ -- 873
 preamble$ -- 1
-purify$ -- 613
+purify$ -- 958
 quote$ -- 0
-skip$ -- 1223
+skip$ -- 1891
 stack$ -- 0
-substring$ -- 1975
-swap$ -- 377
-text.length$ -- 44
-text.prefix$ -- 9
+substring$ -- 2968
+swap$ -- 582
+text.length$ -- 70
+text.prefix$ -- 16
 top$ -- 0
-type$ -- 580
-warning$ -- 5
-while$ -- 345
-width$ -- 79
-write$ -- 991
-(There were 55 warnings)
+type$ -- 908
+warning$ -- 7
+while$ -- 528
+width$ -- 123
+write$ -- 1540
+(There were 18 warnings)
