@@ -13,61 +13,62 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Conditional influences synthetic data}}{24}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Conditional influences Khan}}{25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example problem solving policy}}{30}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of Code.org problems}}{32}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of Code.org data}}{33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{33}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{33}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example problem solving policy}}{31}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of Code.org problems}}{33}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of Code.org data}}{34}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{34}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{34}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Partial solution popularity vs probability of optimal progress}}{35}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Poison path learning curve}}{42}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Poisson path score predicts completion}}{43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Example subtree}}{51}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{51}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{51}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Equivalence class candidates}}{58}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example subtree}}{53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{53}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{53}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Algorithm for estimating semantic equivalence}}{59}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Example tagged code}}{59}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Resulting equivalence classes}}{60}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Runtime of AST indexing}}{61}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{61}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{61}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces How use of equivalence classes change teacher impact}}{62}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{62}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{62}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{62}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Bug detection accuracy}}{64}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Equivalence class candidates}}{60}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Resulting equivalence classes}}{61}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Runtime of AST indexing}}{63}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{63}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{63}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces How use of equivalence classes change teacher impact}}{64}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{64}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{64}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{64}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Bug detection accuracy}}{65}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{65}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{65}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic of program embedding hierarchy}}{70}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Encoding of Hoare triples}}{71}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Precision recall of feedback propagation}}{79}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{79}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Accuracy as a function of complexity}}{80}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic of program embedding hierarchy}}{71}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Encoding of Hoare triples}}{72}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Precision recall of feedback propagation}}{80}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{80}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{80}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{80}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Accuracy as a function of complexity}}{81}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{81}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{81}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{81}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Example peer grading network}}{84}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Relationship between grades received and grades given}}{87}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{87}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{87}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{87}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces How the histogram of errors changes}}{92}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{92}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{92}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Model confidence vs accuracy}}{93}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example peer grading network}}{85}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Relationship between grades received and grades given}}{88}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{88}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{88}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{88}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces How the histogram of errors changes}}{93}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{93}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{93}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Insight into peer graders}}{94}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Model confidence vs accuracy}}{94}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{94}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{94}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Predicting future class participation using peer grading}}{96}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Insight into peer graders}}{95}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{95}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{95}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Predicting future class participation using peer grading}}{97}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Deep tutor models}}{100}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{100}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{100}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Deep tutor models}}{101}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{101}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{101}

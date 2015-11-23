@@ -8,12 +8,12 @@
 \contentsline {section}{\numberline {1.4}Online Programming Case Study}{4}
 \contentsline {section}{\numberline {1.5}The Problem is Hard}{5}
 \contentsline {section}{\numberline {1.6}Emergent Structure}{6}
-\contentsline {section}{\numberline {1.7}Unique Access to Data}{6}
-\contentsline {section}{\numberline {1.8}Program Submission Sparcity}{7}
-\contentsline {section}{\numberline {1.9}Approaches}{8}
-\contentsline {subsection}{\numberline {1.9.1}Big Picture First}{9}
+\contentsline {section}{\numberline {1.7}Unique Access to Data}{7}
+\contentsline {section}{\numberline {1.8}Program Submission Sparcity}{8}
+\contentsline {section}{\numberline {1.9}Approaches}{9}
+\contentsline {subsection}{\numberline {1.9.1}Big Picture First}{10}
 \contentsline {subsection}{\numberline {1.9.2}Understand Students}{10}
-\contentsline {subsection}{\numberline {1.9.3}Easy to Author}{10}
+\contentsline {subsection}{\numberline {1.9.3}Easy to Author}{11}
 \contentsline {section}{\numberline {1.10}Novel Contribution}{11}
 \contentsline {part}{I\hspace {1em}How do Students Learn Across Curricula?}{13}
 \contentsline {chapter}{\numberline {2}Deep Knowledge Tracing}{14}
@@ -36,76 +36,87 @@
 \contentsline {section}{\numberline {2.7}Discussion}{26}
 \contentsline {part}{II\hspace {1em}How do Students Explore Problem Space?}{27}
 \contentsline {chapter}{\numberline {3}Problem Solving Policies}{28}
-\contentsline {section}{\numberline {3.1}Related Work}{31}
-\contentsline {section}{\numberline {3.2}Data}{33}
-\contentsline {section}{\numberline {3.3}Methods}{34}
-\contentsline {subsection}{\numberline {3.3.1}Desirable Path Algorithms}{35}
+\contentsline {section}{\numberline {3.1}Problem Solving Policy}{29}
+\contentsline {section}{\numberline {3.2}Related Work}{30}
+\contentsline {section}{\numberline {3.3}Data from Code.org}{32}
+\contentsline {section}{\numberline {3.4}Methods}{34}
+\contentsline {subsection}{\numberline {3.4.1}Desirable Path Algorithms}{35}
 \contentsline {subsubsection}{Poisson Path}{36}
 \contentsline {subsubsection}{Independent Probable Path}{37}
-\contentsline {subsection}{\numberline {3.3.2}Baseline Algorithms}{37}
+\contentsline {subsection}{\numberline {3.4.2}Baseline Algorithms}{38}
 \contentsline {subsubsection}{Markov Decision Problem}{38}
 \contentsline {subsubsection}{Rivers Policy}{38}
-\contentsline {subsubsection}{Static Analysis}{38}
+\contentsline {subsubsection}{Static Analysis}{39}
 \contentsline {subsubsection}{Most Likely Next}{39}
 \contentsline {subsubsection}{Most Common Path}{39}
 \contentsline {subsubsection}{Expected Success}{39}
 \contentsline {subsubsection}{Min Time}{39}
 \contentsline {subsubsection}{Ability Model}{39}
-\contentsline {subsection}{\numberline {3.3.3}Evaluation}{40}
-\contentsline {section}{\numberline {3.4}Results}{40}
-\contentsline {subsection}{\numberline {3.4.1}Summative Assessment}{42}
-\contentsline {subsection}{\numberline {3.4.2}Generating Hints}{44}
-\contentsline {section}{\numberline {3.5}Discussion}{45}
-\contentsline {subsection}{\numberline {3.5.1}Conclusion}{46}
-\contentsline {part}{III\hspace {1em}How to Model Sparse Problem Space?}{47}
-\contentsline {chapter}{\numberline {4}Shared Substructures}{48}
-\contentsline {section}{\numberline {4.1}Data from a programming intensive MOOC}{51}
-\contentsline {section}{\numberline {4.2}Efficient Indexing of code submissions}{52}
-\contentsline {subsection}{\numberline {4.2.1}Efficient matching}{53}
-\contentsline {section}{\numberline {4.3}Data driven discovery of semantic equivalence classes}{54}
-\contentsline {subsection}{\numberline {4.3.1}Testing for semantic equivalence}{56}
-\contentsline {subsection}{\numberline {4.3.2}Semantic equivalence classes and solution space reductions}{57}
-\contentsline {section}{\numberline {4.4}Bug finding from search queries}{60}
-\contentsline {section}{\numberline {4.5}Empirical findings}{61}
-\contentsline {section}{\numberline {4.6}Related work}{65}
-\contentsline {section}{\numberline {4.7}Discussion}{66}
-\contentsline {chapter}{\numberline {5}Homework Embedding Spaces}{68}
-\contentsline {section}{\numberline {5.1}Related Work}{69}
+\contentsline {subsection}{\numberline {3.4.3}Evaluation}{40}
+\contentsline {section}{\numberline {3.5}Results}{40}
+\contentsline {subsection}{\numberline {3.5.1}Summative Assessment}{42}
+\contentsline {subsection}{\numberline {3.5.2}Generating Hints}{44}
+\contentsline {section}{\numberline {3.6}Discussion}{45}
+\contentsline {subsection}{\numberline {3.6.1}Conclusion}{46}
+\contentsline {part}{III\hspace {1em}How to Model Sparse Problem Space?}{48}
+\contentsline {chapter}{\numberline {4}Shared Substructures}{49}
+\contentsline {section}{\numberline {4.1}Search engines for student submitted content}{50}
+\contentsline {subsection}{\numberline {4.1.1}Delivering scalable human feedback}{50}
+\contentsline {section}{\numberline {4.2}Data from a programming intensive MOOC}{52}
+\contentsline {section}{\numberline {4.3}Structured representations of syntax}{53}
+\contentsline {section}{\numberline {4.4}Efficient Indexing of code submissions}{53}
+\contentsline {subsection}{\numberline {4.4.1}Building an inverted index}{54}
+\contentsline {subsection}{\numberline {4.4.2}Efficient matching}{55}
+\contentsline {subsection}{\numberline {4.4.3}Efficient precomputation of hashes}{55}
+\contentsline {section}{\numberline {4.5}Data driven discovery of semantic equivalence classes}{56}
+\contentsline {subsection}{\numberline {4.5.1}Testing for semantic equivalence}{57}
+\contentsline {subsection}{\numberline {4.5.2}Semantic equivalence classes and solution space reductions}{58}
+\contentsline {section}{\numberline {4.6}Bug finding from search queries}{62}
+\contentsline {section}{\numberline {4.7}Empirical findings}{62}
+\contentsline {subsection}{\numberline {4.7.1}Running Time}{63}
+\contentsline {subsection}{\numberline {4.7.2}Code Phrase Statistics}{63}
+\contentsline {subsection}{\numberline {4.7.3}Equivalence Classes and Reduction}{64}
+\contentsline {subsection}{\numberline {4.7.4}Bug Identification}{65}
+\contentsline {section}{\numberline {4.8}Feedback Case Study}{66}
+\contentsline {section}{\numberline {4.9}Related work}{67}
+\contentsline {section}{\numberline {4.10}Discussion}{67}
+\contentsline {chapter}{\numberline {5}Homework Embedding Spaces}{69}
+\contentsline {section}{\numberline {5.1}Related Work}{70}
 \contentsline {section}{\numberline {5.2}Embedding Hoare Triples}{71}
-\contentsline {subsection}{\numberline {5.2.1}Neural network encoding and decoding of states}{72}
-\contentsline {subsection}{\numberline {5.2.2}Nonparametric model of program embedding}{73}
-\contentsline {subsection}{\numberline {5.2.3}Triple Extraction}{74}
-\contentsline {section}{\numberline {5.3}Feedback Propagation}{74}
-\contentsline {subsection}{\numberline {5.3.1}Incorporating structure via recursive embedding}{75}
-\contentsline {section}{\numberline {5.4}Datasets}{76}
-\contentsline {section}{\numberline {5.5}Results}{77}
-\contentsline {subsection}{\numberline {5.5.1}Prediction of postcondition}{77}
-\contentsline {subsection}{\numberline {5.5.2}Composability of program embeddings}{78}
+\contentsline {subsection}{\numberline {5.2.1}Neural network encoding and decoding of states}{73}
+\contentsline {subsection}{\numberline {5.2.2}Nonparametric model of program embedding}{74}
+\contentsline {subsection}{\numberline {5.2.3}Triple Extraction}{75}
+\contentsline {section}{\numberline {5.3}Feedback Propagation}{75}
+\contentsline {subsection}{\numberline {5.3.1}Incorporating structure via recursive embedding}{76}
+\contentsline {section}{\numberline {5.4}Datasets}{77}
+\contentsline {section}{\numberline {5.5}Results}{78}
+\contentsline {subsection}{\numberline {5.5.1}Prediction of postcondition}{78}
+\contentsline {subsection}{\numberline {5.5.2}Composability of program embeddings}{79}
 \contentsline {subsection}{\numberline {5.5.3}Prediction of Feedback}{79}
-\contentsline {subsection}{\numberline {5.5.4}Code complexity and performance}{80}
-\contentsline {section}{\numberline {5.6}Discussion}{81}
-\contentsline {part}{IV\hspace {1em}Where to Next}{82}
-\contentsline {chapter}{\numberline {6}Crowd Source Feedback}{83}
-\contentsline {section}{\numberline {6.1}Datasets}{85}
-\contentsline {section}{\numberline {6.2}Probabilistic models of peer grading in MOOCs}{86}
-\contentsline {subsection}{\numberline {6.2.1}Models}{87}
-\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_1$\tmspace +\thinmuskip {.1667em}(Grader bias and reliability)}{87}
-\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_2$\tmspace +\thinmuskip {.1667em}(Temporal coherence)}{88}
-\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_3$\tmspace +\thinmuskip {.1667em}(Coupled grader score and reliability)}{88}
-\contentsline {paragraph}{Ethics and Incentives}{89}
-\contentsline {subsection}{\numberline {6.2.2}Inference and evaluation.}{89}
-\contentsline {paragraph}{Evaluation}{91}
-\contentsline {section}{\numberline {6.3}Experimental results}{91}
-\contentsline {subsection}{\numberline {6.3.1}Accuracy of reweighted peer grading}{91}
-\contentsline {subsection}{\numberline {6.3.2}Fairness and efficiency in peer grading}{93}
-\contentsline {subsection}{\numberline {6.3.3}Graders in the context of the MOOC}{95}
-\contentsline {paragraph}{Influential factors for grader ability}{95}
-\contentsline {paragraph}{Grader ability and future performance}{96}
-\contentsline {section}{\numberline {6.4}Related work}{96}
-\contentsline {section}{\numberline {6.5}Discussion and Future work}{97}
-\contentsline {chapter}{\numberline {7}Conclusions}{99}
-\contentsline {section}{\numberline {7.1}Deep Tutor}{99}
-\contentsline {section}{\numberline {7.2}Better Program Encodings}{101}
-\contentsline {section}{\numberline {7.3}Pivot to offline}{102}
-\contentsline {section}{\numberline {7.4}Final Note}{103}
-\contentsline {chapter}{Bibliography}{104}
+\contentsline {subsection}{\numberline {5.5.4}Code complexity and performance}{81}
+\contentsline {section}{\numberline {5.6}Discussion}{82}
+\contentsline {part}{IV\hspace {1em}Alternative Ideas and Future Work}{83}
+\contentsline {chapter}{\numberline {6}Crowd Source Feedback}{84}
+\contentsline {section}{\numberline {6.1}Datasets}{86}
+\contentsline {section}{\numberline {6.2}Probabilistic models of peer grading in MOOCs}{87}
+\contentsline {subsection}{\numberline {6.2.1}Models}{88}
+\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_1$\tmspace +\thinmuskip {.1667em}(Grader bias and reliability)}{88}
+\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_2$\tmspace +\thinmuskip {.1667em}(Temporal coherence)}{89}
+\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_3$\tmspace +\thinmuskip {.1667em}(Coupled grader score and reliability)}{89}
+\contentsline {paragraph}{Ethics and Incentives}{90}
+\contentsline {subsection}{\numberline {6.2.2}Inference and evaluation.}{90}
+\contentsline {paragraph}{Evaluation}{92}
+\contentsline {section}{\numberline {6.3}Experimental results}{92}
+\contentsline {subsection}{\numberline {6.3.1}Accuracy of reweighted peer grading}{92}
+\contentsline {subsection}{\numberline {6.3.2}Fairness and efficiency in peer grading}{94}
+\contentsline {subsection}{\numberline {6.3.3}Graders in the context of the MOOC}{96}
+\contentsline {paragraph}{Influential factors for grader ability}{96}
+\contentsline {paragraph}{Grader ability and future performance}{97}
+\contentsline {section}{\numberline {6.4}Related work}{97}
+\contentsline {section}{\numberline {6.5}Discussion and Future work}{98}
+\contentsline {chapter}{\numberline {7}Conclusions}{100}
+\contentsline {section}{\numberline {7.1}Deep Tutor}{100}
+\contentsline {section}{\numberline {7.2}Better Program Encodings}{102}
+\contentsline {section}{\numberline {7.3}Pivot to offline}{103}
+\contentsline {section}{\numberline {7.4}Final Note}{104}
+\contentsline {chapter}{Bibliography}{105}

@@ -22,6 +22,7 @@
 \usepackage{mdframed}
 \usepackage{booktabs}
 \usepackage{lipsum}
+\usepackage{color}
 \usepackage{xcolor}
 \usepackage{mdframed}
 \usepackage{mdwlist}
@@ -111,6 +112,8 @@
 \newcommand{\nodeIDENT}{{\mathsf{IDENT}}}
 \newcommand{\nodeASSIGN}{{\mathsf{ASSIGN}}}
 
+
+
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
@@ -129,6 +132,9 @@
 \dept{Computer Science}
 
 \begin{document}
+
+\newcommand{\Chris}[1]{{\color{green}{\bf\sf [Chris: #1]}}}
+
 \title{Uncovering Patterns in Student Work\\
             Machine Learning to Understand Human Learning}
 \author{Christopher James Piech}
@@ -140,7 +146,7 @@
  
 \beforepreface
 \prefacesection{Abstract}
-This thesis tells you all you need to know about autonomous feedback for richly structured assignments.
+\input{chapters/abstract}
 
 \prefacesection{Acknowledgments}
 \input{chapters/acknowledgements}
@@ -167,7 +173,7 @@ This thesis tells you all you need to know about autonomous feedback for richly 
 \chapter{Homework Embedding Spaces}
 \input{chapters/4-programEncoding}
 
-\part{Where to Next}
+\part{Alternative Ideas and Future Work}
 
 \chapter{Crowd Source Feedback}
 \input{chapters/6-peerGrading}

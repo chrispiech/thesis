@@ -9,15 +9,20 @@ Solving Policies \cite{piech2015autonomously} \\ \emph{Learning at Scale 2015.}
 
 \vspace{7mm}
 
-When students solve challenges that involve layered steps of problem solving -- for example when they solve programming assignments -- the trajectory that they take to navigate to their final answer contains rich information about what they know. In fact, in order to understand students we believe it would be more fruitful to observe \emph{how} they solve a problem  then just to look at their final answer. In order to take this next, deeper step into understanding how student learn we chose to study students working on Maze Programming Assignments. These assignments which are designed for K-12 students and use blocks that represent standard control flow paradigms (like repeat, while and if) are ideal because the number of unique programs that students generate is quite small, and thus easier to understand.
+When students solve challenges that involve layered steps of problem solving -- for example when they solve programming assignments -- the trajectory that they take to navigate to their final answer contains rich information about what they know. In order to take this next, deeper step into understanding how student learn we chose to study students working on Maze Programming Assignments. These assignments which are designed for K-12 students and use blocks that represent standard control flow paradigms (like repeat, while and if) are ideal because the number of unique programs that students generate is quite small, and thus easier to understand.
 
 %Deep Knowledge tracing is a powerful tool for the domain of assignments where student responses can be encoded as ``correct" or ``incorrect". For more complex domains where students produce rich, structured responses it is no longer sufficient to simply track their work on the granularity of one binary input per assignment. When a student solves a richly structured assignment they produce a series of partial solutions and need assistment intermediately.
 %In this domain we focus on predicting what a teacher would do.
 %One of the reasons that I believe recurrent neural networks are hard to apply to the task of tracing knowledge as a student works on a multi stage assignment is that predicting what a student will do next is particularly difficult given the sparsity of the solution space.
 
-Exploring the whole sequence of steps a student takes to produce work, and the patterns that emerge from thousands of such sequences is fertile ground for a richer understanding of learning. In this chapter uncover a pattern in student learning that can both predict the way an expert teacher would encourage a student to make forward progress and predict a student's future retention. We discovered this pattern by observing historical data of students learning in the Code.org `Hour of Code,' curriculum (which is to the best of our knowledge the largest online course to date). The approached this problem by first focussing on trying to find patterns that allow us to predict how teachers would suggest students make forward progress. Such a prediction can form the basis for an effective hint generation system. The algorithms that we develop are more accurate than current state-of-the-art methods at recreating expert suggestions, are easy to implement and scale well. We then show that the same framework which motivated the hint generating algorithms suggests a sequence-based statistic that can be measured for each learner. We discover that this statistic is highly predictive of a student's future success. 
+Exploring the whole sequence of steps a student takes to produce work, and the patterns that emerge from thousands of such sequences is fertile ground for a richer understanding of learning. In this chapter we uncover a pattern in student learning that can both predict the way an expert teacher would encourage a student to make forward progress and predict a student's future retention. We discovered this pattern by observing historical data of students learning in the Code.org `Hour of Code,' curriculum (which is to the best of our knowledge the largest online course to date). We approached this problem by first focussing on trying to find patterns that allow us to predict how teachers would suggest students make forward progress. Not only are such predictions a signal that we understand students, additionally they can form the basis for an effective hint generation system. The algorithms that we develop are more accurate than current state-of-the-art methods at recreating expert suggestions, are easy to implement and scale well. We then show that the same framework which motivated the hint generating algorithms suggests a sequence-based statistic that can be measured for each learner. We discover that this statistic is highly predictive of a student's future success. 
 
 A motivating case study is the set of assessments in the Code.org Hour of Code course. Code.org is a non-profit organization that led a coordinated effort to have every K-12 student in the United States complete an hour worth of computer science. As part of the initiative Code.org hosted an Hour of Code curriculum: a series of twenty introductory programming ``challenges" with instructional videos. In the year and a half since they launched, over 27 million learners have tried their curriculum and it has been taught in over 90 thousand classrooms making it, to the best of our knowledge, the largest MOOC to date. In the challenges students generate programs by putting together blocks of code. The open ended nature of coding, and the many avenues that students can take to get to the solution both make the challenges appealing learning activities, and prevent Code.org from being able to provide expert feedback to stuck students. 
+
+The main contributions of this chapter are:
+(1) a family of algorithms which can accurately predict how experts believe learners should make forward progress from a partial solution, based on historical data (2) a related per-student statistic generated from how a student solves a challenge that correlates strongly with future performance and (3) a unified comparison of previously published algorithms. These results speak to a deeper theme: \emph{how} students solve assignments is an under utilized, important lens into what students know and what feedback future students will need.
+
+\section{Problem Solving Policy}
 
 The Hour of Code challenges take several steps for a student to solve. At each point in time, the student's current work constitutes a partial solution $\psi \in S$ where $S$ is the set of all possible responses. As the student works on the assessment they will transition through a series $T = \{\psi_0, \psi_1, ... , \psi_n$\} of partial solutions from step $0$, when they have done no work, to step $n$ when they have either reached the solution or given up. 
 We propose that generating feedback autonomously for an assessment of this nature can be seen as the composition of two tasks: 
@@ -25,7 +30,7 @@ We propose that generating feedback autonomously for an assessment of this natur
 \item Deciding for any learner what partial solution an educational expert would suggest they transition to next. 
 \item Choosing how to communicate that information to the student such that they improve on a learning objective. 
 \end{enumerate}
-We suggest that both of the decoupled tasks can be solved and tested independently. The objective of this paper is to solve the former problem by learning what we call a Problem Solving Policy (PSP): a decision for any partial solution as to what next partial solution a student should take (see definition \ref{pspDef} and the example in figure \ref{fig:policy}). Using historical data we generate PSPs for challenges in the Hour of Code and evaluate to what extent they capture expert opinion.
+The first task can be interpreted as ``learning to understand students" and the second can be interpreted as ``using that knowledge to aid students." We suggest that both of the decoupled tasks can be solved and tested independently. The objective of this paper is to solve the former problem by learning what we call a Problem Solving Policy (PSP): a decision for any partial solution as to what next partial solution a student should take (see definition \ref{pspDef} and the example in figure \ref{fig:policy}). Using historical data we generate PSPs for challenges in the Hour of Code and evaluate to what extent they capture expert opinion.
 
 \begin{defo}
 Problem Solving Policy (PSP). \\ 
@@ -41,16 +46,11 @@ A problem solving policy $\pi : S \rightarrow S$ specifies a partial-solution $s
 \label{fig:policy}
 \end{figure}
 
-
 Note that the definition for a PSP makes the Markov assumption as no partial solution other than a student's current state is considered in the policy mapping. 
 
 A PSP provides a foundation for generating formative feedback. For a given partial solution, there are many types of issues a student could have: they may have missed a step, made a mistake, have compounded mistakes, or possibly they are on the right path and simply need to keep going. An ideal PSP captures these diverse needs. It selects the single part of the partial solution the student should work on first and denotes how they should do so. Importantly, the PSP can also be evaluated independently from the actual feedback given to students (e.g. via a hint generation) given a ground truth dataset composed of expert evaluations on how they would push a student forward. 
 
 Our hypothesis is that for large classes like Code.org there are patterns which materialize in how the many previous students have navigated from an empty project to the final answer which can be leveraged to learn how students should move forward from any $\psi \in S$. For example, if ten thousand students had at some point all submitted the exact same partial solution with the same set of mistakes, it seems reasonable that the best way forward is illuminated by the way that crowd then went on to fix their programs. Surprisingly, we found that many of the most obvious statistics that could be calculated from historical data or static analysis were not particularly useful. 
-
-
-The main contributions of this work are:
-(1) a family of algorithms which can accurately predict how experts believe learners should make forward progress from a partial solution (a PSP), based on historical data (2) a related per-student statistic generated from how a student solves a challenge that correlates strongly with future performance and (3) a unified comparison of previously published algorithms. These results speak to a deeper theme: \emph{how} students solve assignments is an under utilized, important lens into what students know and what feedback future students will need.
 
 \section{Related Work}
 
@@ -67,38 +67,21 @@ The problem of generating a PSP can be seen as an instance of more general probl
 One of the aims of this work is to enable further comparative research. To this end we will share relevant code and annonomized, aggregate data:
 \url{http://stanford.edu/~cpiech/codedotorg.html}
 
-\section{Data}
+\section{Data from Code.org}
 
-\begin{figure}
-\centering
-\includegraphics[width=1.0\columnwidth]{img/problems3.png}
 
-\caption[Schematic of Code.org problems]{Schematic of the maze and example solution for \Pa (left) and \Pb (right). The arrow is the agent and the heart is the goal.}
-\label{fig:hocExample}
-\end{figure}
 
-\begin{figure*}
-\centering
-\subfigure[]
-{
-\includegraphics[width=.48\textwidth]{img/retention.png}
-\label{fig:retention}
-}
-\subfigure[]
-{
-\includegraphics[width=.48\textwidth]{img/annotationImpact.png}
-\label{fig:coverage}
-}
-
-\caption[Overview of Code.org data]{
-\subref{fig:retention} Percent of students who finished the first problem in the hour of code that solve the remaining ones.
- \subref{fig:coverage} The percent of submissions that are covered by annotating the most popular partial solutions. 
- }
-\label{tab:predacc}
-\end{figure*}
 
 
 In the Hour of Code website, students write programs to solve maze world puzzles. Each time a learner runs their program, a symbolic representation of their current work is recorded. When the learner submits a final answer, or stops working on a challenge, the learner’s partial solutions are composed into a raw series. There is a simple mechanism to test if two symbolic representations are identical.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{img/problems3.png}
+
+	\caption[Schematic of Code.org problems]{Schematic of the maze and example solution for \Pa (left) and \Pb (right). The arrow is the agent and the heart is the goal.}
+	\label{fig:hocExample}
+\end{figure}
 
 The dataset for this paper is the series of partial solutions from all logged in students from December 2013 to March 2014. In that time Code.org gathered over 137 million partial solutions. Retention was quite high relative to other contemporary open access courses, see figure \ref{fig:retention}. Volunteered information from 19.5\% of the logged in users gives us a window into the demographic makeup of the learners: 59\% are male and 41\% are female. The average age is $\mu$ = 13.2, $\sigma$ = 4.3 years old with the age range spanning from 5 to 98 years old.
 
@@ -127,7 +110,27 @@ In the raw series of data, a student could make incremental changes between runs
   \label{tab:dataTable}
 \end{table}
 
-To evaluate policies, we gathered expert gold standard data for both challenges. A group of seven computer science educators each labelled hundreds of student programs (225 for \Pa  and 268 for \Pb\hspace{-0.5mm}) with the partial solution they suggest a student who ran that program should transition to next. Inter rater reliability showed a notable degree of agreement. The Fleiss Kappa score \cite{fleiss1981measurement} was 0.58. All conflicting codings were discussed and multiple correct ways forward were allowed when there was disagreement.
+To evaluate policies, we gathered expert gold standard data for both challenges. A group of seven computer science educators each labeled hundreds of student programs (225 for \Pa  and 268 for \Pb\hspace{-0.5mm}) with the partial solution they suggest a student who ran that program should transition to next. Inter rater reliability showed a notable degree of agreement. The Fleiss Kappa score \cite{fleiss1981measurement} was 0.58. All conflicting codings were discussed and multiple correct ways forward were allowed when there was disagreement.
+
+\begin{figure*}
+\centering
+\subfigure[]
+{
+\includegraphics[width=.48\textwidth]{img/retention.png}
+\label{fig:retention}
+}
+\subfigure[]
+{
+\includegraphics[width=.48\textwidth]{img/annotationImpact.png}
+\label{fig:coverage}
+}
+
+\caption[Overview of Code.org data]{
+\subref{fig:retention} Percent of students who finished the first problem in the hour of code that solve the remaining ones.
+ \subref{fig:coverage} The percent of submissions that are covered by annotating the most popular partial solutions. 
+ }
+\label{tab:predacc}
+\end{figure*}
 
 \section{Methods}
 
@@ -173,6 +176,7 @@ Where $Z(s)$ are all the paths-to-solution from $s$ and $\lambda_x$ is the numbe
 
 
 
+\vbox{
 \begin{defo}
 Poisson Path. \\ 
 Let $G$ be a graph traversed by agents. Assume for a node $x \in G$, the time required for an agent to visit that node varies as an $exponential(\lambda_x)$ where $\lambda_x$ is a Poisson rate parameter. 
@@ -187,6 +191,7 @@ The Poisson Path is the path from a node $s$ to a terminal with the smallest exp
 \end{align*}
 \label{pcpDef}
 \end{defo}
+}
 
 Computing the Poisson Path can be solved using a simple reduction to Dijkstra's shortest path algorithm. We construct a graph where for all legal transitions $a \rightarrow b$ we add an edge with cost $\frac{1}{\lambda_b}$. A Dijkstra search for the shortest path to any solution over this graph will return the Poisson Path. Dijkstra's algorithm is easy to implement and runs in $O(n\log n)$ time for a graph with $n$ partial solutions. To prevent repeat submissions from having an undue influence on our partial solution counts we remove all cycles from student series before we count occurrences.
 
@@ -369,7 +374,7 @@ This trend is especially interesting when we only look at the scores of students
 
 In the introduction of this paper we proposed that the challenge of autonomously providing hints could be decoupled into (1) Deciding how a learner should make forward progress and (2) Choosing how to communicate that information to the student such that they improve on a learning objective. Given that we can solve the first task sufficiently well, we are  pursuing research on the second: how to turn our PSP into hints. This latter task combines education and UI decisions.
 
-Having a PSP for a given challenge substantially simplifies the task of generating hints. It tells the hint generation algorithm which part of a student's current partial solution they should work on, and how they should modify their work. Often, students have multiple issues. A policy allows an automated system to know what is the first issue the student should work on. Moreover, knowing the exact edit we believe an expert would like a student to make means that generating a hint is reduced to deciding how directly we should tell the student what to do. Based off of a simple template we turned $\pi(x)$ into English text hints. We are currently running an A/B study with thousands of students where they either receive hints generated autonomously from the policy, hints hand-crafted by humans, or placebo hints. 
+Having a PSP for a given challenge substantially simplifies the task of generating hints. It tells the hint generation algorithm which part of a student's current partial solution they should work on, and how they should modify their work. Often, students have multiple issues. A policy allows an automated system to know what is the first issue the student should work on. Moreover, knowing the exact edit we believe an expert would like a student to make means that generating a hint is reduced to deciding how directly we should tell the student what to do. Based off of a simple template we turned $\pi(x)$ into English text hints. 
 
 \section{Discussion}
 
@@ -381,10 +386,10 @@ A limitation of our approach is that it is not clear that students need hints an
 
 Beyond the capacity to generate hints, the process of finding signals in historical data has interesting side-products. The most important corollary we presented is that the same intuition that guides generating PSPs can help us understand individual learners and predict retention. Piech et al found prototypical clusters of ways in which students solve problems that were predictive of exam scores \cite{piech2012modeling}. This paper goes beyond that result by calculating a continuous valued path score which can make more fine grained predictions. Our ability to predict both retention and teacher suggestions are results that lend credibility to one another. The Path Score metric has obvious utility as a diagnostic measure that could help identify learners that may need more attention. Of course, knowing that a student has a bad path score does not imply \emph{why} the student has a low probability of completing a subsequent challenge. It is only a correlation. It is not clean why Path Scores and probability of retention are exponentially related. One interpretation is that there is a monotonic ability scale and that each unit decrease in ability has compounding, and therefore exponential, impact on how well a student navigates through partial solutions. 
 
-As interesting idea to try would be to using a recurrent neural network with one hot encoding of the unique partial solution over time.
-
 There are more undiscovered patterns in how students navigate richly-structured assessments. Student trajectories remain a great mystery.
 
 \subsection{Conclusion}
 
 In this paper we explored ways to solve the machine learning question: how can we predict the way a teacher would encourage a student to make forward progress? The ability to make such prediction is useful for generating feedback at scale. We show that in the Code.org case study two algorithms with the same theoretical backing are accurate at recreating expert opinion. These algorithms can be applied to logs of learners working on problems for which there are no expert labels, and will produce an intelligent strategy for what learners ought to do. We then claim that the same theory can be used to calculate a statistic on how well a student navigated the assignment and show that this statistic predicts future retention. The way in which students solve problems is fertile ground for research in learning at scale. Instead of looking solely at a student's final answer, education of the future will take note of the journey the learner took to get there.
+
+While the algorithm that we introduced works well for assignments where there are many more students then there are common partial solutions, it does not do so well, we imagine, when assignments become more complex and the solution space becomes more sparse. In fact, most temporal approaches devolve when applied to sparse solution spaces. In this chapter we treated each unique partial solution independently. However there are clearly common structure among different partial solutions. Being able to better understand the collection of partial solutions for sparse solution spaces is a fundamental question that I believe is a prerequisite to understanding students over time in such settings. Thus the next natural question to ask is: How should we model sparse solution space?

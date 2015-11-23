@@ -9,36 +9,31 @@ Online Programming Courses \cite{nguyen2014codewebs}\\ \emph{International Confe
 
 \vspace{7mm}
 
-The use of neural networks to learn a joint embedding space is useful for introductory control flow assignments. However for general programs that students would write in an undergraduate programming course, networks which represent recursive structures (such as programs) are currently not powerful enough to be the basis for understanding the space of student partial solutions.
 
-In this chapter we develop a way to understand partial solutions for general programming assignments. To do so we decompose online homework submissions into a vocabulary of ``code phrases'', and based on this vocabulary, we architect a queryable index that allows for fast searches into the massive dataset of student homework submissions. To demonstrate the utility of our homework search engine we index over a million code submissions from users worldwide in Stanford's Machine Learning MOOC and (a) semi-automatically learn shared structure amongst homework submissions and (b)  generate specific feedback for student mistakes. 
+In elementary programming tasks that are used by millions of students we can use emergent patterns in how students navigate the space of solutions to autonomously generate hints. However this strategy relies on having a relatively dense coverage of the partial solutions. When we look at general programming problems, the space of intermediate solutions students produced is too sparse for the Problem Solving Policy approach. In this chapter we develop a way to understand patterns in collections of partial solutions for general programming assignments. To do so we decompose large collections of online homework submissions into a vocabulary of ``code phrases'' and their respective ``contexts". Based on this vocabulary, we architect a queryable index that allows for fast searches into the massive dataset of student homework submissions. The most significant benefit of such a dataset is that it can be used to find parts of programs that are conditionally equivalent and thus re-factor a collection of submissions. If we can identify two programs that (1) react identically to unit tests and (2) for a particular subpart of the program, the subparts differ, but the contexts are the same, it suggests that the subparts are interchangeable.
+
+To demonstrate the utility of our homework search engine we index over a million code submissions from users worldwide in Stanford's Machine Learning MOOC and (a) semi-automatically learn shared structure amongst homework submissions and (b)  generate specific feedback for student mistakes. 
 
 
-\mypara{Search engines for student submitted content}
-\looseness -1 %\Chris{This seems to repeat many thoughts from previou sections: 
-%There has never existed as pressing a need to efficiently search student online content before.
-%But 
-With the amount of collected student content increasing at a growing rate
-	and the lines between formal classroom learning and informal online learning quickly blurring, 
-		search engines for student submitted content seem inevitable, and potentially enormously valuable. 
-		%\Chris{this seems like a good place to define what a search engine over homework means. There is a medium intellectual jump between these two sentences}
+\section{Search engines for student submitted content}
+
+
+Search engines for student submitted content seem inevitable, and potentially enormously valuable. 
 		These search engines would allow one to explore a massive number of homework submissions by efficiently retrieving submissions matching specific criteria.
 Students would then benefit by being able to look for other students who think alike,
 			 to see how students with different viewpoints think,
 			to find alternative strategies of approaching a homework problem,
 			or simply to browse other work for inspiration.
-			%\Chris{What about getting feedback? I know its coming... but its not clear here.}
-Instructors, on the other hand, would also benefit %, for while an instructor cannot read through tens of thousands
-%of student submissions to a MOOC,  she can 
+Instructors, on the other hand, would also benefit 
 by being able to query a search engine in order to look for submissions of a particular
 			type or even to count the number of students who submitted the same
 			or a similar class of solutions.
-%In this paper, we present a system capable of searching for programming code among a massive collection of submissions to a MOOC. Even though our focus is on code, we believe that similar ideas can have broad impact on a variety of courses beyond computer science.
 
-\looseness -1 While search engines for code have existed for a number of years (see~\cite{paul94,thummalapenta07,hummel08,kim10}),
-the nature of MOOC datasets makes for a setting that is quite distinct from that of typical code search.
+
+While search engines for code have existed for a number of years (see~\cite{paul94,thummalapenta07,hummel08,kim10}),
+the nature of student assignment datasets makes for a setting that is quite distinct from that of typical code search.
 %Even though one would still need to comb through massive amounts of code, 
-In the MOOC setting there is significantly more structure, since
+In the classroom setting there is significantly more structure, since
 (1)  submissions often take the form of single unit-testable functions written in a single language, and (2) 
 all students submit attempts of the same problem at the same time.   
 Due to this similarity between many submissions, 
@@ -50,7 +45,7 @@ semantics of code and the intentions of the programmer.
 %just beginning to learn to code.}
 
 
-\looseness -1 The engine that we propose in this chapter is built around a massive index over the existing student code submissions
+Codewebs, the engine that we propose in this chapter is built around a massive index over the existing student code submissions
 which can be searched using a variety of queries and supports a number of possible applications such as (but not limited to)
 finding alternative implementations, mining common approaches and misconceptions, and providing personalized feedback.
 %\Jon{Chris?}
@@ -64,25 +59,18 @@ Finally, the Codewebs system is designed so as to be easily portable to diverse 
 and to different programming languages remaining cognizant to the fact that instructor time is a limited resource.
 %Our system is 
 
-\mypara{Delivering scalable human feedback}
-Instructor time is also a limiting factor in delivering feedback to students, which is critical for learning.
-%Another issue in online education that the Codewebs engine addresses is that of allowing a human to scalably deliver feedback.
-With the number of engaged students in a MOOC commonly exceeding ten thousand, many benefits of face-to-face instruction are easily lost.
-Even despite the fact that programs can be checked for correctness (i.e., unit-tested) automatically, coding assignments are complex in that they can 
+\subsection{Delivering scalable human feedback}
+
+Coding assignments are complex in that they can 
 be approached with a multitude of algorithms or strategies and typically require creativity. 
-Thus in many coding problems, students can benefit from more feedback than a binary ``correct vs. incorrect''.   
-It is difficult, however, to gauge student understanding without being able to personally peruse through  tens of thousands of code submissions.
-And it is consequently difficult to grade student work, to provide detailed student feedback, or respond to individual questions. 
+Thus in many coding problems, students can benefit from more feedback than a binary ``correct vs. incorrect''. Even despite the fact that programs can be checked for correctness (i.e., unit-tested) automatically, when a student fails these unit tests, it is often difficult to be able to give meaningful feedback as to what when wrong.It is impossible, however, to gauge student understanding without being able to personally peruse through  tens of thousands of code submissions.
+And it is consequently difficult to grade student work, to provide detailed student feedback, or respond to individual questions. Moreover in the previous chapter we were able to show great potential in being able to provide feedback based on \emph{how} students solve a particular programming task, however, the approaches have only been shown to work on datasets where there were many more students than common solutions. For general programming assignments (which are more complex than simple maze assignments) student temporal patterns become under sampled. 
 
-\looseness -1 Detailed assignment feedback is in general neither easily automated or even appropriate for typical crowd-sourcing platforms such as Mechanical Turk since graders are required to have a certain level of expertise.  One proposed solution (pursued, for example, by the Coursera platform) has been to use peer grading instead, allowing students to grade each other. While peer grading has shown signs of initial success, it also suffers from a number of limitations including inconsistencies and biases amongst peer graders as well as sometimes an unwillingness or inability to provide high quality and constructive feedback \cite{piech13}.
 
-%\looseness -1 Among the many automated and crowdsourcing approaches now available, 
-%we take the view that \emph{human instructors still have a key role to play, even in the global classroom}.
-%Seamlessly incorporating human feedback into the loop would be both desirable to instructors and beneficial for students.
-Our method for providing scalable human feedback derives from the observation that even though there may be many thousands of unique submissions to an open-ended programming assignment the diversity reflects a much smaller number of compounded student-decision points. By recognizing ``shared parts" of student solutions and decoupling different decisions, instructor feedback can be force multiplied. The idea behind our tool is to have an instructor provide detailed feedback only on a handful of submissions which we can intelligently propagate to new solutions via underlying assignment structure learned using our homework search engine. We aim to create a system where a teacher can provide detailed 
+The method presented in this chapter for understanding student assignments derives from the observation that even though there may be many thousands of unique submissions to an open-ended programming assignment the diversity reflects a much smaller number of compounded student-decision points. By recognizing ``shared parts" of student solutions and decoupling different decisions, instructor feedback and understanding of students can be force multiplied. The idea behind our tool is to have an instructor provide detailed feedback only on a handful of submissions which we can intelligently propagate to new solutions via underlying assignment structure learned using our homework search engine. We aim to create a system where a teacher can provide detailed 
 feedback for thousands of students with the same effort that she would spend in an ordinary college course.
 
-The strategy of propagating teacher feedback aligns with our view that \emph{human instructors have a key role to play in the future digital classroom}. Seamlessly incorporating human feedback into the loop bridges the gap between the typical MOOC experience and the small classroom experience.
+
  Finally, because our system discovers the commonalities amongst student submissions using the corpus of students submissions, adding more student data to our data bank
  will improve our statistical confidence and coverage, 
  allowing us to provide meaningful feedback to more students, detect more classes of conceptual errors, and generally improve the utility of our system.
@@ -99,7 +87,7 @@ The strategy of propagating teacher feedback aligns with our view that \emph{hum
 % will improve statistical confidence and coverage, 
 % allowing us to provide meaningful feedback to more students and detect more classes of conceptual errors, and generally improve the utility of our system.}
 
-\mypara{Overview of main contributions}
+
 To summarize, we propose in this paper a novel system, \emph{Codewebs}, for searching through code
 submissions to a programming intensive MOOC as well as a methodology for scalably providing
 human level feedback to students in the MOOC.
@@ -117,7 +105,7 @@ human level feedback to students in the MOOC.
 %%a method for data-driven discovery of  equivalence classes of subtrees/forests which allow users to search for code by semantic similarity.
 %%We show that information from a human instructor can be used to facilitate bug understanding as well as to give feedback.
 The main technical innovations that we have developed are as follows.
-\begin{itemize}
+\begin{enumerate}
 \item We propose an efficient method for indexing code by ``code phrases'' corresponding to constituent parts
 of code submissions to a massive scale programming course.  In particular, we introduce a novel way to query for the surroundings, or \emph{context} of a code phrase, 
 which allows us to reason about the behavior of code within its context.
@@ -132,24 +120,59 @@ which  had over 120,000 students enrolled worldwide, who submitted over a millio
 We also explore the variability of this dataset, showing in particular that the frequency counts of  
 student submitted code phrases for a single programming problem follow a Zipf law distribution despite the
 fact that all submissions are implementations of the same function.
-\end{itemize}
-\begin{table}[t!]
-\center
-\begin{tabular}{|c|c|}
-\hline
-   \# submissions in total & 1,008,764 \\
-   \# coding problems & 42 \\
-    Average \# submissions per problem & 24,018 \\
-    Average \# students submitting per problem & 15,782 \\
-    Average \# of lines per submission  & 16.44 \\     %(discounting starter code)
-    Average \# of nodes per AST & 164 \\
+\end{enumerate}
+
+
+
+
+
+
+\section{Data from a programming intensive MOOC}\label{sec:dataset}
+We showcase our Codewebs system using data collected from 
+Stanford's online machine learning (ML) Class (taught by Andrew Ng), 
+which opened in October 2011 with over 
+120,000 students registering. Over the duration of the course,
+over 25,000 students submitted at least one assignment, and 
+10,405 students submitted solutions to all 8 homework assignments.  Each
+assignment had multiple parts (which combined for a total of 42 
+coding problems), in which students were asked to implement algorithms covered in lectures such as regression, neural networks and support vector machines.
+
+\begin{table}[h!]
+ \centering
+ \ra{1.3}
+\begin{tabular}{ll}
+  \toprule
+  \tabhead{Statistic} & \tabhead{Coursera ML Course} \\
+  \midrule
+   Submissions in total & 1,008,764 \\
+    Number of coding problems & 42 \\
+    Average  submissions per problem & 24,018 \\
+    Average  students submitting per problem & 15,782 \\
+    Average number of lines per submission  & 16.44 \\     %(discounting starter code)
+    Average number of nodes per AST & 164 \\
 %    Fraction of correct submissions & 1 \\
-    \hline
+    \bottomrule
 \end{tabular}
 \caption[Equivalence class dataset summary]{Statistics of the ML class dataset. }
 \label{tab:datasetsummary}
 \end{table}
-\begin{figure*}[t!]
+
+Code for the ML class was predominantly written in Octave, a high level interpreted language similar to MATLAB,
+and the submissions collectively covered nearly all of Octave's basic language features.
+Submissions to the course website were assessed via a battery of unit tests where the student
+programs were run with standard input and assessed on whether they produced
+the correct output. 
+We remark that high level languages such as Octave are fairly popular for instruction because they
+allow a student to ignore many of the low level frustrations associated with programming and 
+concentrate on the more important higher level concepts.
+But they are also harder languages to automatically analyze due to their more flexible syntax and dynamic typing.
+As we show in this paper, data driven methods give us a way to effectively analyze submissions in such languages.
+
+Figure~\ref{fig:codeexample} shows a correct attempt at the ``Gradient descent (for linear regression)'' problem
+assigned in the first homework.  In this problem, students were asked to find a linear predictor of the output vector $\texttt{y}$
+based on the input matrix $\texttt{X}$. Throughout the paper, we will use this linear regression coding problem as a running example.
+
+\begin{figure*}[ht]
 \center
 \subfigure[]{
 \includegraphics[width=.33\textwidth]{img/goodimplementation.pdf}
@@ -182,33 +205,7 @@ Context of the subtree with respect to the same AST.  Note the additional node d
 }
 \end{figure*}
 
-
-
-\section{Data from a programming intensive MOOC}\label{sec:dataset}
-We showcase our Codewebs system using data collected from 
-Stanford's online machine learning (ML) Class (taught by Andrew Ng), 
-which opened in October 2011 with over 
-120,000 students registering. Over the duration of the course,
-over 25,000 students submitted at least one assignment, and 
-10,405 students submitted solutions to all 8 homework assignments.  Each
-assignment had multiple parts (which combined for a total of 42 
-coding problems), in which students were asked to implement algorithms covered in lectures such as regression, neural networks and support vector machines.
-Code for the ML class was predominantly written in Octave, a high level interpreted language similar to MATLAB,
-and the submissions collectively covered nearly all of Octave's basic language features.
-Submissions to the course website were assessed via a battery of unit tests where the student
-programs were run with standard input and assessed on whether they produced
-the correct output. 
-We remark that high level languages such as Octave are fairly popular for instruction because they
-allow a student to ignore many of the low level frustrations associated with programming and 
-concentrate on the more important higher level concepts.
-But they are also harder languages to automatically analyze due to their more flexible syntax and dynamic typing.
-As we show in this paper, data driven methods give us a way to effectively analyze submissions in such languages.
-
-\looseness -1 Figure~\ref{fig:codeexample} shows a correct attempt at the ``Gradient descent (for linear regression)'' problem
-assigned in the first homework.  In this problem, students were asked to find a linear predictor of the output vector $\texttt{y}$
-based on the input matrix $\texttt{X}$. Throughout the paper, we will use this linear regression coding problem as a running example.
-
-\looseness -1 The Codewebs engine allows us to efficiently query this massive collection of code 
+The Codewebs engine allows us to efficiently query this massive collection of code 
 submissions from Stanford's ML class, all of which attempt to implement the same functionality.  With so many submissions of the same 
 programming problem, we are able to obtain a dense sampling of the solution space, in which 
  we observe almost every conceivable way of approaching the problem both correctly and incorrectly.
@@ -219,8 +216,8 @@ making our dataset also ideal for demonstrating the applicability of Codewebs.
 More statistics of our dataset are summarized in Table~\ref{tab:datasetsummary}.
 
 	
-\mypara{Structured representations of syntax} 
-\looseness -1 In addition to a string representation of each student's code submission,
+\section{Structured representations of syntax} 
+In addition to a string representation of each student's code submission,
 we parse each student submission into an \emph{abstract syntax tree (AST)} representation. 
 Each AST (which is equivalent to that created internally by the Octave software~\cite{eaton97}) 
 is stored explicitly in our database in JSON format.   An example AST is depicted in Figure~\ref{fig:astexample2}.
@@ -231,28 +228,31 @@ Nodes in our ASTs are specified by a \emph{type} (e.g., $\nodeSTATEMENT$, $\node
 $\texttt{gradient}$). 
 Other than the statement and identifier nodes, we do not assume any specific knowledge of the semantic meanings of node types.
 
-\looseness -1 Reasoning with abstract syntax trees instead of the original source code allows the Codewebs system to effectively ignore
+Reasoning with abstract syntax trees instead of the original source code allows the Codewebs system to effectively ignore
 cosmetic idiosyncrasies in whitespace, comments, and to some extent, differences in variable 
 names.   We find in many cases that multiple submissions that are distinct as code strings can correspond to the same AST.
 Thus after parsing, we retain just over half a million distinct ASTs from the original million submissions along with the number
 of occurrences of each unique AST.  
 
 \section{Efficient Indexing of code submissions}\label{sec:indexing}
-\looseness -1 What basic queries or items should a code search engine index?
+What basic queries or items should a code search engine index?
 If we viewed code simply as a string, it would be reasonable to query by terms, or phrases or regular expressions,
 but with the additional tree structure of our ASTs, we can go beyond traditional ``flat'' queries.
 The Codewebs engine accepts basic queries in the form of what we call \emph{code phrases}, subgraphs of an AST
 which take three forms: subtrees, subforests, and contexts, which we now define.  In the following, consider any AST denoted by $\AST$:
 
+\vspace{3mm}
 {{\noindent \bf [Subtrees]}} \emph{Subtrees} represent the most basic form of code phrases and 
 are specified by a single node $\node$ in AST $\AST$ and contain all descendants of $\node$.
 If an AST $\mathcal{B}$ is a subtree of AST $\AST$, we write $\mathcal{B} \leq \AST$.
 When referring to a specific subtree rooted at a node $\node$ of an AST, we write $\subtree$.
 
+\vspace{3mm}
 {{\noindent \bf [Subforests]}} In addition to subtrees, we consider \emph{subforests} which capture everything in a contiguous sequence of statements.
 Specifically, we define a subforest to be a consecutive sequence of \emph{statement subtrees} (i.e., 
 subtrees rooted at $\nodeSTATEMENT$ nodes).  
 
+\vspace{3mm}
 {{\noindent \bf [Context]}} Because the function of a code snippet generally depends strongly on the surrounding region of code in which it appears,
 we also allow for these surroundings to be directly queried by our engine. 
 Formally, we define the \emph{context} of a subtree $\subtree$ within a larger subtree $\subtreeprime$ of the same AST
@@ -262,18 +262,18 @@ For example, the context of the body of a for-loop with respect to the subtree r
 variable and expression specifying termination conditions.  We denote the context by $\subtreeprime\backslash\subtree$.
 Figure~\ref{fig:subtreeexample} shows an example subtree with its corresponding context (Figure~\ref{fig:contextexample}).
  We also refer to two special types of contexts:
-\begin{itemize}
+\begin{enumerate}
 \item Given AST $\AST$  and subtree $\subtree$, 
 the \emph{global context} of $\subtree$ with respect 
 to $\AST$ (written $\AST\backslash\subtree$) refers to the tree obtained by removing $\subtree$ from $\AST$.
 \item Given a subtree $\subtree$ rooted at node $\node$ in AST $\AST$, the \emph{local context} of $\subtree$ with respect to $\AST$ (written $\parentsubtree\backslash\subtree$)
 is the context of $\subtree$ within the subtree rooted at $\node$'s parent.
-\end{itemize}
+\end{enumerate}
 
 
 
 
-\mypara{Building an inverted index}
+\subsection{Building an inverted index}
 We now describe the construction of the
 inverted index at the heart of the Codewebs system, associating possible code 
 phrases of the above three types to lists of ASTs in the database which contain those phrases.  For simplicity, 
@@ -283,7 +283,7 @@ While traditional search engines \cite{zobel06} typically do not index arbitrari
 and since (2)  virtually all of the submissions attempt to implement the same functionality, resulting in many ASTs sharing large code phrases. 
 %\Jon{We might want to introduce notation for ``kth ancestor of a node'', but not clear if it is necessary yet.}
 
-\looseness -1 The inverted index is incrementally constructed by adding one AST at a time as follows.
+The inverted index is incrementally constructed by adding one AST at a time as follows.
 We first preprocess all ASTs by anonymizing identifiers that are not recognized as reserved Octave 
 identifiers or as those belonging to the provided starter code for the assignment.
 Then for each AST $\AST$ in the data,
@@ -315,8 +315,8 @@ the constraints of sharing a postorder traversal and corresponding to valid sour
 %to be 1. 
 
 
-\mypara{Efficient precomputation of hashes}
-\looseness -1 By exploiting the particular structure of the hash function $H$, we can efficiently precompute
+\subsection{Efficient precomputation of hashes}
+By exploiting the particular structure of the hash function $H$, we can efficiently precompute
 hash codes for all code phrases within an AST.
 We explicitly maintain  a serialized representation of each AST $\AST$ in our dataset
 as a flat array $L_\AST=[[{\bf\ell_1},\dots,{\bf\ell_m}]]$ 
@@ -414,8 +414,7 @@ Our second observation is that this design task can be automated to a large exte
 by unit test outcomes for each submission.
 
 
-\begin{example}[$\texttt{length(y)}$ and $\texttt{size(y,1)}$]\label{ex:lengthy}
-\looseness -1 As an illustration, consider our running example, the linear regression problem. 
+As an illustration, consider our running example, the linear regression problem. 
 Students were given a function prototype, assuming among other variables,  
 that a one-dimensional response vector, $y$, would be passed in as input.
 One of the sources of variation in the  problem came from the fact that
@@ -428,7 +427,7 @@ Thus, a typical canonicalization approach based on semantics preserving AST tran
 However, in the particular context of this linear regression problem, the two expressions would have been interchangeable
 in nearly all submissions, suggesting our approach (described next) of identifying the two expressions as
 being \emph{probabilistically equivalent}, and raises the question of how to discover such identifications from data.
-\end{example}
+
 
 There are two phases of our data driven canonicalization approach. In Section~\ref{sec:testing}, we are given 
 two code phrases and asked to determine whether they are semantically equivalent based on data.
@@ -440,26 +439,30 @@ ways of writing that code phrase.
 In order to define our notion of probabilistic equivalence, we first state a formal definition of \emph{exact} equivalence.
 We focus on semantics preserving AST transformations which take a subtree (or subforest) and replace it by another.
 A reasonable definition might then be as follows. 
-\begin{defn}\label{def:exactequivalence}
+
+\vspace{2mm}
+\begin{defo}
+Exact Equivalence \\
+\label{def:exactequivalence}
 Given two subtrees (or subforests) $\mathcal{B}$ and $\mathcal{B}'$,
 we say that $\mathcal{B}$ and $\mathcal{B}'$ are equivalent if for every AST containing $\mathcal{B}$,
 replacing $\mathcal{B}$ by $\mathcal{B}'$ always
 yields a program that runs identically (i.e. always produces the same output given the same input).  
-\end{defn}
+\end{defo}
+\vspace{2mm}
+
+
 For brevity, we will use subtrees to refer to both subtrees and subforests in the remainder of the section.
 Definition~\ref{def:exactequivalence} is a strict notion that might be useful in AST transformations for compiler optimization 
 (for example, to replace a for-loop by an unrolled version), but as discussed above, does not capture the notion of
-similarity in Example~\ref{ex:lengthy} and is thus overly rigid for our purposes.
-
-\mypara{Probabilistic formulation of semantic equivalence}
-We relax two aspects of the definition of exact equivalence:
-\begin{itemize}
+similarity in Example~\ref{ex:lengthy} and is thus overly rigid for our purposes. Thus, we relax two aspects of the definition of exact equivalence:
+\begin{enumerate}
 \item First, instead of asking $\mathcal{B}$ and $\mathcal{B}$' to result in identical behavior under \emph{all} inputs, we ask for 
 identical behavior only on a collection of unit tests (which may not be exhaustive in practice), allowing us to verify similarity using data 
 rather than having to establish formal proofs about program behavior.
 \item Second, instead of requiring that $\mathcal{B}$ and $\mathcal{B}$'  behave similarly under all containing ASTs, 
 we only require that the two subtrees behave similarly in the context of ASTs that have a high enough probability of being submitted to a particular problem.	
-\end{itemize}
+\end{enumerate}
 Formally, let $F[\AST]$ denote the output of an AST $\AST$ given a battery of unit tests as input.
 In the following, we let $P$ be the distribution over ASTs that could be submitted to a particular problem.
 We assume that $P$ exists, but that we only have access to draws from it (the already submitted code).
@@ -479,18 +482,23 @@ about equivalences to never-before-seen ASTs.  Our relaxed notion of equivalence
 
 %\Jon{introduce a context dependent equivalence}
 %\Jon{and a context free equivalence}
+\vspace{3mm}
+\begin{defo}
+	\label{def:equivalence}
+	We say that the AST subtrees $\mathcal{B}$ and $\mathcal{B}$' are $\alpha$-equivalent if, whenever $\AST\sim P$, $\AST'\sim P$, the following condition is satisfied:
 
-\begin{defn}\label{def:equivalence}
-We say that the AST subtrees $\mathcal{B}$ and $\mathcal{B}$' are $\alpha$-equivalent if, whenever $\AST\sim P$, $\AST'\sim P$, the following condition is satisfied:
+	\vspace{-2mm}
+	{
+	\begin{equation}\label{eqn:def1}
+	P(F[\AST] = F[\AST'] \,|\, \mathcal{B}\leq \AST, \mathcal{B}' \leq \AST', \AST\backslash \mathcal{B} = \AST'\backslash \mathcal{B}') \;\geq\; \alpha.
+	\end{equation}
+	}
+	\vspace{-2mm}
 
-{\scriptsize
-\begin{equation}\label{eqn:def1}
-P(F[\AST] = F[\AST'] \,|\, \mathcal{B}\leq \AST, \mathcal{B}' \leq \AST', \AST\backslash \mathcal{B} = \AST'\backslash \mathcal{B}') \;\geq\; \alpha.
-\end{equation}
-}
+	We refer to the above probability as the \emph{semantic equivalence probability}.
+\end{defo}
+\vspace{3mm}
 
-We refer to the above probability as the \emph{semantic equivalence probability}.
-\end{defn}
 In other words, if we condition two random ASTs  ($\AST$ and $\AST'$) drawn from the distribution $P$ to (1) contain the subtrees
 $\mathcal{B}$ and $\mathcal{B}'$ respectively, and (2) agree on global context ($\AST\backslash \mathcal{B}=\AST'\backslash \mathcal{B}'$), 
 then the probability that the unit
@@ -506,7 +514,28 @@ test outputs of $\AST$ and $\AST'$ agree should be high if $\mathcal{B}$ and $\m
 %does not happen too much however, we might still recover that $\alpha*\beta$ is analogous to $\beta*\alpha$
 %under our Definition 1.
 
-\begin{figure}
+
+Given two subtrees $\mathcal{B}$ and $\mathcal{B}'$, we can now estimate the probability
+that the two are semantically equivalent.   Our method relies on querying the Codewebs index, and 
+we assume queries always return a list of unique ASTs matching a given code phrase, along with a count of the number of submissions 
+matching each AST.
+First, Equation~\ref{eqn:def1} can be written equivalently as:
+
+{\scriptsize
+\begin{align}
+P(&F[\AST] = F[\AST'] \,|\, \mathcal{B}\leq \AST, \mathcal{B}' \leq \AST', \AST\backslash \mathcal{B} =\AST'\backslash \mathcal{B}')  \\
+ &\propto \sum_{\substack{\AST,\AST': \\ \AST\backslash \mathcal{B} = \AST'\backslash\mathcal{B'}}} \mathds{1}\{F[\AST] = F[\AST'] \}  \cdot P(\AST | \mathcal{B}\leq\AST) \cdot P(\AST'|\mathcal{B}'\leq \mathcal{A}) \label{eqn:equiv2}.
+ 	%&\qquad\qquad\cdot P(\AST,\AST\,|\, \mathcal{B}\in \AST, \mathcal{B}' \in \AST', \AST\backslash \mathcal{B} =\AST'\backslash \mathcal{B}')
+\end{align}
+}
+
+Estimating Equation~\ref{eqn:equiv2}  by plugging  in empirical distributions for $P(\AST | \mathcal{B}\leq\AST) $ and $P(\AST | \mathcal{B}'\leq\AST')$ 
+respectively amounts to summing over pairs of ASTs in the dataset that contain $\mathcal{B}$ and $\mathcal{B}'$, respectively, and match exactly
+with respect to global context.
+For intuition, the algorithm in figure ~\ref{alg:estimate} shows pseudocode for estimating the semantic equivalence
+probability for two subtrees using Equation~\ref{eqn:equiv2}.  
+
+\begin{figure}[ht]
 \begin{center}
 \begin{algorithm2e}[H]
 {\bf function} {\sc EquivalenceProb}\xspace(Subtrees $\mathcal{B}$, $\mathcal{B}'$): \\ 
@@ -530,37 +559,16 @@ test outputs of $\AST$ and $\AST'$ agree should be high if $\mathcal{B}$ and $\m
 	}
 }
 \ \Return $\texttt{count}/\texttt{denominator}$ \;
+\end{algorithm2e}
 \caption[Algorithm for estimating semantic equivalence]{Pseudocode for estimating the semantic equivalence probability between two subtrees, $\mathcal{B}$ and $\mathcal{B}'$.  
 The function $\texttt{QueryIndex}(\mathcal{B})$ is assumed to return a list of pairs $(\AST_i,c_i)$ such that each $\AST_i$ contains $\mathcal{B}$
 and $c_i$ is the number of submissions matching $\AST_i$.   Note that the inner loop can be implemented efficiently using 
 the precomputed hashes of global contexts (described in Section~\ref{sec:indexing}).
 }
 \label{alg:estimate}
-\end{algorithm2e}
+
 \end{center}
 \end{figure}
-
-\mypara{Estimating the semantic equivalence probability}
-\mbox{}
-Given two subtrees $\mathcal{B}$ and $\mathcal{B}'$, we can now estimate the probability
-that the two are semantically equivalent.   Our method relies on querying the Codewebs index, and 
-we assume queries always return a list of unique ASTs matching a given code phrase, along with a count of the number of submissions 
-matching each AST.
-First, Equation~\ref{eqn:def1} can be written equivalently as:
-
-{\scriptsize
-\begin{align}
-P(&F[\AST] = F[\AST'] \,|\, \mathcal{B}\leq \AST, \mathcal{B}' \leq \AST', \AST\backslash \mathcal{B} =\AST'\backslash \mathcal{B}')  \\
- &\propto \sum_{\substack{\AST,\AST': \\ \AST\backslash \mathcal{B} = \AST'\backslash\mathcal{B'}}} \mathds{1}\{F[\AST] = F[\AST'] \}  \cdot P(\AST | \mathcal{B}\leq\AST) \cdot P(\AST'|\mathcal{B}'\leq \mathcal{A}) \label{eqn:equiv2}.
- 	%&\qquad\qquad\cdot P(\AST,\AST\,|\, \mathcal{B}\in \AST, \mathcal{B}' \in \AST', \AST\backslash \mathcal{B} =\AST'\backslash \mathcal{B}')
-\end{align}
-}
-
-Estimating Equation~\ref{eqn:equiv2}  by plugging  in empirical distributions for $P(\AST | \mathcal{B}\leq\AST) $ and $P(\AST | \mathcal{B}'\leq\AST')$ 
-respectively amounts to summing over pairs of ASTs in the dataset that contain $\mathcal{B}$ and $\mathcal{B}'$, respectively, and match exactly
-with respect to global context.
-For intuition, Algorithm~\ref{alg:estimate} shows pseudocode for estimating the semantic equivalence
-probability for two subtrees using Equation~\ref{eqn:equiv2}.  
 
 
 \subsection{Semantic equivalence classes and solution space reductions}	\label{sec:reduction}
@@ -569,17 +577,22 @@ we turn to the problem of discovering groups of subtrees that are equivalent and
 %We can now explore how to propose candidates for this verification.
 
 To discover candidate equivalence classes, we use a two stage process: in the first stage an instructor annotates a small set of ``seed'' subtrees 
-that she believes are semantically meaningful, and in the second stage we algorithmically extract as many semantically equivalent subtrees as possible for each of denoted ``seeds.'' 
-
-The main advantage of this semi-autonomous approach is that it results in named equivalence 
+that she believes are semantically meaningful, and in the second stage we algorithmically extract as many semantically equivalent subtrees as possible for each of denoted ``seeds.'' The main advantage of this semi-autonomous approach is that it results in named equivalence 
 classes (as opposed to anonymous equivalence classes) which can be used to provide non-cryptic feedback. A secondary benefit 
-is that it enables a simple and efficient algorithm to extract the most important equivalences in an intelligent order.
-
-As an example, given the AST $\AST$ for the implementation in 
+is that it enables a simple and efficient algorithm to extract the most important equivalences in an intelligent order. As an example, given the AST $\AST$ for the implementation in 
 Figure~\ref{fig:codeexample},
  in the first phase an instructor might select the subtree $\mathcal{B}$ corresponding to the expression \texttt{(X * theta - y)} and label it as the ``residual." In the second phase the algorithm would find other equivalent ways to write the residual, such as $\texttt{(theta' * X' - y')'}$.
 See Figure~\ref{fig:tagging} for more  examples of code snippets that an instructor might select from the linear
  regression problem.
+
+ \begin{figure}[t]
+\center
+\includegraphics[width=.35\textwidth]{img/taggingexample.pdf}
+\caption[Example tagged code]{
+Example code snippets corresponding to AST subtrees tagged by an instructor for the linear regression problem.
+}
+\label{fig:tagging}
+\end{figure}
 
 In phase two, we expand the seed subtrees one at a time to build up an \emph{equivalence class}
 of subtrees by iterating the following steps:
@@ -630,7 +643,6 @@ set of the contexts that we believe may be attached to one of the equivalent sub
 until the size of our set stops growing.
 \end{enumerate}
 
-\mypara{Reduction and reindexing}
 Each equivalence class
 $\Sigma=\{\mathcal{B}_1,\mathcal{B}_2,\dots\}$ 
 learned from the data yields a set of canonicalization rules.  Thus whenever
@@ -640,14 +652,7 @@ The identification of subtrees within an equivalence class
  leads to a reduction in the complexity of the collection of submitted ASTs since ASTs that were previously
 distinct can now be transformed into the same tree.  Thus after finding an equivalence class, it is easier to expand a subsequent set.
 
-\begin{figure}[t!]
-\center
-\includegraphics[width=.35\textwidth]{img/taggingexample.pdf}
-\caption[Example tagged code]{
-Example code snippets corresponding to AST subtrees tagged by an instructor for the linear regression problem.
-}
-\label{fig:tagging}
-\end{figure}
+
 
 \begin{figure}[t!]
 \center
@@ -659,7 +664,7 @@ Example code snippets corresponding to AST subtrees tagged by an instructor for 
 \label{fig:equivalences}
 \end{figure}
 
-\begin{example}
+
 We highlight several examples of equivalence classes that were automatically discovered from the 
 submissions to the linear regression problem (shown in Figure~\ref{fig:equivalences} with names in braces).  
 Equivalence class $\{m\}$, for example, shows that $\texttt{length(y)}$ and $\texttt{size(y,1)}$ are equivalent, as discussed in Example~\ref{ex:lengthy}.
@@ -678,10 +683,8 @@ not have been equal if a student had redefined $\texttt{m}$ to be a matrix inste
 %The appearance of the subtree $\texttt{(X*theta - y) .* X(:, 1)}$ in Figure~\ref{fig:residual} may seem mysterious --- 
 %but it can be explained by the fact that many students assumed the precondition that the first column of the input
 %matrix $\texttt{X}$ (i.e., $\texttt{X(:,1)}$), was an all-ones vector (a correct assumption for this particular problem). Discovering these equivalences would be impossible with a small dataset, but with a MOOC-scale dataset, is indeed feasible.
-\end{example}
 
-
-\looseness -1 After the determination of each equivalence class, we rebuild the Codewebs index and optionally
+After the determination of each equivalence class, we rebuild the Codewebs index and optionally
 identify further equivalences.  It is often the case that recognizing an equivalence class  $\mathcal{E}$ (and reindexing 
 taking $\mathcal{E}$ into account) can help us to discover further equivalence classes.
 For example, it might be the case that we do not 
@@ -696,16 +699,13 @@ subtrees that fit into the same contexts as members of the equivalence class but
 %\Jon{note that collapsing some equivalences can help further ones to be discovered.}
 
 \section{Bug finding from search queries}
-Since the input to our system includes unit test outputs, determining whether a code submission contains a bug is not a difficult problem.  However, determining where the bug lies is considerably more challenging.  We discuss a way to use the search engine to localize a bug within code solely by examining its AST.  In the next section we will justify its effectiveness by evaluating its ability to determine the presence of a bug in a query code submission \emph{without} having access to the unit test output of the query.
+Since the input to our system includes unit test outputs, determining whether a code submission contains a bug is not a difficult problem.  However, determining where the bug lies is considerably more challenging and demonstrates awareness of the student's program.  We discuss a way to use the search engine to localize a bug within code solely by examining its AST.  In the next section we will show evidence of its effectiveness by evaluating its ability to determine the presence of a bug in a query code submission \emph{without} having access to the unit test output of the query.
 
-\mypara{Approach}
-As our ultimate goal is to provide useful feedback to as many students as possible, we will focus on common, localizable bugs.  If we consider the distribution of unit test outputs of ASTs which contain a particular subtree, we would expect that such a distribution corresponding to a buggy subtree would be skewed towards incorrect outputs, while that corresponding to a non-buggy subtree would resemble the overall distribution of unit test outputs.  
+If we consider the distribution of unit test outputs of ASTs which contain a particular subtree, we would expect that such a distribution corresponding to a buggy subtree would be skewed towards incorrect outputs, while that corresponding to a non-buggy subtree would resemble the overall distribution of unit test outputs.  
 As long as the subtrees are sufficiently small and the bugs sufficiently common, it is possible to have a reliably large sample of these unit test
-output distributions to use for the purposes of classification.
+output distributions to use for the purposes of classification. Notice, however, that as the subtrees become larger, the corresponding sample sizes necessarily decrease.  In fact, for any submission not in our training set, the improper subtree consisting of the full AST must has a unit test output distribution with sample size zero.  Thus to increase the sample sizes of our distributions, we use distributions corresponding to local contexts instead of subtrees for classification.
 
-Notice, however, that as the subtrees become larger, the corresponding sample sizes necessarily decrease.  In fact, for any submission not in our training set, the improper subtree consisting of the full AST must has a unit test output distribution with sample size zero.  Thus to increase the sample sizes of our distributions, we use distributions corresponding to local contexts instead of subtrees for classification.
 
-\mypara{Algorithm}
 Our algorithm consists of an indexing phase and a query phase.  In the indexing phase, we iterate over the local contexts of all proper subtrees of all ASTs in our collection.  For each unique local context we construct a histogram of the unit tests outputs of the ASTs to which the context belongs.   Notice that these histograms
 can be built via queries to our index described in Section~\ref{sec:indexing}.
 We then classify each local context as being either buggy or not buggy based on the skew and sample size of its unit test output histogram.
@@ -717,52 +717,25 @@ buggy by our index.  We then unmark any node with a marked descendant, and repor
 %\mypara{Building a bug database}
 %\subsection{Statistical bug isolation}
 
-\begin{figure}[t!]
-\center
-\subfigure[]{
-\includegraphics[width=.475\textwidth]{img/numastsvsruntime.pdf}
-\label{fig:numastsvsruntime}
-}
-\subfigure[]{
-\includegraphics[width=.475\textwidth]{img/astsizevsruntime.pdf}
-\label{fig:astsizevsruntime}
-}
-
-\caption[Runtime of AST indexing]{\subref{fig:numastsvsruntime} Runtime in seconds for indexing a collection of ASTs (as a function of the number of ASTs)
-from the ``gradient descent (for linear regression)'' problem;
-\subref{fig:astsizevsruntime} Runtime in seconds for indexing 1000 ASTs from each of the homework problems for Coursera's ML course plotted
-against average AST size (\# nodes) for each problem}
-%\label{fig:numastsvsruntime}
-\end{figure}
-\begin{figure*}[t!]
-\center
-\subfigure[]{
-\includegraphics[width=.30\textwidth]{img/zipfnoequivalence.pdf}
-\label{fig:zipfnoequiv}
-}
-\subfigure[]{
-\includegraphics[width=.30\textwidth]{img/reduction.pdf}
-\label{fig:reduction}
-}
-\subfigure[]{
-\includegraphics[width=.30\textwidth]{img/reduction2.pdf}
-\label{fig:reduction2}
-}
-
-\caption[How use of equivalence classes change teacher impact]{
-\subref{fig:zipfnoequiv}
-Zipf's Law: subtree frequency plotted against subtree rank (in the frequency table). % with and without canonicalization.  
-%Note that our data closely follows Zipf's law (dotted line) except at an ``elbow'' at the top of the ranked list.
-%We do not include time required for parsing or loading ASTs from disk in the above plot.
-%Note that this is eclipsed by time for parsing (roughly 2 hours for all 40790 submissions).
-\subref{fig:reduction} Fraction of remaining unique ASTs after canonicalizing the $k$ most frequent ASTs with 1, 10 or 19 learned equivalence classes;
-\subref{fig:reduction2} Number of submissions covered if an instructor were to mark the 25 or 200 most frequent ASTs after canonicalization
-}
-
-\label{fig:zipfreduction}
-\end{figure*}
-
 \section{Empirical findings}\label{sec:evaluation}
+
+\begin{figure}[t!]
+  \center
+  \subfigure[]{
+  \includegraphics[width=.475\textwidth]{img/numastsvsruntime.pdf}
+  \label{fig:numastsvsruntime}
+  }
+  \subfigure[]{
+  \includegraphics[width=.475\textwidth]{img/astsizevsruntime.pdf}
+  \label{fig:astsizevsruntime}
+  }
+  \caption[Runtime of AST indexing]{\subref{fig:numastsvsruntime} Runtime in seconds for indexing a collection of ASTs (as a function of the number of ASTs)
+  from the ``gradient descent (for linear regression)'' problem;
+  \subref{fig:astsizevsruntime} Runtime in seconds for indexing 1000 ASTs from each of the homework problems for Coursera's ML course plotted
+  against average AST size (\# nodes) for each problem}
+  %\label{fig:numastsvsruntime}
+\end{figure}
+
 In this section we present  empirical studies
 of the performance of our Codewebs system and use it to study data from Stanford's ML class.
 Our current implementation uses a parser (adapted from the Octave project~\cite{eaton97}) to convert
@@ -774,7 +747,7 @@ Lenovo Thinkpad
 (2.40 GHz) with 8 GB RAM.
 
 
-\mypara{Running time}
+\subsection{Running Time}
 We first consider the amount of time required for indexing 
 by plotting the running time 
  as a function of the number of ASTs (for the linear regression problem).
@@ -801,7 +774,7 @@ on forty different programming problems against the average number of nodes per 
 We finally note that in all cases, the combined time for all parsing, indexing, and equivalence discovery operations
 is dominated by the amount of time that students are given to complete an assignment (consisting of 5-7 programming problems on average).
 
-\mypara{Code phrase statistics}
+\subsection{Code Phrase Statistics}
 Given the scale of our data, it is natural to ask:  \emph{have we seen all of the code phrases that we are likely to see?}
 For insight, we turn to Zipf's law~\cite{zipf1949human}, which characterizes a phenomenon that
  the frequency of a word in a large scale natural language corpus
@@ -812,6 +785,31 @@ Zipf's law has had implications for search engine design, particular for efficie
 Among other things, we know that when words are sampled from a Zipfian distribution, the size of the vocabulary grows
 indefinitely without converging to a fixed maximum size~\cite{lu10}.
 
+\begin{figure*}[t!]
+  \center
+  \subfigure[]{
+  \includegraphics[width=.30\textwidth]{img/zipfnoequivalence.pdf}
+  \label{fig:zipfnoequiv}
+  }
+  \subfigure[]{
+  \includegraphics[width=.30\textwidth]{img/reduction.pdf}
+  \label{fig:reduction}
+  }
+  \subfigure[]{
+  \includegraphics[width=.30\textwidth]{img/reduction2.pdf}
+  \label{fig:reduction2}
+  }
+
+  \caption[How use of equivalence classes change teacher impact]{
+  \subref{fig:zipfnoequiv}
+  Zipf's Law: subtree frequency plotted against subtree rank (in the frequency table).
+  \subref{fig:reduction} Fraction of remaining unique ASTs after canonicalizing the $k$ most frequent ASTs with 1, 10 or 19 learned equivalence classes;
+  \subref{fig:reduction2} Number of submissions covered if an instructor were to mark the 25 or 200 most frequent ASTs after canonicalization
+  }
+
+  \label{fig:zipfreduction}
+\end{figure*}
+
 Asking the similar question of whether code phrases also obey such a law may yield
 insight into how the Codewebs index is expected to grow as a function of the size of the dataset of submissions.
 Due to the constrained nature of the data, we might expect significantly 
@@ -820,7 +818,7 @@ plots the frequency of a subtree against its corresponding rank in the frequency
 from all subtrees taken from 10,000 distinct ASTs submitted to the linear regression problem.
 The relationship between the log rank and log frequency is evidently nearly linear
  with an ``elbow'' at around the $45^{th}$ most frequent subtree, up to which all earlier subtrees occur more than 10,000 times.  
- We hypothesize that this elbow is due to the subtrees included in the provided starter code that was shared by almost all implementations.
+ We hypothesize that this elbow is due to the subtrees included in the provided starter code that was shared by almost all implementations. This extends the result that we observed in chapter 1. Not only do entire submissions tend to follow a Zipf distribution, the collection of code phrases does too.
 
 A linear regression shows that $\log (\texttt{rank}) \approx a- b\cdot\log (\texttt{freq})$, where $a=10.677$
 and $b=1.01$ (which is remarkably close to the slope of 1 postulated by Zipf's law). 
@@ -829,7 +827,7 @@ been observed in the data.  On the other hand, the result also suggests that pri
 scaling up code phrase indexing as well.
 %\Jon{and with equivalences?}
 
-\mypara{Equivalence classes and reduction}
+\subsection{Equivalence Classes and Reduction}
 We now evaluate the amount of reduction obtained via canonicalization.  We 
 manually tagged 19 code phrases that were likely to vary in the linear regression problem (including those shown in Figure~\ref{fig:equivalences})
 and used the Codewebs engine to thus find 19 equivalence classes.
@@ -852,7 +850,7 @@ of the roughly 40,790 submissions to the linear regression problem by marking 20
 Note that we also cover 73\% more submissions by marking just 25 canonicalized ASTS than 
 if we were to mark 200 uncanonicalized ASTs.
 
-\mypara{Bug identification}
+\subsection{Bug Identification}
 Evaluating bug localization is challenging since there is currently no available ``ground truth'' data
 on the locations of bugs in submitted code.  We thus only evaluate our ability to detect
 the presence of a bug in a submission (instead of requiring localization), for which we do have ground truth through unit tests.
@@ -866,30 +864,30 @@ ASTs with $k=5$ (see our previous work,~\cite{huang13}).
 
 
 \begin{figure}[t!]
-\center
-%\subfigure[]{
-%\includegraphics[width=.30\textwidth]{img/bugsComparison.pdf}
-%\label{fig:bugsAll}
-%}\;
-\subfigure[]{
-\includegraphics[width=.31\textwidth]{img/bugsFscoreDiffs.pdf}
-\label{fig:bugsAll}
+  \center
+  %\subfigure[]{
+  %\includegraphics[width=.30\textwidth]{img/bugsComparison.pdf}
+  %\label{fig:bugsAll}
+  %}\;
+  \subfigure[]{
+  \includegraphics[width=.4\textwidth]{img/bugsFscoreDiffs.pdf}
+  \label{fig:bugsAll}
 
-}
-\qquad\qquad
-\subfigure[]{
-\includegraphics[width=.3\textwidth]{img/bugIsolation.pdf}
-\label{fig:bugIsolation}
-}
+  }
+  \qquad\qquad
+  \subfigure[]{
+  \includegraphics[width=.4\textwidth]{img/bugIsolation.pdf}
+  \label{fig:bugIsolation}
+  }
 
-\caption[Bug detection accuracy]{
-\subref{fig:bugsAll}  F-score comparison of Codewebs based bug detection algorithm against baseline (5-nearest neighbors) 
-for the 5000 most frequent ASTs for each assigned homework problem.  Each circle corresponds to a single homework problem, 
-with circle widths  set to be proportional to the average \# of nodes per AST for that problem; 
-\subref{fig:bugIsolation} Codewebs based bug detection F-scores on the $k$ most frequent ASTs, with and without canonicalization
-on the ``linear regression with gradient descent'' homework problem.
-}
-\label{fig:exp2}
+  \caption[Bug detection accuracy]{
+  \subref{fig:bugsAll}  F-score comparison of Codewebs based bug detection algorithm against baseline (5-nearest neighbors) 
+  for the 5000 most frequent ASTs for each assigned homework problem.  Each circle corresponds to a single homework problem, 
+  with circle widths  set to be proportional to the average \# of nodes per AST for that problem; 
+  \subref{fig:bugIsolation} Codewebs based bug detection F-scores on the $k$ most frequent ASTs, with and without canonicalization
+  on the ``linear regression with gradient descent'' homework problem.
+  }
+  \label{fig:exp2}
 \end{figure}
 
 
@@ -922,7 +920,7 @@ On 1000 ASTs, our bug detection precision (with canonicalization) is .78 and rec
 Finally, we remark that the bug localization algorithm is fast and capable of  handling over 150 requests per second (for the
 linear regression problem with an average AST size 116).
 
-\mypara{Feedback case study}
+\section{Feedback Case Study}
 Without the help of our system, the easiest way to scalably provide feedback to students in a MOOC is to 
 send canned feedback for the most frequent (incorrect) unit test outcomes, which often reflect common misunderstandings.
 One weakness of this unit-test based approach, however, is that it can fail when a single conceptual misunderstanding
@@ -935,8 +933,7 @@ erroneously included an ``extraneous sum'' in the gradient expression
 (e.g., with $\texttt{sum((X*theta-y)'*X)}$ instead of   $\texttt{X'*(X*theta-y)}$ ). 
 Upon identifying a single instance of the bug, an instructor can then use
 the Codewebs system 
-to extract many equivalent ways of writing the erroneous expression (e.g., $\texttt{sum(((theta'*X')'-y)'*X)}$, $\texttt{sum(transpose(X*theta-y)*X)}$, etc.).   
-These expressions are then matched to incoming student submissions, for which we can
+to extract many equivalent ways of writing the erroneous expression. These expressions are then matched to incoming student submissions, for which we can
 provide a human generated message explaining the cause of the misunderstanding.
 
 After extracting equivalences and matching to the existing submissions, our algorithm
@@ -987,28 +984,25 @@ the number of clusters intuitively can grow exponentially in the number of parts
 Our work is the first to explicitly address the idea that smaller parts of code can be shared among submissions.
 
 \section{Discussion}\label{sec:discussion}
-MOOC platforms now collect massive datasets of student submissions across hundreds of courses, 
+Online platforms now collect massive datasets of student submissions across hundreds of courses, 
 introducing new research problems of how to organize and search the data 
 effectively, but also new opportunities to use the data in ways that were not previously possible.
 We have developed a system called Codewebs which efficiently indexes all of the code submissions to a 
-MOOC programming assignment and can be useful in a number of applications.  
+large online programming assignment and can be useful in a number of applications.  
 Through a novel use of unit test information, our system is also able to determine 
 when code snippets are semantically equivalent in a data driven way.
 
-As the MOOC ecosystem continues to quickly expand, it is crucial for 
-accompanying learning technologies to be applicable to a large variety of courses with minimal effort on the part of the instructor.
 Codewebs makes no assumptions about the underlying assignments and is designed to be easily applicable to a 
 wide variety of programming languages.
 Instead of running dynamic analysis on fully instrumented programs, the system relies only on unit test information
 which is lightweight and thus contributes to portability.
-To apply Codewebs to a programming problem, the most important requirement is a large dataset of student submissions (which is a given in MOOCs).
+To apply Codewebs to a programming problem, the most important requirement is a large dataset of student submissions.
 Beyond data, we only have a handful of requirements:
 (1) a mechanism for parsing source code into an abstract syntax tree (which is available for most programming languages)
 (2) a specification of which nodes of an AST correspond to statements, identifiers, and constants, 
 (3) a listing of reserved functions and identifiers that are not to be anonymized, 
 (4) sufficiently informative unit tests for problems, and 
-(5) instructor specified
-points of variation for determining canonicalization rules.  
+(5) instructor specified points of variation for determining canonicalization rules.  
 Thus we believe that applying the Codewebs system to submissions in other coding intensive courses should be straightforward.
 
 There are a number of directions ripe for future work.
@@ -1026,7 +1020,7 @@ But more interestingly, these ideas may also apply to indexing formal logic proo
 natural language mathematical proofs, which can be useful either for researchers or educators.
 %or in math and statistics courses offered online.
 Looking even further, it is tantalizing to speculate about the role that effective search engines for student content
- might play in the MOOC ecosystem beyond STEM (science, technology, engineering and mathematics) courses. 
+ might play in the online learning ecosystem beyond STEM (science, technology, engineering and mathematics) courses. 
 Public exhibitions of student work are, for example, a common way to culminate university level art and design courses --- but 
 pulling these exhibitions off at the scale of MOOCs requires an effective way to search through tens of thousands of submissions.
 And while the specific features of designing a search engine for one of these courses will surely be different from the Codewebs
@@ -1034,3 +1028,5 @@ setting,  many of the same questions will still apply.
 What are the natural queries for an assignment?
 How can we exploit the organizational structure of a search engine index to facilitate student feedback?
 How do we scale to tens of thousands of students?
+
+
