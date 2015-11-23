@@ -174,7 +174,7 @@ An interesting observation that we made is that for every single programming ass
 \center
 \includegraphics[width=1.0\textwidth]{img/zipfAll}
 \caption[Submission Sparcity]{
-Log-log plots for four assignments with temporal data. Code.org A and B are two different assignments from the Code.org platform and Stanford A and B are two assignments form the Stanford CS1 course. All assignments that we analyzed simlarly fit Zipf distributions.
+Log-log plots for five assignments. Code.org A and B are two different assignments from the Code.org platform, Stanford A and B are two assignments form the Stanford CS1 course and Coursera Machine Learning A is one assignment from the machine learning course. The $s$ value is the power parameter of a ziph fit. Of note$^*$ all assignments have temporal data except for machine learning, which means that the $s$ parameter for that one assignment is not directly comparable to the others.
 }
 \label{fig:zipfAll}
 \end{figure}
@@ -222,7 +222,7 @@ The challenge of how to provide autonomous feedback to students at scale remains
 In the first chapter we use recurrent neural networks to understand students as they solve correct/incorrect class of problems in Khan Academy. In the second chapter we find out what temporal patterns emerge when millions of students solve the same Code.org Maze assignments. In the third chapter we develop a neural network way to encode the functionality of control flow programming assignments. In the fourth chapter we present a way to autonomously discover equivalent sub-parts of general student programming assignments. Finally, in the fifth chapter we show how machine learning tools can be used to help in peer grading, the ubiquitous way to provide feedback online when autonomous methods are not available.
 
 The most substantial contributions of this research are:
-\begin{itemize}
+\begin{enumerate}
 \item We achieved state of the art in knowledge tracing (and a 25\% increase of AUC on a standard dataset). 
 
 \item Discovery of the Poison Path pattern in how students navigate solution spaces that both: predicts how teachers would suggest a learner make forward progress and has an almost perfect logrithmic relationship with the probability of a student succeeding in the future.
@@ -231,7 +231,7 @@ The most substantial contributions of this research are:
 
 \item A novel way to `tune` the network of peer grades to simultaneously learn grading ability and assignment true scores (and a 33\% reduction in RMSE on an online design course).
 
-\end{itemize}
+\end{enumerate}
 However, there are dozens of smaller corollaries that we arrived at as a result of our novel exploration of an unprecedented dataset. It is hard to quantify exactly where we stand with respect to autonomously providing feedback across the entire domain of programming assignments especially since the objectives we try to reach are slightly different for different problem types. However for each task I can subjectively express the degree to which the algorithms allow us to understand what students know. To do so I compose both (1) the degree to which a task reflects actionable understanding of a student and (2) the accuracy our algorithms were able to achieve on the task. As an example of the different utility of different prediction tasks: being able to predict exactly what a student will do represents a deeper understanding then being able to recognize that their last submissions was similar enough to another students that we can propagate feedback. For each of the new algorithms that we present I did my best to estimate algorithm ``understanding" over the range of assignments to which they are applicable. See figure \ref{fig:bigPicture}. While I have made substantial gains against the baselines of brute force annotation and propagation of feedback available from unit tests, there is still a substantial amount of room for improvement between the hull of our contemporary ability to understand students and the level that is possible.
 
 The thesis is split into three parts. In the first part we explore how to understand students as they learn across curricula of simple answers. In the second part we will explore how to model student trajectories as they solve multi step programming tasks. In the third part we explore how to understand patterns in sparse student programs.

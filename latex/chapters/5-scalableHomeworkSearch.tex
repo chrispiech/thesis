@@ -10,7 +10,7 @@ Online Programming Courses \cite{nguyen2014codewebs}\\ \emph{International Confe
 \vspace{7mm}
 
 
-In elementary programming tasks that are used by millions of students we can use emergent patterns in how students navigate the space of solutions to autonomously generate hints. However this strategy relies on having a relatively dense coverage of the partial solutions. When we look at general programming problems, the space of intermediate solutions students produced is too sparse for the Problem Solving Policy approach. In this chapter we develop a way to understand patterns in collections of partial solutions for general programming assignments. To do so we decompose large collections of online homework submissions into a vocabulary of ``code phrases'' and their respective ``contexts". Based on this vocabulary, we architect a queryable index that allows for fast searches into the massive dataset of student homework submissions. The most significant benefit of such a dataset is that it can be used to find parts of programs that are conditionally equivalent and thus re-factor a collection of submissions. If we can identify two programs that (1) react identically to unit tests and (2) for a particular subpart of the program, the subparts differ, but the contexts are the same, it suggests that the subparts are interchangeable.
+In maze programming tasks that are used by millions of students we can use emergent patterns in how students navigate the space of solutions to autonomously generate hints. However this strategy relies on having a relatively dense coverage of the partial solutions. When we look at general programming problems, the space of intermediate solutions students produced is too sparse for the Problem Solving Policy approach. In this chapter we develop a way to understand patterns in collections of partial solutions for general programming assignments. To do so we decompose large collections of online homework submissions into a vocabulary of ``code phrases'' and their respective ``contexts". Based on this vocabulary, we architect a queryable index that allows for fast searches into the massive dataset of student homework submissions. The most significant benefit of such a dataset is that it can be used to find parts of programs that are conditionally equivalent and thus re-factor a collection of submissions. If we can identify two programs that (1) react identically to unit tests and (2) for a particular subpart of the program, the subparts differ, but the contexts are the same, it suggests that the subparts are interchangeable.
 
 To demonstrate the utility of our homework search engine we index over a million code submissions from users worldwide in Stanford's Machine Learning MOOC and (a) semi-automatically learn shared structure amongst homework submissions and (b)  generate specific feedback for student mistakes. 
 
@@ -65,7 +65,6 @@ Coding assignments are complex in that they can
 be approached with a multitude of algorithms or strategies and typically require creativity. 
 Thus in many coding problems, students can benefit from more feedback than a binary ``correct vs. incorrect''. Even despite the fact that programs can be checked for correctness (i.e., unit-tested) automatically, when a student fails these unit tests, it is often difficult to be able to give meaningful feedback as to what when wrong.It is impossible, however, to gauge student understanding without being able to personally peruse through  tens of thousands of code submissions.
 And it is consequently difficult to grade student work, to provide detailed student feedback, or respond to individual questions. Moreover in the previous chapter we were able to show great potential in being able to provide feedback based on \emph{how} students solve a particular programming task, however, the approaches have only been shown to work on datasets where there were many more students than common solutions. For general programming assignments (which are more complex than simple maze assignments) student temporal patterns become under sampled. 
-
 
 The method presented in this chapter for understanding student assignments derives from the observation that even though there may be many thousands of unique submissions to an open-ended programming assignment the diversity reflects a much smaller number of compounded student-decision points. By recognizing ``shared parts" of student solutions and decoupling different decisions, instructor feedback and understanding of students can be force multiplied. The idea behind our tool is to have an instructor provide detailed feedback only on a handful of submissions which we can intelligently propagate to new solutions via underlying assignment structure learned using our homework search engine. We aim to create a system where a teacher can provide detailed 
 feedback for thousands of students with the same effort that she would spend in an ordinary college course.
@@ -374,7 +373,16 @@ For example, where one student might use a for-loop, another might equivalently 
 %and De Morgan's laws (and distributive laws in general) can be used to transform
 %the apparent syntax of a boolean or algebraic expression.
 and if we were to require exact syntactic matches between code phrases (as was assumed in the previous section), we would not be
-able to capture the fact that the two submitted implementations were highly similar.
+able to capture the fact that the two submitted implementations were highly similar. The web of student solutions depicted in figure \ref{fig:submissionWeb} shows this complexity.
+
+\begin{figure}[t!]
+\includegraphics[width=1.0\textwidth]{img/machineLearningWeb}
+\caption[Depiction of Machine Learning Submissions]{A depiction of landscape of solutions for “gradient descent for linear regression” representing over
+40,000 student code submissions with edges drawn between syntactically similar submissions and
+colors corresponding to performance on a battery of unit tests (red submissions passed all unit
+tests)}
+\label{fig:submissionWeb}
+\end{figure}
 
 To address the issue of non-exact matches, some authors have turned to a softer notion of matching between ASTs
 such as tree edit distance (see \cite{shasha94}). But this approach, which has been used in works on generic
@@ -1028,5 +1036,10 @@ setting,  many of the same questions will still apply.
 What are the natural queries for an assignment?
 How can we exploit the organizational structure of a search engine index to facilitate student feedback?
 How do we scale to tens of thousands of students?
+
+While the Codewebs methodology is effective, it has some notable limitations. While equivalence classes are good at catching functional identities, by factoring out equivalence classes, the students programming style is often lost. This is often important information for providing feedback and understanding the space of programs. A related limitation is that the system doesn't capture conditional equivalence. Sometimes it may be the case that two code phrases are the same only under a particular condition in the context. This case is particularly hard to handle as on one hand that signal can be important for propagating feedback, and on another hand marking the two phrases as equivalent will be incorrect in certain cases. 
+
+Another limitation of this research project is that it does not enable programs to be used as input to traditional machine learning programs. The equivalence representation lack the typical feature vector that many algorithms operate on and distance between two programs is now ambiguous. AST edit distance -- which has very notable limitations -- does not extend to equivalence classes. In fact it is provably undecidable in the computational theory sense. Since equivalence under the context of equivalence classes is well defined the method will be useful for extensions to ideas such as the Problem Solving Policy. But in order for programs to be amenable to the sort of tool used in Deep Knowledge Tracing, we will need to come up with alternative mechanisms for capturing underlying structure in collections of programs.
+
 
 

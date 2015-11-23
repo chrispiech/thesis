@@ -8,12 +8,14 @@ Based on a paper: Learning Program Embeddings to Propagate Feedback on Student C
 
 \vspace{7mm}
 
+%A central difficulty that arises as we look at a set of programs is that even though as humans we can see structure and patterns in student submissions, it is difficult for computers to find structure in data in the form of programs.  Program representations
+%such as the Abstract Syntax Trees are not directly conducive to standard statistical methods and the edit distance metric between such trees 
+%are not discriminative enough to be used to share feedback accurately since programs with similar ASTs can behave quite differently and require different comments. 
 
-In this chapter we develop approaches for giving feedback to students for control flow assignments that are typical as the first assignments in university courses. In these tasks, students write programs using a language that is often turing complete and has all the control flow affordances of modern programming languages, but no user defined variables. Feedback in this domain often is in the form of human comments to the whole (or parts) of a partial solution. 
 
-A central difficulty that arises as we look at this set of programs is that even though as humans we can see structure and patterns in student submissions, it is difficult for computers to find structure in data in the form of programs.  Program representations
-such as the Abstract Syntax Trees are not directly conducive to standard statistical methods and the edit distance metric between such trees 
-are not discriminative enough to be used to share feedback accurately since programs with similar ASTs can behave quite differently and require different comments. 
+A central difficulty that arises as we look at a set of programs is that even though as humans we can see structure and patterns in student submissions, it is difficult for computers to find structure in data in the form of programs.
+By using the codewebs engine we were able to autonomously find equivalences amongst a collection of general student programs and thus start to uncover latent structure. However these equivalences cannot capture suble conditional relationships between programs and does not allow for programs to be input to traditional machine learning tasks. 
+Given how successfully recurrent neural networks performed at understanding student learning accross curricula, it seems worth investigating if there were methods that could potentially capture a more nuanced articulation of submissions structure \emph{and} project programs into vector space.
 
 There are two major goals of this chapter.  The 
 first is to automatically learn a feature embedding of 
@@ -27,6 +29,8 @@ we formulate a novel neural network architecture
 that allows us to jointly optimize an embedding of programs and memory-state in a feature space.
 %We propose the use of neural networks to jointly learn an embedding of states and programs that best captures these pre-condition, program, post-condition triples. 
 See Figure~\ref{fig:splash} for an example program and corresponding matrix embeddings.
+
+In this chapter we develop approaches for giving feedback to students for control flow assignments that are typical as the first assignments in university courses. In these tasks, students write programs using a language that is often turing complete and has all the control flow affordances of modern programming languages, but no user defined variables. Programs without user variables are easier to reason about, and thus make for an ideal domain to explore program embedding spaces. Feedback in this domain often is in the form of human comments to the whole (or parts) of a partial solution. 
 
 
 %A unique property of programs is that they are 

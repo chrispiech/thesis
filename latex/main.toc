@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.7}Unique Access to Data}{7}
 \contentsline {section}{\numberline {1.8}Program Submission Sparcity}{8}
 \contentsline {section}{\numberline {1.9}Approaches}{9}
-\contentsline {subsection}{\numberline {1.9.1}Big Picture First}{10}
+\contentsline {subsection}{\numberline {1.9.1}Big Picture First}{9}
 \contentsline {subsection}{\numberline {1.9.2}Understand Students}{10}
 \contentsline {subsection}{\numberline {1.9.3}Easy to Author}{11}
 \contentsline {section}{\numberline {1.10}Novel Contribution}{11}
@@ -69,54 +69,54 @@
 \contentsline {subsection}{\numberline {4.4.2}Efficient matching}{55}
 \contentsline {subsection}{\numberline {4.4.3}Efficient precomputation of hashes}{55}
 \contentsline {section}{\numberline {4.5}Data driven discovery of semantic equivalence classes}{56}
-\contentsline {subsection}{\numberline {4.5.1}Testing for semantic equivalence}{57}
-\contentsline {subsection}{\numberline {4.5.2}Semantic equivalence classes and solution space reductions}{58}
+\contentsline {subsection}{\numberline {4.5.1}Testing for semantic equivalence}{58}
+\contentsline {subsection}{\numberline {4.5.2}Semantic equivalence classes and solution space reductions}{59}
 \contentsline {section}{\numberline {4.6}Bug finding from search queries}{62}
-\contentsline {section}{\numberline {4.7}Empirical findings}{62}
+\contentsline {section}{\numberline {4.7}Empirical findings}{63}
 \contentsline {subsection}{\numberline {4.7.1}Running Time}{63}
-\contentsline {subsection}{\numberline {4.7.2}Code Phrase Statistics}{63}
-\contentsline {subsection}{\numberline {4.7.3}Equivalence Classes and Reduction}{64}
-\contentsline {subsection}{\numberline {4.7.4}Bug Identification}{65}
-\contentsline {section}{\numberline {4.8}Feedback Case Study}{66}
+\contentsline {subsection}{\numberline {4.7.2}Code Phrase Statistics}{64}
+\contentsline {subsection}{\numberline {4.7.3}Equivalence Classes and Reduction}{65}
+\contentsline {subsection}{\numberline {4.7.4}Bug Identification}{66}
+\contentsline {section}{\numberline {4.8}Feedback Case Study}{67}
 \contentsline {section}{\numberline {4.9}Related work}{67}
-\contentsline {section}{\numberline {4.10}Discussion}{67}
-\contentsline {chapter}{\numberline {5}Homework Embedding Spaces}{69}
-\contentsline {section}{\numberline {5.1}Related Work}{70}
-\contentsline {section}{\numberline {5.2}Embedding Hoare Triples}{71}
-\contentsline {subsection}{\numberline {5.2.1}Neural network encoding and decoding of states}{73}
-\contentsline {subsection}{\numberline {5.2.2}Nonparametric model of program embedding}{74}
-\contentsline {subsection}{\numberline {5.2.3}Triple Extraction}{75}
-\contentsline {section}{\numberline {5.3}Feedback Propagation}{75}
-\contentsline {subsection}{\numberline {5.3.1}Incorporating structure via recursive embedding}{76}
-\contentsline {section}{\numberline {5.4}Datasets}{77}
-\contentsline {section}{\numberline {5.5}Results}{78}
-\contentsline {subsection}{\numberline {5.5.1}Prediction of postcondition}{78}
-\contentsline {subsection}{\numberline {5.5.2}Composability of program embeddings}{79}
-\contentsline {subsection}{\numberline {5.5.3}Prediction of Feedback}{79}
-\contentsline {subsection}{\numberline {5.5.4}Code complexity and performance}{81}
-\contentsline {section}{\numberline {5.6}Discussion}{82}
-\contentsline {part}{IV\hspace {1em}Alternative Ideas and Future Work}{83}
-\contentsline {chapter}{\numberline {6}Crowd Source Feedback}{84}
-\contentsline {section}{\numberline {6.1}Datasets}{86}
-\contentsline {section}{\numberline {6.2}Probabilistic models of peer grading in MOOCs}{87}
-\contentsline {subsection}{\numberline {6.2.1}Models}{88}
-\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_1$\tmspace +\thinmuskip {.1667em}(Grader bias and reliability)}{88}
-\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_2$\tmspace +\thinmuskip {.1667em}(Temporal coherence)}{89}
-\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_3$\tmspace +\thinmuskip {.1667em}(Coupled grader score and reliability)}{89}
-\contentsline {paragraph}{Ethics and Incentives}{90}
-\contentsline {subsection}{\numberline {6.2.2}Inference and evaluation.}{90}
-\contentsline {paragraph}{Evaluation}{92}
-\contentsline {section}{\numberline {6.3}Experimental results}{92}
-\contentsline {subsection}{\numberline {6.3.1}Accuracy of reweighted peer grading}{92}
-\contentsline {subsection}{\numberline {6.3.2}Fairness and efficiency in peer grading}{94}
-\contentsline {subsection}{\numberline {6.3.3}Graders in the context of the MOOC}{96}
-\contentsline {paragraph}{Influential factors for grader ability}{96}
-\contentsline {paragraph}{Grader ability and future performance}{97}
-\contentsline {section}{\numberline {6.4}Related work}{97}
-\contentsline {section}{\numberline {6.5}Discussion and Future work}{98}
-\contentsline {chapter}{\numberline {7}Conclusions}{100}
-\contentsline {section}{\numberline {7.1}Deep Tutor}{100}
-\contentsline {section}{\numberline {7.2}Better Program Encodings}{102}
-\contentsline {section}{\numberline {7.3}Pivot to offline}{103}
-\contentsline {section}{\numberline {7.4}Final Note}{104}
-\contentsline {chapter}{Bibliography}{105}
+\contentsline {section}{\numberline {4.10}Discussion}{68}
+\contentsline {chapter}{\numberline {5}Homework Embedding Spaces}{71}
+\contentsline {section}{\numberline {5.1}Related Work}{72}
+\contentsline {section}{\numberline {5.2}Embedding Hoare Triples}{74}
+\contentsline {subsection}{\numberline {5.2.1}Neural network encoding and decoding of states}{75}
+\contentsline {subsection}{\numberline {5.2.2}Nonparametric model of program embedding}{76}
+\contentsline {subsection}{\numberline {5.2.3}Triple Extraction}{77}
+\contentsline {section}{\numberline {5.3}Feedback Propagation}{77}
+\contentsline {subsection}{\numberline {5.3.1}Incorporating structure via recursive embedding}{78}
+\contentsline {section}{\numberline {5.4}Datasets}{79}
+\contentsline {section}{\numberline {5.5}Results}{80}
+\contentsline {subsection}{\numberline {5.5.1}Prediction of postcondition}{80}
+\contentsline {subsection}{\numberline {5.5.2}Composability of program embeddings}{81}
+\contentsline {subsection}{\numberline {5.5.3}Prediction of Feedback}{82}
+\contentsline {subsection}{\numberline {5.5.4}Code complexity and performance}{83}
+\contentsline {section}{\numberline {5.6}Discussion}{84}
+\contentsline {part}{IV\hspace {1em}Alternative Ideas and Future Work}{85}
+\contentsline {chapter}{\numberline {6}Crowd Source Feedback}{86}
+\contentsline {section}{\numberline {6.1}Datasets}{88}
+\contentsline {section}{\numberline {6.2}Probabilistic models of peer grading in MOOCs}{89}
+\contentsline {subsection}{\numberline {6.2.1}Models}{90}
+\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_1$\tmspace +\thinmuskip {.1667em}(Grader bias and reliability)}{90}
+\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_2$\tmspace +\thinmuskip {.1667em}(Temporal coherence)}{91}
+\contentsline {paragraph}{Model $\unhbox \voidb@x \hbox {\bf PG}_3$\tmspace +\thinmuskip {.1667em}(Coupled grader score and reliability)}{91}
+\contentsline {paragraph}{Ethics and Incentives}{92}
+\contentsline {subsection}{\numberline {6.2.2}Inference and evaluation.}{92}
+\contentsline {paragraph}{Evaluation}{94}
+\contentsline {section}{\numberline {6.3}Experimental results}{94}
+\contentsline {subsection}{\numberline {6.3.1}Accuracy of reweighted peer grading}{94}
+\contentsline {subsection}{\numberline {6.3.2}Fairness and efficiency in peer grading}{96}
+\contentsline {subsection}{\numberline {6.3.3}Graders in the context of the MOOC}{98}
+\contentsline {paragraph}{Influential factors for grader ability}{98}
+\contentsline {paragraph}{Grader ability and future performance}{99}
+\contentsline {section}{\numberline {6.4}Related work}{99}
+\contentsline {section}{\numberline {6.5}Discussion and Future work}{100}
+\contentsline {chapter}{\numberline {7}Conclusions}{102}
+\contentsline {section}{\numberline {7.1}Deep Tutor}{102}
+\contentsline {section}{\numberline {7.2}Better Program Encodings}{104}
+\contentsline {section}{\numberline {7.3}Pivot to offline}{105}
+\contentsline {section}{\numberline {7.4}Final Note}{106}
+\contentsline {chapter}{Bibliography}{107}
