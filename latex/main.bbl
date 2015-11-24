@@ -57,6 +57,11 @@ Yoram Bachrach, Tom Minka, John Guiver, and Thore Graepel.
 \newblock In {\em The 29th Annual International Conference on Machine
   Learning}, ICML '12, 2012.
 
+\bibitem[Bow12]{bowen2012cost}
+William~G Bowen.
+\newblock The “cost disease” in higher education: Is technology the answer.
+\newblock 2012.
+
 \bibitem[Bow13]{bowman2013can}
 Samuel~R Bowman.
 \newblock Can recursive neural tensor networks learn logical reasoning?
@@ -245,6 +250,11 @@ Ilya Goldin.
 \newblock In {\em Proceedings of the Workshop on Intelligent Support for
   Learning Groups at the 11th International Conference on Intelligent Tutoring
   Systems}, 2012.
+
+\bibitem[Gro15]{world2015world}
+World~Bank Group.
+\newblock {\em World development indicators 2015}.
+\newblock World Bank Publications, 2015.
 
 \bibitem[GWD14]{graves2014neural}
 Alex Graves, Greg Wayne, and Ivo Danihelka.
@@ -462,10 +472,10 @@ Andy Nguyen, Christopher Piech, Jonathan Huang, and Leonidas Guibas.
   wide web}, pages 491--502. International World Wide Web Conferences Steering
   Committee, 2014.
 
-\bibitem[Pap12]{pappano2012year}
-Laura Pappano.
-\newblock The year of the mooc.
-\newblock {\em The New York Times}, 2(12):2012, 2012.
+\bibitem[OEC14]{oecd2014education}
+OECD.
+\newblock Education at a glance 2014.
+\newblock 2014.
 
 \bibitem[PCK09]{pavlik2009performance}
 Philip~I {Pavlik Jr}, Hao Cen, and Kenneth~R Koedinger.

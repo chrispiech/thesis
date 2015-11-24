@@ -6,12 +6,12 @@
 \contentsline {section}{\numberline {1.2}The Shortage of Quality Education}{1}
 \contentsline {section}{\numberline {1.3}Feedback}{3}
 \contentsline {section}{\numberline {1.4}Online Programming Case Study}{4}
-\contentsline {section}{\numberline {1.5}The Problem is Hard}{5}
+\contentsline {section}{\numberline {1.5}The Problem is Hard}{6}
 \contentsline {section}{\numberline {1.6}Emergent Structure}{6}
 \contentsline {section}{\numberline {1.7}Unique Access to Data}{7}
-\contentsline {section}{\numberline {1.8}Program Submission Sparcity}{8}
+\contentsline {section}{\numberline {1.8}Program Submission Sparsity}{8}
 \contentsline {section}{\numberline {1.9}Approaches}{9}
-\contentsline {subsection}{\numberline {1.9.1}Big Picture First}{9}
+\contentsline {subsection}{\numberline {1.9.1}Big Picture First}{10}
 \contentsline {subsection}{\numberline {1.9.2}Understand Students}{10}
 \contentsline {subsection}{\numberline {1.9.3}Easy to Author}{11}
 \contentsline {section}{\numberline {1.10}Novel Contribution}{11}
