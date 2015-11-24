@@ -24,13 +24,7 @@ The main contributions of this chapter are:
 
 \section{Problem Solving Policy}
 
-The Hour of Code challenges take several steps for a student to solve. At each point in time, the student's current work constitutes a partial solution $\psi \in S$ where $S$ is the set of all possible responses. As the student works on the assessment they will transition through a series $T = \{\psi_0, \psi_1, ... , \psi_n$\} of partial solutions from step $0$, when they have done no work, to step $n$ when they have either reached the solution or given up. 
-We propose that generating feedback autonomously for an assessment of this nature can be seen as the composition of two tasks: 
-\begin{enumerate}
-\item Deciding for any learner what partial solution an educational expert would suggest they transition to next. 
-\item Choosing how to communicate that information to the student such that they improve on a learning objective. 
-\end{enumerate}
-The first task can be interpreted as ``learning to understand students" and the second can be interpreted as ``using that knowledge to aid students." We suggest that both of the decoupled tasks can be solved and tested independently. The objective of this paper is to solve the former problem by learning what we call a Problem Solving Policy (PSP): a decision for any partial solution as to what next partial solution a student should take (see definition \ref{pspDef} and the example in figure \ref{fig:policy}). Using historical data we generate PSPs for challenges in the Hour of Code and evaluate to what extent they capture expert opinion.
+The Hour of Code challenges take several steps for a student to solve. At each point in time, the student's current work constitutes a partial solution $\psi \in S$ where $S$ is the set of all possible responses. As the student works on the assessment they will transition through a series $T = \{\psi_0, \psi_1, ... , \psi_n$\} of partial solutions from step $0$, when they have done no work, to step $n$ when they have either reached the solution or given up. Using trajectories of student we hope to be able to decide for any learner what partial solution an educational expert would suggest they transition to next. The objective of this paper is to solve the problem by learning what we call a Problem Solving Policy (PSP): a decision for any partial solution as to what next partial solution a student should take (see definition \ref{pspDef} and the example in figure \ref{fig:policy}). Using historical data we generate PSPs for challenges in the Hour of Code and evaluate to what extent they capture expert opinion.
 
 \begin{defo}
 Problem Solving Policy (PSP). \\ 
@@ -75,7 +69,7 @@ One of the aims of this work is to enable further comparative research. To this 
 
 In the Hour of Code website, students write programs to solve maze world puzzles. Each time a learner runs their program, a symbolic representation of their current work is recorded. When the learner submits a final answer, or stops working on a challenge, the learner’s partial solutions are composed into a raw series. There is a simple mechanism to test if two symbolic representations are identical.
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.8\columnwidth]{img/problems3.png}
 
@@ -372,7 +366,7 @@ This trend is especially interesting when we only look at the scores of students
 
 \subsection{Generating Hints}
 
-In the introduction of this paper we proposed that the challenge of autonomously providing hints could be decoupled into (1) Deciding how a learner should make forward progress and (2) Choosing how to communicate that information to the student such that they improve on a learning objective. Given that we can solve the first task sufficiently well, we are  pursuing research on the second: how to turn our PSP into hints. This latter task combines education and UI decisions.
+In the introduction of this thesis we proposed that the challenge of autonomously providing hints could be decoupled into (1) Developing and understanding of students and (2) Choosing how to communicate that information to the student such that they improve on a learning objective. Given that we can solve the first task sufficiently well, we are  pursuing research on the second: how to turn our PSP into hints. This latter task combines education and UI decisions.
 
 Having a PSP for a given challenge substantially simplifies the task of generating hints. It tells the hint generation algorithm which part of a student's current partial solution they should work on, and how they should modify their work. Often, students have multiple issues. A policy allows an automated system to know what is the first issue the student should work on. Moreover, knowing the exact edit we believe an expert would like a student to make means that generating a hint is reduced to deciding how directly we should tell the student what to do. Based off of a simple template we turned $\pi(x)$ into English text hints. 
 
